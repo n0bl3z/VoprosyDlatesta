@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест для самооценивания</title>
+  <meta name="description" content="Тест из 40 случайных вопросов для проверки знаний по информатике и ЭВМ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Переключатель темы -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5" />
+      <path
+        d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+    </svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+    </svg>
+  </button>
+
+  <div class="container">
+    <!-- Стартовый экран -->
+    <div id="start-screen" class="screen active">
+      <div class="card start-card">
+        <div class="icon-container">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+          </svg>
+        </div>
+        <h1>Тест для самооценивания</h1>
+        <p class="description">Проверьте свои знания по основам информатики и вычислительной техники. Тест включает 40
+          случайных вопросов из базы в 500 вопросов.</p>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-value">40</span>
+            <span class="info-label">вопросов</span>
+          </div>
+          <div class="info-item">
+            <span class="info-value">1</span>
+            <span class="info-label">балл за ответ</span>
+          </div>
+          <div class="info-item">
+            <span class="info-value">∞</span>
+            <span class="info-label">время</span>
+          </div>
+        </div>
+        <button id="start-btn" class="btn btn-primary">Начать тест</button>
+      </div>
+    </div>
+
+    <!-- Экран теста -->
+    <div id="quiz-screen" class="screen">
+      <div class="quiz-header">
+        <div class="progress-info">
+          <span>Вопрос <span id="current-question">1</span> из <span id="total-questions">40</span></span>
+          <span class="score-display">Баллы: <span id="current-score">0</span></span>
+        </div>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="card question-card">
+        <div id="multi-hint" class="multi-hint hidden">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 16v-4M12 8h.01" />
+          </svg>
+          Выберите несколько вариантов ответа
+        </div>
+        <h2 id="question-text" class="question-text"></h2>
+        <div id="answers-container" class="answers-container"></div>
+        <button id="confirm-btn" class="btn btn-secondary hidden">Подтвердить ответ</button>
+        <div id="feedback" class="feedback hidden"></div>
+        <div class="navigation">
+          <button id="next-btn" class="btn btn-primary" disabled>Следующий вопрос</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Экран результатов -->
+    <div id="results-screen" class="screen">
+      <div class="card results-card">
+        <div id="results-icon" class="results-icon"></div>
+        <h1>Тест завершён!</h1>
+        <div class="results-score">
+          <span id="final-score" class="score-number">0</span>
+          <span class="score-label">из 100 баллов</span>
+        </div>
+        <div id="results-message" class="results-message"></div>
+        <div class="results-details">
+          <div class="detail-item correct">
+            <span class="detail-value" id="correct-count">0</span>
+            <span class="detail-label">Правильных</span>
+          </div>
+          <div class="detail-item wrong">
+            <span class="detail-value" id="wrong-count">0</span>
+            <span class="detail-label">Неправильных</span>
+          </div>
+          <div class="detail-item percentage">
+            <span class="detail-value" id="percentage">0%</span>
+            <span class="detail-label">Результат</span>
+          </div>
+        </div>
+        <button id="restart-btn" class="btn btn-primary">Пройти ещё раз</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
