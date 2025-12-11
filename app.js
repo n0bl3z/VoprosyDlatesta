@@ -25,8 +25,14 @@ const state = {
   timeRemaining: 0,
   timerInterval: null,
   userName: null,
+  userId: null,
   isChangingName: false
 };
+
+// Генерация уникального ID пользователя
+function generateUserId() {
+  return 'user_' + Date.now().toString(36) + '_' + Math.random().toString(36).substr(2, 5);
+}
 
 // ============================================
 // DOM-элементы
@@ -71,8 +77,18 @@ const elements = {
 // Управление именем пользователя
 // ============================================
 
-function loadUserName() {
+function loadUserData() {
   const savedName = localStorage.getItem('userName');
+  const savedId = localStorage.getItem('userId');
+
+  // Если нет ID — генерируем новый
+  if (!savedId) {
+    state.userId = generateUserId();
+    localStorage.setItem('userId', state.userId);
+  } else {
+    state.userId = savedId;
+  }
+
   if (savedName) {
     state.userName = savedName;
     updateNameDisplay();
@@ -119,13 +135,19 @@ function saveName() {
   }
 
   const oldName = state.userName;
+  const isNewUser = !oldName && !state.isChangingName;
+
   state.userName = newName;
   localStorage.setItem('userName', newName);
   updateNameDisplay();
   hideNameModal();
 
+  // Если новый пользователь — отправляем приветствие
+  if (isNewUser) {
+    sendNewUserToDiscord(newName);
+  }
   // Если меняем имя — отправляем в Discord
-  if (state.isChangingName && oldName && oldName !== newName) {
+  else if (state.isChangingName && oldName && oldName !== newName) {
     sendNameChangeToDiscord(oldName, newName);
   }
 }
@@ -183,11 +205,12 @@ function sendResultsToDiscord(score, correct, wrong, percent) {
       color: color,
       fields: [
         { name: '👤 Пользователь', value: state.userName || 'Аноним', inline: true },
+        { name: '� ID', value: `\`${state.userId}\``, inline: true },
         { name: '🏆 Баллы', value: `${score}/100`, inline: true },
-        { name: '📊 Процент', value: `${percent}%`, inline: true },
         { name: '✅ Правильных', value: `${correct}`, inline: true },
         { name: '❌ Неправильных', value: `${wrong}`, inline: true },
-        { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: true }
+        { name: '📊 Процент', value: `${percent}%`, inline: true },
+        { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
       footer: { text: 'Тест для самооценивания v0.2' }
     }]
@@ -202,9 +225,28 @@ function sendNameChangeToDiscord(oldName, newName) {
       title: '✏️ Смена имени',
       color: 0x8b5cf6, // фиолетовый
       fields: [
+        { name: '🆔 ID', value: `\`${state.userId}\``, inline: false },
         { name: '📛 Старое имя', value: oldName, inline: true },
         { name: '➡️ Новое имя', value: newName, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
+      ],
+      footer: { text: 'Тест для самооценивания v0.2' }
+    }]
+  };
+
+  sendToDiscord(payload);
+}
+
+function sendNewUserToDiscord(userName) {
+  const payload = {
+    embeds: [{
+      title: '🎉 Новый пользователь!',
+      color: 0x10b981, // зелёный изумрудный
+      description: `Добро пожаловать в тест!`,
+      fields: [
+        { name: '👤 Имя', value: userName, inline: true },
+        { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
+        { name: '📅 Дата регистрации', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
       footer: { text: 'Тест для самооценивания v0.2' }
     }]
@@ -583,8 +625,8 @@ elements.nameInput.addEventListener('input', () => {
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
 
-  // Проверяем имя пользователя
-  if (!loadUserName()) {
+  // Проверяем данные пользователя (имя и ID)
+  if (!loadUserData()) {
     // Если имени нет — показываем модалку
     showNameModal(false);
   }
