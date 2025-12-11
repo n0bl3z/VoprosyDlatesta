@@ -2,6 +2,7 @@
  * Приложение теста для самооценивания
  * Выбирает 40 случайных вопросов и подсчитывает баллы
  * Поддержка вопросов с несколькими правильными ответами
+ * Отправка результатов в Discord
  */
 
 // ============================================
@@ -9,14 +10,22 @@
 // ============================================
 
 const QUESTIONS_PER_TEST = 40;
+const TIMER_MINUTES = 45;
+
+// Discord Webhook URL — замените на свой
+const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1448693442514386994/fyU-avlQmlWIUOAMTb0VJt-Rg3hg9sLbogA6fPMNIcpyfwhKblps_IDn5Ri2sBVxvVk0';
 
 const state = {
-  questions: [],           // Текущие 40 вопросов для теста
-  currentIndex: 0,         // Индекс текущего вопроса
-  score: 0,                // Набранные баллы
-  answered: false,         // Флаг: ответ дан на текущий вопрос
-  selectedAnswers: [],     // Выбранные ответы (для мультиответов)
-  isMultiAnswer: false     // Флаг: текущий вопрос с несколькими ответами
+  questions: [],
+  currentIndex: 0,
+  score: 0,
+  answered: false,
+  selectedAnswers: [],
+  isMultiAnswer: false,
+  timeRemaining: 0,
+  timerInterval: null,
+  userName: null,
+  isChangingName: false
 };
 
 // ============================================
@@ -24,18 +33,15 @@ const state = {
 // ============================================
 
 const elements = {
-  // Экраны
   startScreen: document.getElementById('start-screen'),
   quizScreen: document.getElementById('quiz-screen'),
   resultsScreen: document.getElementById('results-screen'),
-
-  // Стартовый экран
   startBtn: document.getElementById('start-btn'),
-
-  // Экран теста
   currentQuestion: document.getElementById('current-question'),
   totalQuestions: document.getElementById('total-questions'),
   currentScore: document.getElementById('current-score'),
+  timer: document.getElementById('timer'),
+  timerDisplay: null,
   progressFill: document.getElementById('progress-fill'),
   questionText: document.getElementById('question-text'),
   answersContainer: document.getElementById('answers-container'),
@@ -43,8 +49,6 @@ const elements = {
   confirmBtn: document.getElementById('confirm-btn'),
   feedback: document.getElementById('feedback'),
   nextBtn: document.getElementById('next-btn'),
-
-  // Экран результатов
   resultsIcon: document.getElementById('results-icon'),
   finalScore: document.getElementById('final-score'),
   resultsMessage: document.getElementById('results-message'),
@@ -52,17 +56,168 @@ const elements = {
   wrongCount: document.getElementById('wrong-count'),
   percentage: document.getElementById('percentage'),
   restartBtn: document.getElementById('restart-btn'),
-
-  // Тема
-  themeToggle: document.getElementById('theme-toggle')
+  themeToggle: document.getElementById('theme-toggle'),
+  // Новые элементы для имени
+  nameModal: document.getElementById('name-modal'),
+  modalTitle: document.getElementById('modal-title'),
+  modalDescription: document.getElementById('modal-description'),
+  nameInput: document.getElementById('name-input'),
+  saveNameBtn: document.getElementById('save-name-btn'),
+  changeNameBtn: document.getElementById('change-name-btn'),
+  userNameDisplay: document.getElementById('user-name-display')
 };
+
+// ============================================
+// Управление именем пользователя
+// ============================================
+
+function loadUserName() {
+  const savedName = localStorage.getItem('userName');
+  if (savedName) {
+    state.userName = savedName;
+    updateNameDisplay();
+    return true;
+  }
+  return false;
+}
+
+function updateNameDisplay() {
+  if (state.userName) {
+    elements.userNameDisplay.textContent = state.userName;
+  } else {
+    elements.userNameDisplay.textContent = 'Гость';
+  }
+}
+
+function showNameModal(isChanging = false) {
+  state.isChangingName = isChanging;
+
+  if (isChanging) {
+    elements.modalTitle.textContent = 'Сменить имя';
+    elements.modalDescription.textContent = 'Введите новое имя';
+    elements.nameInput.value = state.userName || '';
+  } else {
+    elements.modalTitle.textContent = 'Как вас зовут?';
+    elements.modalDescription.textContent = 'Введите ваше имя для отслеживания результатов';
+    elements.nameInput.value = '';
+  }
+
+  elements.nameModal.classList.remove('hidden');
+  elements.nameInput.focus();
+}
+
+function hideNameModal() {
+  elements.nameModal.classList.add('hidden');
+}
+
+function saveName() {
+  const newName = elements.nameInput.value.trim();
+
+  if (!newName) {
+    elements.nameInput.style.borderColor = 'var(--color-error)';
+    return;
+  }
+
+  const oldName = state.userName;
+  state.userName = newName;
+  localStorage.setItem('userName', newName);
+  updateNameDisplay();
+  hideNameModal();
+
+  // Если меняем имя — отправляем в Discord
+  if (state.isChangingName && oldName && oldName !== newName) {
+    sendNameChangeToDiscord(oldName, newName);
+  }
+}
+
+// ============================================
+// Discord Webhook
+// ============================================
+
+async function sendToDiscord(payload) {
+  // Используем CORS-прокси для обхода блокировки Discord
+  // Варианты прокси (если один не работает, попробуйте другой):
+  const CORS_PROXIES = [
+    'https://corsproxy.io/?',
+    'https://api.allorigins.win/raw?url=',
+    'https://cors-anywhere.herokuapp.com/'
+  ];
+
+  const proxyUrl = CORS_PROXIES[0] + encodeURIComponent(DISCORD_WEBHOOK_URL);
+
+  try {
+    await fetch(proxyUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    console.log('Результаты отправлены в Discord');
+  } catch (error) {
+    console.error('Ошибка отправки в Discord:', error);
+    // Пробуем альтернативный прокси
+    try {
+      const altProxyUrl = CORS_PROXIES[1] + encodeURIComponent(DISCORD_WEBHOOK_URL);
+      await fetch(altProxyUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      console.log('Результаты отправлены через альтернативный прокси');
+    } catch (e) {
+      console.error('Все прокси недоступны:', e);
+    }
+  }
+}
+
+function sendResultsToDiscord(score, correct, wrong, percent) {
+  // Определяем цвет embed по результату
+  let color;
+  if (percent >= 90) color = 0x22c55e; // зелёный
+  else if (percent >= 70) color = 0x3b82f6; // синий
+  else if (percent >= 50) color = 0xf59e0b; // жёлтый
+  else color = 0xef4444; // красный
+
+  const payload = {
+    embeds: [{
+      title: '📝 Результат теста',
+      color: color,
+      fields: [
+        { name: '👤 Пользователь', value: state.userName || 'Аноним', inline: true },
+        { name: '🏆 Баллы', value: `${score}/100`, inline: true },
+        { name: '📊 Процент', value: `${percent}%`, inline: true },
+        { name: '✅ Правильных', value: `${correct}`, inline: true },
+        { name: '❌ Неправильных', value: `${wrong}`, inline: true },
+        { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: true }
+      ],
+      footer: { text: 'Тест для самооценивания v0.2' }
+    }]
+  };
+
+  sendToDiscord(payload);
+}
+
+function sendNameChangeToDiscord(oldName, newName) {
+  const payload = {
+    embeds: [{
+      title: '✏️ Смена имени',
+      color: 0x8b5cf6, // фиолетовый
+      fields: [
+        { name: '📛 Старое имя', value: oldName, inline: true },
+        { name: '➡️ Новое имя', value: newName, inline: true },
+        { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
+      ],
+      footer: { text: 'Тест для самооценивания v0.2' }
+    }]
+  };
+
+  sendToDiscord(payload);
+}
 
 // ============================================
 // Переключение темы
 // ============================================
 
 function initTheme() {
-  // Проверяем сохранённую тему или системные настройки
   const savedTheme = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -84,12 +239,57 @@ function toggleTheme() {
 }
 
 // ============================================
+// Таймер
+// ============================================
+
+function startTimer() {
+  state.timeRemaining = TIMER_MINUTES * 60;
+  elements.timerDisplay = elements.timer.parentElement;
+  updateTimerDisplay();
+
+  state.timerInterval = setInterval(() => {
+    state.timeRemaining--;
+    updateTimerDisplay();
+
+    if (state.timeRemaining <= 0) {
+      clearInterval(state.timerInterval);
+      timeUp();
+    }
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const minutes = Math.floor(state.timeRemaining / 60);
+  const seconds = state.timeRemaining % 60;
+  elements.timer.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+  if (elements.timerDisplay) {
+    elements.timerDisplay.classList.remove('warning', 'danger');
+
+    if (state.timeRemaining <= 60) {
+      elements.timerDisplay.classList.add('danger');
+    } else if (state.timeRemaining <= 300) {
+      elements.timerDisplay.classList.add('warning');
+    }
+  }
+}
+
+function stopTimer() {
+  if (state.timerInterval) {
+    clearInterval(state.timerInterval);
+    state.timerInterval = null;
+  }
+}
+
+function timeUp() {
+  stopTimer();
+  showResults();
+}
+
+// ============================================
 // Утилиты
 // ============================================
 
-/**
- * Перемешивает массив методом Фишера-Йейтса
- */
 function shuffleArray(array) {
   const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -99,17 +299,11 @@ function shuffleArray(array) {
   return shuffled;
 }
 
-/**
- * Выбирает N случайных элементов из массива
- */
 function getRandomItems(array, n) {
   const shuffled = shuffleArray(array);
   return shuffled.slice(0, Math.min(n, shuffled.length));
 }
 
-/**
- * Переключает видимость экранов
- */
 function showScreen(screenName) {
   elements.startScreen.classList.remove('active');
   elements.quizScreen.classList.remove('active');
@@ -128,9 +322,6 @@ function showScreen(screenName) {
   }
 }
 
-/**
- * Проверяет, является ли вопрос мультиответным
- */
 function isMultiAnswerQuestion(question) {
   const correctCount = question.answers.filter(a => a.isCorrect).length;
   return correctCount > 1;
@@ -140,11 +331,7 @@ function isMultiAnswerQuestion(question) {
 // Логика теста
 // ============================================
 
-/**
- * Инициализирует новый тест
- */
 function initQuiz() {
-  // Сбрасываем состояние
   state.questions = getRandomItems(allQuestions, QUESTIONS_PER_TEST);
   state.currentIndex = 0;
   state.score = 0;
@@ -152,36 +339,27 @@ function initQuiz() {
   state.selectedAnswers = [];
   state.isMultiAnswer = false;
 
-  // Обновляем UI
   elements.totalQuestions.textContent = state.questions.length;
   elements.currentScore.textContent = '0';
 
-  // Показываем экран теста и первый вопрос
   showScreen('quiz');
+  startTimer();
   renderQuestion();
 }
 
-/**
- * Отображает текущий вопрос
- */
 function renderQuestion() {
   const question = state.questions[state.currentIndex];
   if (!question) return;
 
-  // Определяем тип вопроса
   state.isMultiAnswer = isMultiAnswerQuestion(question);
   state.selectedAnswers = [];
   state.answered = false;
 
-  // Обновляем прогресс
   const progress = ((state.currentIndex) / state.questions.length) * 100;
   elements.currentQuestion.textContent = state.currentIndex + 1;
   elements.progressFill.style.width = `${progress}%`;
-
-  // Отображаем текст вопроса
   elements.questionText.textContent = question.question;
 
-  // Показываем/скрываем подсказку для мультиответов
   if (state.isMultiAnswer) {
     elements.multiHint.classList.remove('hidden');
     elements.confirmBtn.classList.remove('hidden');
@@ -191,11 +369,9 @@ function renderQuestion() {
     elements.confirmBtn.classList.add('hidden');
   }
 
-  // Очищаем и перемешиваем ответы
   elements.answersContainer.innerHTML = '';
   const shuffledAnswers = shuffleArray(question.answers);
 
-  // Создаём кнопки ответов
   shuffledAnswers.forEach((answer, index) => {
     const btn = document.createElement('button');
     btn.className = 'answer-btn';
@@ -213,12 +389,10 @@ function renderQuestion() {
     elements.answersContainer.appendChild(btn);
   });
 
-  // Сбрасываем UI
   elements.feedback.classList.add('hidden');
   elements.feedback.className = 'feedback hidden';
   elements.nextBtn.disabled = true;
 
-  // Обновляем текст кнопки
   if (state.currentIndex === state.questions.length - 1) {
     elements.nextBtn.textContent = 'Завершить тест';
   } else {
@@ -226,40 +400,28 @@ function renderQuestion() {
   }
 }
 
-/**
- * Обрабатывает клик по ответу
- */
 function handleAnswerClick(btn, answer, index) {
-  // Игнорируем если уже ответили
   if (state.answered) return;
 
   if (state.isMultiAnswer) {
-    // Режим множественного выбора
     handleMultiAnswerClick(btn, answer, index);
   } else {
-    // Режим одиночного выбора
     handleSingleAnswerClick(btn, answer);
   }
 }
 
-/**
- * Обработка одиночного ответа
- */
 function handleSingleAnswerClick(btn, answer) {
   state.answered = true;
 
-  // Блокируем все кнопки
   const allButtons = elements.answersContainer.querySelectorAll('.answer-btn');
   allButtons.forEach(b => b.disabled = true);
 
-  // Подсвечиваем правильный ответ
   allButtons.forEach(b => {
     if (b.dataset.correct === 'true') {
       b.classList.add('correct');
     }
   });
 
-  // Проверяем ответ
   if (answer.isCorrect) {
     state.score++;
     elements.currentScore.textContent = state.score;
@@ -272,40 +434,29 @@ function handleSingleAnswerClick(btn, answer) {
   elements.nextBtn.disabled = false;
 }
 
-/**
- * Обработка мультиответа — выбор
- */
 function handleMultiAnswerClick(btn, answer, index) {
   const selectedIndex = state.selectedAnswers.findIndex(a => a.index === index);
 
   if (selectedIndex > -1) {
-    // Снимаем выбор
     state.selectedAnswers.splice(selectedIndex, 1);
     btn.classList.remove('selected');
   } else {
-    // Добавляем выбор
     state.selectedAnswers.push({ index, answer, btn });
     btn.classList.add('selected');
   }
 
-  // Активируем кнопку подтверждения если есть выбранные ответы
   elements.confirmBtn.disabled = state.selectedAnswers.length === 0;
 }
 
-/**
- * Подтверждение мультиответа
- */
 function confirmMultiAnswer() {
   if (state.answered || state.selectedAnswers.length === 0) return;
 
   state.answered = true;
 
-  // Блокируем все кнопки
   const allButtons = elements.answersContainer.querySelectorAll('.answer-btn');
   allButtons.forEach(b => b.disabled = true);
   elements.confirmBtn.disabled = true;
 
-  // Находим все правильные ответы
   const correctAnswers = [];
   allButtons.forEach(b => {
     if (b.dataset.correct === 'true') {
@@ -314,17 +465,14 @@ function confirmMultiAnswer() {
     }
   });
 
-  // Проверяем выбранные ответы
   const selectedCorrect = state.selectedAnswers.filter(a => a.answer.isCorrect);
   const selectedWrong = state.selectedAnswers.filter(a => !a.answer.isCorrect);
 
-  // Подсвечиваем неправильные выбранные
   selectedWrong.forEach(a => {
     a.btn.classList.remove('selected');
     a.btn.classList.add('wrong');
   });
 
-  // Проверяем: все правильные выбраны И нет неправильных
   const isFullyCorrect =
     selectedCorrect.length === correctAnswers.length &&
     selectedWrong.length === 0;
@@ -342,9 +490,6 @@ function confirmMultiAnswer() {
   elements.nextBtn.disabled = false;
 }
 
-/**
- * Показывает обратную связь после ответа
- */
 function showFeedback(isCorrect, message) {
   elements.feedback.classList.remove('hidden', 'correct', 'wrong');
   elements.feedback.classList.add(isCorrect ? 'correct' : 'wrong');
@@ -361,9 +506,6 @@ function showFeedback(isCorrect, message) {
   elements.feedback.innerHTML = icon + message;
 }
 
-/**
- * Переходит к следующему вопросу или показывает результаты
- */
 function goToNext() {
   state.currentIndex++;
 
@@ -374,50 +516,47 @@ function goToNext() {
   }
 }
 
-/**
- * Показывает экран результатов
- */
 function showResults() {
+  stopTimer();
   showScreen('results');
 
   const total = state.questions.length;
   const correct = state.score;
   const wrong = total - correct;
   const percent = Math.round((correct / total) * 100);
-
-  // Рассчитываем балл в 100-бальной системе
   const score100 = Math.round((correct / total) * 100);
 
-  // Заполняем данные
   elements.finalScore.textContent = score100;
   elements.correctCount.textContent = correct;
   elements.wrongCount.textContent = wrong;
   elements.percentage.textContent = `${percent}%`;
 
-  // Определяем категорию результата
   let iconClass, emoji, message;
 
   if (percent >= 90) {
     iconClass = 'excellent';
     emoji = '🏆';
-    message = 'Отличный результат! Вы прекрасно знаете материал.';
+    message = 'Красавчик бро не сомнивался в тебе';
   } else if (percent >= 70) {
     iconClass = 'good';
     emoji = '👍';
-    message = 'Хороший результат! Есть над чем поработать.';
+    message = 'Хорошо бро';
   } else if (percent >= 50) {
     iconClass = 'average';
     emoji = '📚';
-    message = 'Удовлетворительно. Рекомендуем повторить материал.';
+    message = 'Ну бро чет мало';
   } else {
     iconClass = 'poor';
     emoji = '💪';
-    message = 'Нужно подтянуть знания. Не сдавайтесь!';
+    message = 'Ебать лашок';
   }
 
   elements.resultsIcon.className = `results-icon ${iconClass}`;
   elements.resultsIcon.textContent = emoji;
   elements.resultsMessage.textContent = message;
+
+  // Отправляем результаты в Discord
+  sendResultsToDiscord(score100, correct, wrong, percent);
 }
 
 // ============================================
@@ -430,12 +569,26 @@ elements.restartBtn.addEventListener('click', initQuiz);
 elements.themeToggle.addEventListener('click', toggleTheme);
 elements.confirmBtn.addEventListener('click', confirmMultiAnswer);
 
+// События для работы с именем
+elements.changeNameBtn.addEventListener('click', () => showNameModal(true));
+elements.saveNameBtn.addEventListener('click', saveName);
+elements.nameInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') saveName();
+});
+elements.nameInput.addEventListener('input', () => {
+  elements.nameInput.style.borderColor = 'var(--color-border)';
+});
+
 // Инициализация при загрузке
 document.addEventListener('DOMContentLoaded', () => {
-  // Инициализируем тему
   initTheme();
 
-  // Проверяем, загружены ли вопросы
+  // Проверяем имя пользователя
+  if (!loadUserName()) {
+    // Если имени нет — показываем модалку
+    showNameModal(false);
+  }
+
   if (typeof allQuestions === 'undefined' || allQuestions.length === 0) {
     elements.startBtn.disabled = true;
     elements.startBtn.textContent = 'Ошибка загрузки вопросов';

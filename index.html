@@ -25,6 +25,28 @@
     </svg>
   </button>
 
+  <!-- Версия -->
+  <div class="version-tag">v0.2</div>
+
+  <!-- Кнопка смены имени -->
+  <button id="change-name-btn" class="change-name-btn" title="Сменить имя">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+      <circle cx="12" cy="7" r="4" />
+    </svg>
+    <span id="user-name-display"></span>
+  </button>
+
+  <!-- Модальное окно ввода имени -->
+  <div id="name-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-title">Как вас зовут?</h2>
+      <p id="modal-description">Введите ваше имя для отслеживания результатов</p>
+      <input type="text" id="name-input" placeholder="Ваше имя" maxlength="30" autocomplete="off">
+      <button id="save-name-btn" class="btn btn-primary">Сохранить</button>
+    </div>
+  </div>
+
   <div class="container">
     <!-- Стартовый экран -->
     <div id="start-screen" class="screen active">
@@ -35,21 +57,20 @@
               d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
           </svg>
         </div>
-        <h1>Тест для самооценивания</h1>
-        <p class="description">Проверьте свои знания по основам информатики и вычислительной техники. Тест включает 40
-          случайных вопросов из базы в 500 вопросов.</p>
+        <h1>Тест для снижения самооценки</h1>
+        <p class="description">Ну че голубки скоро экзамен XD</p>
         <div class="info-grid">
           <div class="info-item">
             <span class="info-value">40</span>
             <span class="info-label">вопросов</span>
           </div>
           <div class="info-item">
-            <span class="info-value">1</span>
-            <span class="info-label">балл за ответ</span>
+            <span class="info-value">2.5</span>
+            <span class="info-label">балла за ответ</span>
           </div>
           <div class="info-item">
-            <span class="info-value">∞</span>
-            <span class="info-label">время</span>
+            <span class="info-value">45</span>
+            <span class="info-label">минут</span>
           </div>
         </div>
         <button id="start-btn" class="btn btn-primary">Начать тест</button>
@@ -61,6 +82,7 @@
       <div class="quiz-header">
         <div class="progress-info">
           <span>Вопрос <span id="current-question">1</span> из <span id="total-questions">40</span></span>
+          <span class="timer-display">⏱ <span id="timer">45:00</span></span>
           <span class="score-display">Правильно: <span id="current-score">0</span></span>
         </div>
         <div class="progress-bar">
