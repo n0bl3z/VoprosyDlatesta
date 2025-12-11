@@ -24,6 +24,7 @@ const state = {
   isMultiAnswer: false,
   timeRemaining: 0,
   timerInterval: null,
+  startTime: null,
   userName: null,
   userId: null,
   isChangingName: false
@@ -199,20 +200,27 @@ function sendResultsToDiscord(score, correct, wrong, percent) {
   else if (percent >= 50) color = 0xf59e0b; // жёлтый
   else color = 0xef4444; // красный
 
+  // Вычисляем время прохождения
+  const elapsedMs = Date.now() - state.startTime;
+  const elapsedMinutes = Math.floor(elapsedMs / 60000);
+  const elapsedSeconds = Math.floor((elapsedMs % 60000) / 1000);
+  const timeString = `${elapsedMinutes} мин ${elapsedSeconds} сек`;
+
   const payload = {
     embeds: [{
       title: '📝 Результат теста',
       color: color,
       fields: [
         { name: '👤 Пользователь', value: state.userName || 'Аноним', inline: true },
-        { name: '� ID', value: `\`${state.userId}\``, inline: true },
+        { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
         { name: '🏆 Баллы', value: `${score}/100`, inline: true },
         { name: '✅ Правильных', value: `${correct}`, inline: true },
         { name: '❌ Неправильных', value: `${wrong}`, inline: true },
         { name: '📊 Процент', value: `${percent}%`, inline: true },
-        { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
+        { name: '⏱️ Время', value: timeString, inline: true },
+        { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: true }
       ],
-      footer: { text: 'Тест для самооценивания v0.2' }
+      footer: { text: 'Тест для самооценивания v0.4' }
     }]
   };
 
@@ -230,7 +238,7 @@ function sendNameChangeToDiscord(oldName, newName) {
         { name: '➡️ Новое имя', value: newName, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v0.2' }
+      footer: { text: 'Тест для самооценивания v0.4' }
     }]
   };
 
@@ -248,7 +256,7 @@ function sendNewUserToDiscord(userName) {
         { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
         { name: '📅 Дата регистрации', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v0.2' }
+      footer: { text: 'Тест для самооценивания v0.4' }
     }]
   };
 
@@ -380,6 +388,7 @@ function initQuiz() {
   state.answered = false;
   state.selectedAnswers = [];
   state.isMultiAnswer = false;
+  state.startTime = Date.now();
 
   elements.totalQuestions.textContent = state.questions.length;
   elements.currentScore.textContent = '0';
