@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тест для самооценивания</title>
-  <meta name="description" content="Тест из 40 случайных вопросов для проверки знаний по информатике и ЭВМ">
+  <meta name="description" content="Тест из 40 случайных вопросов для проверки знаний">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=0.4">
+  <link rel="stylesheet" href="styles.css?v=0.5">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
   </button>
 
   <!-- Версия -->
-  <div class="version-tag">v0.4</div>
+  <div class="version-tag">v0.5</div>
 
   <!-- Кнопка смены имени -->
   <button id="change-name-btn" class="change-name-btn" title="Сменить имя">
@@ -36,6 +36,16 @@
     </svg>
     <span id="user-name-display"></span>
   </button>
+
+  <!-- Переключатель предметов -->
+  <div id="subject-switcher" class="subject-switcher">
+    <button id="subject-hardware" class="subject-btn active" data-subject="hardware">
+      Аппаратное обеспечение
+    </button>
+    <button id="subject-innovation" class="subject-btn" data-subject="innovation">
+      Инновационные технологии
+    </button>
+  </div>
 
   <!-- Модальное окно ввода имени -->
   <div id="name-modal" class="modal hidden">
@@ -59,6 +69,7 @@
         </div>
         <h1>Тест для снижения самооценки</h1>
         <p class="description">Ну че голубки скоро экзамен XD</p>
+        <p id="current-subject-name" class="subject-name">Аппаратное обеспечение</p>
         <div class="info-grid">
           <div class="info-item">
             <span class="info-value">40</span>
@@ -103,6 +114,12 @@
         <button id="confirm-btn" class="btn btn-secondary hidden">Подтвердить ответ</button>
         <div id="feedback" class="feedback hidden"></div>
         <div class="navigation">
+          <button id="exit-btn" class="btn btn-exit" title="Выйти из теста">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9" />
+            </svg>
+            Выйти
+          </button>
           <button id="next-btn" class="btn btn-primary" disabled>Следующий вопрос</button>
         </div>
       </div>
@@ -137,8 +154,9 @@
     </div>
   </div>
 
-  <script src="questions.js?v=0.4"></script>
-  <script src="app.js?v=0.4"></script>
+  <script src="questions.js?v=0.5"></script>
+  <script src="innovation_questions.js?v=0.5"></script>
+  <script src="app.js?v=0.5"></script>
 </body>
 
 </html>

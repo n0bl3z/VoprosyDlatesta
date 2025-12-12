@@ -15,6 +15,18 @@ const TIMER_MINUTES = 45;
 // Discord Webhook URL — замените на свой
 const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1448693442514386994/fyU-avlQmlWIUOAMTb0VJt-Rg3hg9sLbogA6fPMNIcpyfwhKblps_IDn5Ri2sBVxvVk0';
 
+// Предметы
+const subjects = {
+  hardware: {
+    name: 'Аппаратное обеспечение',
+    questions: typeof allQuestions !== 'undefined' ? allQuestions : []
+  },
+  innovation: {
+    name: 'Инновационные технологии',
+    questions: typeof innovationQuestions !== 'undefined' ? innovationQuestions : []
+  }
+};
+
 const state = {
   questions: [],
   currentIndex: 0,
@@ -27,7 +39,9 @@ const state = {
   startTime: null,
   userName: null,
   userId: null,
-  isChangingName: false
+  isChangingName: false,
+  selectedSubject: 'hardware',
+  isQuizActive: false
 };
 
 // Генерация уникального ID пользователя
@@ -56,6 +70,7 @@ const elements = {
   confirmBtn: document.getElementById('confirm-btn'),
   feedback: document.getElementById('feedback'),
   nextBtn: document.getElementById('next-btn'),
+  exitBtn: document.getElementById('exit-btn'),
   resultsIcon: document.getElementById('results-icon'),
   finalScore: document.getElementById('final-score'),
   resultsMessage: document.getElementById('results-message'),
@@ -64,14 +79,18 @@ const elements = {
   percentage: document.getElementById('percentage'),
   restartBtn: document.getElementById('restart-btn'),
   themeToggle: document.getElementById('theme-toggle'),
-  // Новые элементы для имени
+  // Элементы для имени
   nameModal: document.getElementById('name-modal'),
   modalTitle: document.getElementById('modal-title'),
   modalDescription: document.getElementById('modal-description'),
   nameInput: document.getElementById('name-input'),
   saveNameBtn: document.getElementById('save-name-btn'),
   changeNameBtn: document.getElementById('change-name-btn'),
-  userNameDisplay: document.getElementById('user-name-display')
+  userNameDisplay: document.getElementById('user-name-display'),
+  // Элементы для переключения предметов
+  subjectSwitcher: document.getElementById('subject-switcher'),
+  subjectButtons: document.querySelectorAll('.subject-btn'),
+  currentSubjectName: document.getElementById('current-subject-name')
 };
 
 // ============================================
@@ -206,6 +225,9 @@ function sendResultsToDiscord(score, correct, wrong, percent) {
   const elapsedSeconds = Math.floor((elapsedMs % 60000) / 1000);
   const timeString = `${elapsedMinutes} мин ${elapsedSeconds} сек`;
 
+  // Название предмета
+  const subjectName = subjects[state.selectedSubject].name;
+
   const payload = {
     embeds: [{
       title: '📝 Результат теста',
@@ -213,6 +235,7 @@ function sendResultsToDiscord(score, correct, wrong, percent) {
       fields: [
         { name: '👤 Пользователь', value: state.userName || 'Аноним', inline: true },
         { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
+        { name: '📚 Предмет', value: subjectName, inline: true },
         { name: '🏆 Баллы', value: `${score}/100`, inline: true },
         { name: '✅ Правильных', value: `${correct}`, inline: true },
         { name: '❌ Неправильных', value: `${wrong}`, inline: true },
@@ -220,7 +243,7 @@ function sendResultsToDiscord(score, correct, wrong, percent) {
         { name: '⏱️ Время', value: timeString, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: true }
       ],
-      footer: { text: 'Тест для самооценивания v0.4' }
+      footer: { text: 'Тест для самооценивания v0.5' }
     }]
   };
 
@@ -238,7 +261,7 @@ function sendNameChangeToDiscord(oldName, newName) {
         { name: '➡️ Новое имя', value: newName, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v0.4' }
+      footer: { text: 'Тест для самооценивания v0.5' }
     }]
   };
 
@@ -256,7 +279,7 @@ function sendNewUserToDiscord(userName) {
         { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
         { name: '📅 Дата регистрации', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v0.4' }
+      footer: { text: 'Тест для самооценивания v0.5' }
     }]
   };
 
@@ -382,13 +405,19 @@ function isMultiAnswerQuestion(question) {
 // ============================================
 
 function initQuiz() {
-  state.questions = getRandomItems(allQuestions, QUESTIONS_PER_TEST);
+  // Берём вопросы из выбранного предмета
+  const currentSubject = subjects[state.selectedSubject];
+  state.questions = getRandomItems(currentSubject.questions, QUESTIONS_PER_TEST);
   state.currentIndex = 0;
   state.score = 0;
   state.answered = false;
   state.selectedAnswers = [];
   state.isMultiAnswer = false;
   state.startTime = Date.now();
+  state.isQuizActive = true;
+
+  // Блокируем переключатель предметов
+  elements.subjectSwitcher.classList.add('disabled');
 
   elements.totalQuestions.textContent = state.questions.length;
   elements.currentScore.textContent = '0';
@@ -569,6 +598,8 @@ function goToNext() {
 
 function showResults() {
   stopTimer();
+  state.isQuizActive = false;
+  elements.subjectSwitcher.classList.remove('disabled');
   showScreen('results');
 
   const total = state.questions.length;
@@ -620,6 +651,9 @@ elements.restartBtn.addEventListener('click', initQuiz);
 elements.themeToggle.addEventListener('click', toggleTheme);
 elements.confirmBtn.addEventListener('click', confirmMultiAnswer);
 
+// Кнопка выхода из теста
+elements.exitBtn.addEventListener('click', exitQuiz);
+
 // События для работы с именем
 elements.changeNameBtn.addEventListener('click', () => showNameModal(true));
 elements.saveNameBtn.addEventListener('click', saveName);
@@ -630,19 +664,46 @@ elements.nameInput.addEventListener('input', () => {
   elements.nameInput.style.borderColor = 'var(--color-border)';
 });
 
+// События для переключения предметов
+elements.subjectButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (state.isQuizActive) return;
+
+    const subject = btn.dataset.subject;
+    state.selectedSubject = subject;
+
+    // Обновляем активную кнопку
+    elements.subjectButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Обновляем название предмета на стартовом экране
+    elements.currentSubjectName.textContent = subjects[subject].name;
+  });
+});
+
+// Функция выхода из теста
+function exitQuiz() {
+  if (confirm('Вы уверены, что хотите выйти? Прогресс будет потерян.')) {
+    stopTimer();
+    state.isQuizActive = false;
+    elements.subjectSwitcher.classList.remove('disabled');
+    showScreen('start');
+  }
+}
+
 // Инициализация при загрузке
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
 
   // Проверяем данные пользователя (имя и ID)
   if (!loadUserData()) {
-    // Если имени нет — показываем модалку
     showNameModal(false);
   }
 
-  if (typeof allQuestions === 'undefined' || allQuestions.length === 0) {
-    elements.startBtn.disabled = true;
-    elements.startBtn.textContent = 'Ошибка загрузки вопросов';
-    console.error('Вопросы не загружены. Проверьте файл questions.js');
+  // Проверяем загрузку вопросов
+  const currentSubject = subjects[state.selectedSubject];
+  if (!currentSubject || currentSubject.questions.length === 0) {
+    console.warn('Вопросы текущего предмета не загружены');
   }
 });
+
