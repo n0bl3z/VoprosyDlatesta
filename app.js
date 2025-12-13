@@ -76,7 +76,7 @@ const elements = {
   resultsMessage: document.getElementById('results-message'),
   correctCount: document.getElementById('correct-count'),
   wrongCount: document.getElementById('wrong-count'),
-  percentage: document.getElementById('percentage'),
+  timeTaken: document.getElementById('time-taken'),
   restartBtn: document.getElementById('restart-btn'),
   themeToggle: document.getElementById('theme-toggle'),
   // Элементы для имени
@@ -243,7 +243,7 @@ function sendResultsToDiscord(score, correct, wrong, percent) {
         { name: '⏱️ Время', value: timeString, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: true }
       ],
-      footer: { text: 'Тест для самооценивания v0.5' }
+      footer: { text: 'Тест для самооценивания v0.6' }
     }]
   };
 
@@ -261,7 +261,7 @@ function sendNameChangeToDiscord(oldName, newName) {
         { name: '➡️ Новое имя', value: newName, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v0.5' }
+      footer: { text: 'Тест для самооценивания v0.6' }
     }]
   };
 
@@ -279,7 +279,7 @@ function sendNewUserToDiscord(userName) {
         { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
         { name: '📅 Дата регистрации', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v0.5' }
+      footer: { text: 'Тест для самооценивания v0.6' }
     }]
   };
 
@@ -608,10 +608,16 @@ function showResults() {
   const percent = Math.round((correct / total) * 100);
   const score100 = Math.round((correct / total) * 100);
 
+  // Вычисляем время прохождения
+  const elapsedMs = Date.now() - state.startTime;
+  const elapsedMinutes = Math.floor(elapsedMs / 60000);
+  const elapsedSeconds = Math.floor((elapsedMs % 60000) / 1000);
+  const timeString = `${elapsedMinutes}:${elapsedSeconds.toString().padStart(2, '0')}`;
+
   elements.finalScore.textContent = score100;
   elements.correctCount.textContent = correct;
   elements.wrongCount.textContent = wrong;
-  elements.percentage.textContent = `${percent}%`;
+  elements.timeTaken.textContent = timeString;
 
   let iconClass, emoji, message;
 
