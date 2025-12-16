@@ -57,6 +57,15 @@ function generateUserId() {
   return 'user_' + Date.now().toString(36) + '_' + Math.random().toString(36).substr(2, 5);
 }
 
+// Перемешивание массива (Fisher-Yates shuffle)
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 // ============================================
 // DOM-элементы
 // ============================================
@@ -445,9 +454,9 @@ function initQuiz() {
     console.log('🔓 Secret mode: using v2 questions');
   }
 
-  // Режим 'all' — берём все вопросы, иначе рандомные 40
+  // Режим 'all' — берём все вопросы (перемешанные), иначе рандомные 40
   if (state.isSecretMode && state.quizMode === 'all') {
-    state.questions = [...questionsPool]; // Все вопросы
+    state.questions = shuffleArray([...questionsPool]); // Все вопросы в случайном порядке
     console.log('🔓 All questions mode:', questionsPool.length, 'questions');
   } else {
     state.questions = getRandomItems(questionsPool, QUESTIONS_PER_TEST);
@@ -765,6 +774,8 @@ function exitQuiz() {
     stopTimer();
     state.isQuizActive = false;
     elements.subjectSwitcher.classList.remove('disabled');
+    // Возвращаем переключатель режимов для секретного пользователя
+    updateSecretModeUI();
     showScreen('start');
   }
 }
