@@ -1112,3 +1112,12 @@ body {
   color: white;
   border-color: var(--color-primary);
 }
+/* Fix dark mode text color */
+[data-theme="dark"] .quiz-mode-selector .mode-btn:not(.active) {
+  color: var(--color-text-primary);
+}
+
+/* Utility class to hide elements */
+.hidden {
+  display: none !important;
+}
