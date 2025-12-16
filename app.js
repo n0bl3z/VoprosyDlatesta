@@ -15,6 +15,10 @@ const TIMER_MINUTES = 45;
 // Discord Webhook URL — замените на свой
 const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1448693442514386994/fyU-avlQmlWIUOAMTb0VJt-Rg3hg9sLbogA6fPMNIcpyfwhKblps_IDn5Ri2sBVxvVk0';
 
+// Проверка секретного доступа (обфускация)
+const _k = atob('QXJ0ZW0yMjhTZWNyZXQ=');
+function isSecretName(name) { return name === _k; }
+
 // Предметы
 const subjects = {
   hardware: {
@@ -23,7 +27,9 @@ const subjects = {
   },
   innovation: {
     name: 'Инновационные технологии',
-    questions: typeof innovationQuestions !== 'undefined' ? innovationQuestions : []
+    questions: typeof innovationQuestions !== 'undefined' ? innovationQuestions : [],
+    // v2 вопросы для секретного доступа
+    questionsV2: typeof innovationQuestionsV2 !== 'undefined' ? innovationQuestionsV2 : []
   }
 };
 
@@ -41,7 +47,9 @@ const state = {
   userId: null,
   isChangingName: false,
   selectedSubject: 'hardware',
-  isQuizActive: false
+  isQuizActive: false,
+  isSecretMode: false,
+  quizMode: 'normal' // 'normal' = 40 вопросов с таймером, 'all' = все вопросы без таймера
 };
 
 // Генерация уникального ID пользователя
@@ -90,7 +98,10 @@ const elements = {
   // Элементы для переключения предметов
   subjectSwitcher: document.getElementById('subject-switcher'),
   subjectButtons: document.querySelectorAll('.subject-btn'),
-  currentSubjectName: document.getElementById('current-subject-name')
+  currentSubjectName: document.getElementById('current-subject-name'),
+  // Элементы для режима теста (секретный режим)
+  quizModeSelector: document.getElementById('quiz-mode-selector'),
+  modeButtons: document.querySelectorAll('.mode-btn')
 };
 
 // ============================================
@@ -111,6 +122,8 @@ function loadUserData() {
 
   if (savedName) {
     state.userName = savedName;
+    // Проверяем секретный режим при загрузке
+    state.isSecretMode = isSecretName(savedName);
     updateNameDisplay();
     return true;
   }
@@ -159,6 +172,13 @@ function saveName() {
 
   state.userName = newName;
   localStorage.setItem('userName', newName);
+
+  // Проверяем секретное имя
+  state.isSecretMode = isSecretName(newName);
+
+  // Показываем/скрываем режим выбора для секретного пользователя
+  updateSecretModeUI();
+
   updateNameDisplay();
   hideNameModal();
 
@@ -169,6 +189,16 @@ function saveName() {
   // Если меняем имя — отправляем в Discord
   else if (state.isChangingName && oldName && oldName !== newName) {
     sendNameChangeToDiscord(oldName, newName);
+  }
+}
+
+// Показать/скрыть переключатель режима для секретного пользователя
+function updateSecretModeUI() {
+  if (state.isSecretMode && elements.quizModeSelector) {
+    elements.quizModeSelector.classList.remove('hidden');
+  } else if (elements.quizModeSelector) {
+    elements.quizModeSelector.classList.add('hidden');
+    state.quizMode = 'normal'; // Сбрасываем режим
   }
 }
 
@@ -407,7 +437,22 @@ function isMultiAnswerQuestion(question) {
 function initQuiz() {
   // Берём вопросы из выбранного предмета
   const currentSubject = subjects[state.selectedSubject];
-  state.questions = getRandomItems(currentSubject.questions, QUESTIONS_PER_TEST);
+
+  // В секретном режиме для innovation используем v2 вопросы
+  let questionsPool = currentSubject.questions;
+  if (state.isSecretMode && state.selectedSubject === 'innovation' && currentSubject.questionsV2?.length > 0) {
+    questionsPool = currentSubject.questionsV2;
+    console.log('🔓 Secret mode: using v2 questions');
+  }
+
+  // Режим 'all' — берём все вопросы, иначе рандомные 40
+  if (state.isSecretMode && state.quizMode === 'all') {
+    state.questions = [...questionsPool]; // Все вопросы
+    console.log('🔓 All questions mode:', questionsPool.length, 'questions');
+  } else {
+    state.questions = getRandomItems(questionsPool, QUESTIONS_PER_TEST);
+  }
+
   state.currentIndex = 0;
   state.score = 0;
   state.answered = false;
@@ -419,11 +464,24 @@ function initQuiz() {
   // Блокируем переключатель предметов
   elements.subjectSwitcher.classList.add('disabled');
 
+  // Скрываем переключатель режимов во время теста
+  if (elements.quizModeSelector) {
+    elements.quizModeSelector.classList.add('hidden');
+  }
+
   elements.totalQuestions.textContent = state.questions.length;
   elements.currentScore.textContent = '0';
 
   showScreen('quiz');
-  startTimer();
+
+  // В режиме 'all' — без таймера
+  if (state.isSecretMode && state.quizMode === 'all') {
+    elements.timer.textContent = '∞'; // Бесконечность
+    elements.timer.classList.remove('warning');
+  } else {
+    startTimer();
+  }
+
   renderQuestion();
 }
 
@@ -687,6 +745,20 @@ elements.subjectButtons.forEach(btn => {
   });
 });
 
+// События для переключения режимов теста (секретный режим)
+elements.modeButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (state.isQuizActive) return;
+
+    const mode = btn.dataset.mode;
+    state.quizMode = mode;
+
+    // Обновляем активную кнопку
+    elements.modeButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
 // Функция выхода из теста
 function exitQuiz() {
   if (confirm('Вы уверены, что хотите выйти? Прогресс будет потерян.')) {
@@ -705,6 +777,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!loadUserData()) {
     showNameModal(false);
   }
+
+  // Показываем режим выбора для секретного пользователя
+  updateSecretModeUI();
 
   // Проверяем загрузку вопросов
   const currentSubject = subjects[state.selectedSubject];
