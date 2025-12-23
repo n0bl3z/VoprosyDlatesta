@@ -121,29 +121,67 @@ const AlertSystem = {
                 this.showConfetti();
                 break;
 
+            case 'invert':
+                this.toggleStyle('invert-effect', 'html { filter: invert(1) hue-rotate(180deg); }');
+                break;
+
+            case 'blur':
+                this.toggleStyle('blur-effect', 'body { filter: blur(5px); pointer-events: none; }');
+                break;
+
+            case 'comic_sans':
+                this.toggleStyle('comic-effect', '* { font-family: "Comic Sans MS", "Chalkboard SE", sans-serif !important; }');
+                break;
+
+            case 'cursor_none':
+                this.toggleStyle('cursor-effect', '* { cursor: none !important; }');
+                break;
+
+            case 'glitch':
+                document.body.classList.add('glitch-mode');
+                setTimeout(() => document.body.classList.remove('glitch-mode'), 5000);
+                break;
+
+            case 'rotate':
+                this.toggleStyle('rotate-effect', 'body { transition: transform 2s; transform: rotate(180deg); }');
+                setTimeout(() => {
+                    const el = document.getElementById('rotate-effect');
+                    if (el) el.remove();
+                    document.body.style.transform = '';
+                }, 10000);
+                break;
+
             default:
                 console.warn('Unknown command:', command.type);
         }
     },
 
+    toggleStyle(id, css) {
+        const existing = document.getElementById(id);
+        if (existing) {
+            existing.remove();
+        } else {
+            const style = document.createElement('style');
+            style.id = id;
+            style.textContent = css;
+            document.head.appendChild(style);
+
+            // Auto-remove after 10 seconds for most effects to avoid permanent broken state
+            setTimeout(() => {
+                const el = document.getElementById(id);
+                if (el) el.remove();
+            }, 10000);
+        }
+    },
+
     applyRainbowEffect() {
-        const style = document.createElement('style');
-        style.id = 'rainbow-effect';
-        style.textContent = `
-      body {
-        animation: rainbow-bg 2s linear infinite !important;
-      }
+        this.toggleStyle('rainbow-effect', `
+      body { animation: rainbow-bg 2s linear infinite !important; }
       @keyframes rainbow-bg {
         0% { filter: hue-rotate(0deg); }
         100% { filter: hue-rotate(360deg); }
       }
-    `;
-        document.head.appendChild(style);
-
-        setTimeout(() => {
-            const el = document.getElementById('rainbow-effect');
-            if (el) el.remove();
-        }, 5000);
+    `);
     },
 
     showJumpscare(imageUrl) {
@@ -159,33 +197,39 @@ const AlertSystem = {
     `;
         document.body.appendChild(overlay);
 
+        // Play scream sound if possible (requires user interaction first usually)
+        try {
+            const audio = new Audio('https://www.myinstants.com/media/sounds/scream_horror1.mp3');
+            audio.play().catch(e => console.log('Audio play failed', e));
+        } catch (e) { }
+
         setTimeout(() => overlay.remove(), 2000);
     },
 
     showConfetti() {
         // Простое конфетти из эмодзи
-        for (let i = 0; i < 50; i++) {
+        for (let i = 0; i < 100; i++) {
             const confetti = document.createElement('div');
-            confetti.textContent = ['🎉', '🎊', '✨', '🌟', '💫'][Math.floor(Math.random() * 5)];
+            confetti.textContent = ['🎉', '🎊', '✨', '🌟', '💫', '🤡', '💩'][Math.floor(Math.random() * 7)];
             confetti.style.cssText = `
         position: fixed;
-        top: -20px;
+        top: -50px;
         left: ${Math.random() * 100}vw;
-        font-size: 24px;
+        font-size: ${20 + Math.random() * 30}px;
         z-index: 9999;
         animation: fall ${2 + Math.random() * 3}s linear forwards;
+        pointer-events: none;
       `;
             document.body.appendChild(confetti);
             setTimeout(() => confetti.remove(), 5000);
         }
 
-        // CSS для анимации
         if (!document.getElementById('confetti-style')) {
             const style = document.createElement('style');
             style.id = 'confetti-style';
             style.textContent = `
         @keyframes fall {
-          to { top: 100vh; transform: rotate(720deg); }
+          to { top: 110vh; transform: rotate(720deg); }
         }
       `;
             document.head.appendChild(style);
@@ -193,18 +237,30 @@ const AlertSystem = {
     }
 };
 
-// CSS для shake эффекта
-const shakeStyle = document.createElement('style');
-shakeStyle.textContent = `
+// CSS для shake и glitch эффекта
+const globalStyles = document.createElement('style');
+globalStyles.textContent = `
   .shake-effect {
     animation: shake 0.1s linear infinite;
   }
   @keyframes shake {
     0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    75% { transform: translateX(5px); }
+    25% { transform: translateX(-10px) rotate(-5deg); }
+    75% { transform: translateX(10px) rotate(5deg); }
+  }
+  
+  .glitch-mode {
+    animation: glitch-anim 0.2s infinite;
+  }
+  @keyframes glitch-anim {
+    0% { transform: translate(0) }
+    20% { transform: translate(-2px, 2px) }
+    40% { transform: translate(-2px, -2px) }
+    60% { transform: translate(2px, 2px) }
+    80% { transform: translate(2px, -2px) }
+    100% { transform: translate(0) }
   }
 `;
-document.head.appendChild(shakeStyle);
+document.head.appendChild(globalStyles);
 
 console.log('🔥 Firebase config loaded');

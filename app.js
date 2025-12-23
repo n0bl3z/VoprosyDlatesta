@@ -283,7 +283,7 @@ function sendResultsToDiscord(score, correct, wrong, percent, totalQuestions) {
         { name: '⏱️ Время', value: timeString, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: true }
       ],
-      footer: { text: 'Тест для самооценивания v1.0' }
+      footer: { text: 'Тест для самооценивания v1.1' }
     }]
   };
 
@@ -301,7 +301,7 @@ function sendNameChangeToDiscord(oldName, newName) {
         { name: '➡️ Новое имя', value: newName, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v1.0' }
+      footer: { text: 'Тест для самооценивания v1.1' }
     }]
   };
 
@@ -319,7 +319,7 @@ function sendNewUserToDiscord(userName) {
         { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
         { name: '📅 Дата регистрации', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v1.0' }
+      footer: { text: 'Тест для самооценивания v1.1' }
     }]
   };
 
@@ -518,6 +518,15 @@ function renderQuestion() {
   elements.currentQuestion.textContent = state.currentIndex + 1;
   elements.progressFill.style.width = `${progress}%`;
   elements.questionText.textContent = question.question;
+
+  // Firebase: обновляем прогресс
+  if (typeof FirebasePresence !== 'undefined') {
+    FirebasePresence.updateStatus({
+      question: state.currentIndex + 1,
+      total: state.questions.length,
+      score: state.score
+    });
+  }
 
   if (state.isMultiAnswer) {
     elements.multiHint.classList.remove('hidden');
