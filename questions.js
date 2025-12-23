@@ -1,22 +1,22 @@
 const allQuestions = [
   {
     "id": 1,
-    "question": "Что такое ЭВМ",
+    "question": "Что такое ЭВМ?",
     "answers": [
       {
-        "text": "Электронно-вычислительная машина, предназначенная для автоматической обработки информации.",
+        "text": "Комплекс технических и программных средств",
         "isCorrect": true
       },
       {
-        "text": "Устройство для ручного счёта и вычислений.",
+        "text": "Любое электронное устройство с экраном",
         "isCorrect": false
       },
       {
-        "text": "Программа для создания текстовых документов.",
+        "text": "Электронная вычислительная матрица",
         "isCorrect": false
       },
       {
-        "text": "Электрическое устройство для хранения данных без обработки",
+        "text": "Математическая модель вычислений",
         "isCorrect": false
       }
     ]
@@ -26,19 +26,19 @@ const allQuestions = [
     "question": "Для чего предназначено АЛУ?",
     "answers": [
       {
-        "text": "Для управления процессами в компьютере.",
+        "text": "Управление потоками команд",
         "isCorrect": false
       },
       {
-        "text": "Для выполнения арифметических и логических операций.",
+        "text": "Выполнение арифметических и логических операций",
         "isCorrect": true
       },
       {
-        "text": "Для хранения программ и данных.",
+        "text": "Хранение оперативных данных",
         "isCorrect": false
       },
       {
-        "text": "Для вывода информации на экран.",
+        "text": "Синхронизация работы шины",
         "isCorrect": false
       }
     ]
@@ -48,19 +48,19 @@ const allQuestions = [
     "question": "ЭВМ по принципу Фон Неймана состоит из:",
     "answers": [
       {
-        "text": "Центрального процессора, памяти, устройств ввода/вывода.",
+        "text": "Процессор, память, устройства ввода-вывода",
         "isCorrect": true
       },
       {
-        "text": "Только процессора и накопителя данных.",
+        "text": "Монитор, системный блок, клавиатура",
         "isCorrect": false
       },
       {
-        "text": "Только памяти и клавиатуры.",
+        "text": "АЛУ, ПЗУ и шина данных",
         "isCorrect": false
       },
       {
-        "text": "Процессора и монитора.",
+        "text": "Микросхемы, провода и корпус",
         "isCorrect": false
       }
     ]
@@ -70,19 +70,19 @@ const allQuestions = [
     "question": "Перфокарты впервые стали использоваться в:",
     "answers": [
       {
-        "text": "В 19 веке для управления ткацкими станками.",
+        "text": "ЭВМ первого поколения",
+        "isCorrect": false
+      },
+      {
+        "text": "Ткацких станках Жаккарда",
         "isCorrect": true
       },
       {
-        "text": "В 20 веке для хранения программ.",
+        "text": "Механических калькуляторах Паскаля",
         "isCorrect": false
       },
       {
-        "text": "В 18 веке для арифметических вычислений.",
-        "isCorrect": false
-      },
-      {
-        "text": "В 21 веке для цифровых документов.",
+        "text": "Телеграфных аппаратах Морзе",
         "isCorrect": false
       }
     ]
@@ -92,19 +92,19 @@ const allQuestions = [
     "question": "Принцип открытости архитектуры ЭВМ означает:",
     "answers": [
       {
-        "text": "Возможность совместимости оборудования и программ разных производителей.",
+        "text": "Свободный доступ к коду ПО",
+        "isCorrect": false
+      },
+      {
+        "text": "Работа без защитного корпуса",
+        "isCorrect": false
+      },
+      {
+        "text": "Возможность замены отдельных узлов",
         "isCorrect": true
       },
       {
-        "text": "Возможность доступа к Интернету без ограничений.",
-        "isCorrect": false
-      },
-      {
-        "text": "Возможность использовать ЭВМ без операционной системы.",
-        "isCorrect": false
-      },
-      {
-        "text": "Возможность открывать корпус компьютера без лицензии.",
+        "text": "Отсутствие авторских прав",
         "isCorrect": false
       }
     ]
@@ -114,19 +114,19 @@ const allQuestions = [
     "question": "Какое высказывание верно?",
     "answers": [
       {
-        "text": "Все программы работают быстрее, чем процессы ЭВМ.",
-        "isCorrect": false
-      },
-      {
-        "text": "ЭВМ выполняет операции строго по заданной программе.",
+        "text": "Контроллер управляет внешним устройством",
         "isCorrect": true
       },
       {
-        "text": "ЭВМ может сама придумывать новые алгоритмы без участия человека.",
+        "text": "Процессор хранит все данные",
         "isCorrect": false
       },
       {
-        "text": "В ЭВМ нет центрального процессора.",
+        "text": "Шина данных всегда однонаправленная",
+        "isCorrect": false
+      },
+      {
+        "text": "ПЗУ — это энергозависимая память",
         "isCorrect": false
       }
     ]
@@ -136,19 +136,19 @@ const allQuestions = [
     "question": "Что такое системный интерфейс?",
     "answers": [
       {
-        "text": "Программа для создания игр.",
+        "text": "Графическая оболочка ОС",
         "isCorrect": false
       },
       {
-        "text": "Совокупность правил и методов взаимодействия компонентов ЭВМ.",
+        "text": "Совокупность шин и протоколов",
         "isCorrect": true
       },
       {
-        "text": "Встроенный экран для отображения информации.",
+        "text": "Разъем для монитора",
         "isCorrect": false
       },
       {
-        "text": "Устройство для ввода текста с клавиатуры.",
+        "text": "Панель настроек BIOS",
         "isCorrect": false
       }
     ]
@@ -158,19 +158,19 @@ const allQuestions = [
     "question": "Какой принцип Фон Неймана обуславливает хранение программ и данных одной памяти?",
     "answers": [
       {
-        "text": "Принцип адресации.",
+        "text": "Принцип адресности",
         "isCorrect": false
       },
       {
-        "text": "Принцип программного управления.",
-        "isCorrect": false
-      },
-      {
-        "text": "Принцип хранения программ.",
+        "text": "Принцип однородности памяти",
         "isCorrect": true
       },
       {
-        "text": "Принцип последовательного исполнения.",
+        "text": "Принцип двоичного кодирования",
+        "isCorrect": false
+      },
+      {
+        "text": "Принцип программного управления",
         "isCorrect": false
       }
     ]
@@ -180,19 +180,19 @@ const allQuestions = [
     "question": "Какой принцип Фон Неймана обуславливает последовательное выполнение команд программы?",
     "answers": [
       {
-        "text": "Принцип хранения программ.",
-        "isCorrect": false
-      },
-      {
-        "text": "Принцип последовательного исполнения.",
+        "text": "Принцип программного управления",
         "isCorrect": true
       },
       {
-        "text": "Принцип двоичного представления.",
+        "text": "Принцип иерархии памяти",
         "isCorrect": false
       },
       {
-        "text": "Принцип деления памяти на ячейки.",
+        "text": "Принцип жесткости архитектуры",
+        "isCorrect": false
+      },
+      {
+        "text": "Принцип параллелизма",
         "isCorrect": false
       }
     ]
@@ -202,19 +202,19 @@ const allQuestions = [
     "question": "Какой принцип Фон Неймана обуславливает деление памяти на ячейки?",
     "answers": [
       {
-        "text": "Принцип адресации.",
+        "text": "Принцип дискретности",
+        "isCorrect": false
+      },
+      {
+        "text": "Принцип адресности",
         "isCorrect": true
       },
       {
-        "text": "Принцип программного управления.",
+        "text": "Принцип блочной структуры",
         "isCorrect": false
       },
       {
-        "text": "Принцип двоичного представления.",
-        "isCorrect": false
-      },
-      {
-        "text": "Принцип последовательного исполнения.",
+        "text": "Принцип произвольного доступа",
         "isCorrect": false
       }
     ]
@@ -224,41 +224,41 @@ const allQuestions = [
     "question": "Какой принцип Фон Неймана обуславливает представление данных в двоичном виде?",
     "answers": [
       {
-        "text": "Принцип двоичного представления.",
+        "text": "Принцип логической определенности",
+        "isCorrect": false
+      },
+      {
+        "text": "Принцип двоичного кодирования",
         "isCorrect": true
       },
       {
-        "text": "Принцип хранения программ.",
+        "text": "Принцип квантования информации",
         "isCorrect": false
       },
       {
-        "text": "Принцип адресации.",
-        "isCorrect": false
-      },
-      {
-        "text": "Принцип открытости архитектуры.",
+        "text": "Принцип элементной независимости",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 12,
-    "question": "Мэйнфреймы – это …",
+    "question": "Мэйнфреймы - это ...",
     "answers": [
       {
-        "text": "Персональные компьютеры для домашних пользователей.",
+        "text": "Игровые персональные компьютеры",
         "isCorrect": false
       },
       {
-        "text": "Мощные вычислительные системы для больших организаций.",
+        "text": "Мощные многопользовательские системы",
         "isCorrect": true
       },
       {
-        "text": "Мини-компьютеры для обучения.",
+        "text": "Малогабаритные переносные устройства",
         "isCorrect": false
       },
       {
-        "text": "Портативные устройства для игр.",
+        "text": "Процессоры с RISC-архитектурой",
         "isCorrect": false
       }
     ]
@@ -268,19 +268,19 @@ const allQuestions = [
     "question": "К какому классу ЭВМ по вычислительной мощности относят персональные компьютеры:",
     "answers": [
       {
-        "text": "Мэйнфреймы",
+        "text": "Микро-ЭВМ",
+        "isCorrect": true
+      },
+      {
+        "text": "Малые ЭВМ",
+        "isCorrect": false
+      },
+      {
+        "text": "Средние ЭВМ",
         "isCorrect": false
       },
       {
         "text": "Мини-ЭВМ",
-        "isCorrect": false
-      },
-      {
-        "text": "Персональные ЭВМ",
-        "isCorrect": true
-      },
-      {
-        "text": "Суперкомпьютеры",
         "isCorrect": false
       }
     ]
@@ -290,19 +290,19 @@ const allQuestions = [
     "question": "По назначению ЭВМ классифицируют на:",
     "answers": [
       {
-        "text": "Игровые и офисные",
+        "text": "Настольные, мобильные и серверные",
         "isCorrect": false
       },
       {
-        "text": "На универсальные и специализированные",
+        "text": "Универсальные, специализированные, проблемно-ориентированные",
         "isCorrect": true
       },
       {
-        "text": "На цифровые и аналоговые",
+        "text": "Бытовые, учебные и научные",
         "isCorrect": false
       },
       {
-        "text": "На переносные и стационарные",
+        "text": "Цифровые, аналоговые и гибридные",
         "isCorrect": false
       }
     ]
@@ -312,19 +312,19 @@ const allQuestions = [
     "question": "На какие виды делятся ЭВМ по размерам и вычислительной мощности?",
     "answers": [
       {
-        "text": "Большие, средние, малые",
+        "text": "Персональные, офисные и игровые",
+        "isCorrect": false
+      },
+      {
+        "text": "Стационарные и портативные",
+        "isCorrect": false
+      },
+      {
+        "text": "СуперЭВМ, большие, малые, микроЭВМ",
         "isCorrect": true
       },
       {
-        "text": "Красные, синие, зелёные",
-        "isCorrect": false
-      },
-      {
-        "text": "Настольные, портативные, мобильные",
-        "isCorrect": false
-      },
-      {
-        "text": "Простые, сложные, сверхсложные",
+        "text": "Ламповые, транзисторные и чиповые",
         "isCorrect": false
       }
     ]
@@ -334,19 +334,19 @@ const allQuestions = [
     "question": "Какое самое главное и принципиальное отличие вычислительных машин разных поколений?",
     "answers": [
       {
-        "text": "Внешний вид корпуса",
-        "isCorrect": false
-      },
-      {
-        "text": "Элементная база и технологии изготовления",
+        "text": "Используемая элементная база",
         "isCorrect": true
       },
       {
-        "text": "Производитель",
+        "text": "Объем оперативной памяти",
         "isCorrect": false
       },
       {
-        "text": "Цвет и размер экрана",
+        "text": "Скорость работы принтера",
+        "isCorrect": false
+      },
+      {
+        "text": "Количество внешних портов",
         "isCorrect": false
       }
     ]
@@ -356,19 +356,19 @@ const allQuestions = [
     "question": "Что такое интегральная схема?",
     "answers": [
       {
-        "text": "Отдельный резистор",
+        "text": "Алгоритм работы процессора",
         "isCorrect": false
       },
       {
-        "text": "Электронное устройство, в котором много элементов размещены на одной пластине",
+        "text": "Проводная сеть между ЭВМ",
+        "isCorrect": false
+      },
+      {
+        "text": "Полупроводниковый кристалл с компонентами",
         "isCorrect": true
       },
       {
-        "text": "Программа для ЭВМ",
-        "isCorrect": false
-      },
-      {
-        "text": "Встроенный аккумулятор",
+        "text": "Совокупность всех плат компьютера",
         "isCorrect": false
       }
     ]
@@ -378,73 +378,73 @@ const allQuestions = [
     "question": "Какой была элементная база первого поколения ЭВМ?",
     "answers": [
       {
-        "text": "Вакуумные лампы",
+        "text": "Электронно-вакуумные лампы",
         "isCorrect": true
       },
       {
-        "text": "Транзисторы",
+        "text": "Полупроводниковые транзисторы",
         "isCorrect": false
       },
       {
-        "text": "Микросхемы",
+        "text": "Электромагнитные реле",
         "isCorrect": false
       },
       {
-        "text": "Сверхпроводники",
+        "text": "Дискретные резисторные сборки",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 19,
-    "question": "Элементная база второго поколения (1960е годы) - это …",
+    "question": "Элементная база второго поколения (1960е годы) - это ...",
     "answers": [
       {
-        "text": "Вакуумные лампы",
+        "text": "Сверхбольшие интегральные схемы",
         "isCorrect": false
       },
       {
-        "text": "Транзисторы",
+        "text": "Полупроводниковые транзисторы",
         "isCorrect": true
       },
       {
-        "text": "Микропроцессоры",
+        "text": "Магнитные сердечники памяти",
         "isCorrect": false
       },
       {
-        "text": "Оптоэлектронные элементы",
+        "text": "Микропроцессоры Intel",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 20,
-    "question": "Элементная база третьего поколения(1970е годы) - это …",
+    "question": "Элементная база третьего поколения(1970е годы) - это ...",
     "answers": [
       {
-        "text": "Вакуумные лампы",
-        "isCorrect": false
-      },
-      {
-        "text": "Транзисторы",
-        "isCorrect": false
-      },
-      {
-        "text": "Интегральные схемы",
+        "text": "Малые интегральные схемы",
         "isCorrect": true
       },
       {
-        "text": "Оптоэлектронные элементы",
+        "text": "Искусственный интеллект",
+        "isCorrect": false
+      },
+      {
+        "text": "Оптоволоконные компоненты",
+        "isCorrect": false
+      },
+      {
+        "text": "Квантовые точки",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 21,
-    "question": "Элементная база четвертого поколения(1980е годы) - это…",
+    "question": "Элементная база четвертого поколения (1980-е годы) - это...",
     "answers": [
       {
-        "text": "Микропроцессоры и масштабные интегральные схемы",
+        "text": "Сверхбольшие интегральные схемы",
         "isCorrect": true
       },
       {
@@ -452,11 +452,11 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "Транзисторы",
+        "text": "Индивидуальные транзисторы",
         "isCorrect": false
       },
       {
-        "text": "Аналоговые устройства",
+        "text": "Магнитные сердечники",
         "isCorrect": false
       }
     ]
@@ -466,19 +466,19 @@ const allQuestions = [
     "question": "Абак - это:",
     "answers": [
       {
-        "text": "Древнее устройство для вычислений",
+        "text": "Счетная доска",
         "isCorrect": true
       },
       {
-        "text": "Электронная ЭВМ",
+        "text": "Первый арифмометр",
         "isCorrect": false
       },
       {
-        "text": "Программируемый калькулятор",
+        "text": "Механический компьютер",
         "isCorrect": false
       },
       {
-        "text": "Счётная машина на микросхемах",
+        "text": "Электронный калькулятор",
         "isCorrect": false
       }
     ]
@@ -488,19 +488,19 @@ const allQuestions = [
     "question": "Какое поколение ЭВМ будет пользоваться популярностью в будущем?",
     "answers": [
       {
-        "text": "Первое",
-        "isCorrect": false
+        "text": "Пятое и последующие",
+        "isCorrect": true
       },
       {
         "text": "Второе",
         "isCorrect": false
       },
       {
-        "text": "Четвертое и последующие поколения",
-        "isCorrect": true
+        "text": "Третье аналоговое",
+        "isCorrect": false
       },
       {
-        "text": "Второе и третье",
+        "text": "Четвертое мобильное",
         "isCorrect": false
       }
     ]
@@ -510,63 +510,63 @@ const allQuestions = [
     "question": "Классификация ПЭВМ по конструктивным особенностям:",
     "answers": [
       {
-        "text": "Настольные, портативные, ноутбуки",
+        "text": "Стационарные и портативные",
         "isCorrect": true
       },
       {
-        "text": "Красные, синие, зелёные",
+        "text": "Быстрые и медленные",
         "isCorrect": false
       },
       {
-        "text": "Универсальные и специализированные",
+        "text": "Цифровые и текстовые",
         "isCorrect": false
       },
       {
-        "text": "Большие, средние, малые",
+        "text": "Научные и учебные",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 25,
-    "question": "В 50-е годы началось … поколение ЭВМ.",
+    "question": "В 50-е годы началось ... поколение ЭВМ.",
     "answers": [
       {
-        "text": "Первое",
+        "text": "Второе",
         "isCorrect": true
       },
       {
-        "text": "Второе",
+        "text": "Четвертое",
+        "isCorrect": false
+      },
+      {
+        "text": "Нулевое",
         "isCorrect": false
       },
       {
         "text": "Третье",
-        "isCorrect": false
-      },
-      {
-        "text": "Четвёртое",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 26,
-    "question": "Что такое “ENIAC”?",
+    "question": "Что такое 'ENIAC'?",
     "answers": [
       {
-        "text": "Первая в мире программируемая электронная ЭВМ",
+        "text": "Электронный цифровой компьютер",
         "isCorrect": true
       },
       {
-        "text": "Портативный калькулятор",
+        "text": "Механический интегратор",
         "isCorrect": false
       },
       {
-        "text": "Первая интегральная схема",
+        "text": "Язык программирования",
         "isCorrect": false
       },
       {
-        "text": "Первый транзистор",
+        "text": "Операционная система",
         "isCorrect": false
       }
     ]
@@ -576,19 +576,19 @@ const allQuestions = [
     "question": "Период первого поколения ЭВМ:",
     "answers": [
       {
-        "text": "1951–1958",
+        "text": "1946 – 1955 годы",
         "isCorrect": true
       },
       {
-        "text": "1960–1969",
+        "text": "1930 – 1940 годы",
         "isCorrect": false
       },
       {
-        "text": "1970–1979",
+        "text": "1955 – 1960 годы",
         "isCorrect": false
       },
       {
-        "text": "1980–1989",
+        "text": "1940 – 1950 годы",
         "isCorrect": false
       }
     ]
@@ -598,19 +598,19 @@ const allQuestions = [
     "question": "Период второго поколения ЭВМ:",
     "answers": [
       {
-        "text": "1951–1958",
-        "isCorrect": false
-      },
-      {
-        "text": "1959–1964",
+        "text": "1955 – 1964 годы",
         "isCorrect": true
       },
       {
-        "text": "1970–1979",
+        "text": "1960 – 1970 годы",
         "isCorrect": false
       },
       {
-        "text": "1980–1989",
+        "text": "1950 – 1955 годы",
+        "isCorrect": false
+      },
+      {
+        "text": "1965 – 1975 годы",
         "isCorrect": false
       }
     ]
@@ -620,41 +620,41 @@ const allQuestions = [
     "question": "Период третьего поколения ЭВМ:",
     "answers": [
       {
-        "text": "1951–1958",
-        "isCorrect": false
-      },
-      {
-        "text": "1959–1964",
-        "isCorrect": false
-      },
-      {
-        "text": "1965–1971",
+        "text": "1964 – 1971 годы",
         "isCorrect": true
       },
       {
-        "text": "1980–1989",
+        "text": "1970 – 1980 годы",
+        "isCorrect": false
+      },
+      {
+        "text": "1960 – 1968 годы",
+        "isCorrect": false
+      },
+      {
+        "text": "1975 – 1982 годы",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 30,
-    "question": "Для чего разрабатывался “Colossus” Аланом Тьюрингом?",
+    "question": "Для чего разрабатывался 'Colossus' Аланом Тьюрингом?",
     "answers": [
       {
-        "text": "Для расчётов в космической отрасли",
-        "isCorrect": false
-      },
-      {
-        "text": "Для дешифровки немецких шифров во Второй мировой войне",
+        "text": "Для дешифровки сообщений",
         "isCorrect": true
       },
       {
-        "text": "Для игры в шахматы",
+        "text": "Расчета полета ядер",
         "isCorrect": false
       },
       {
-        "text": "Для обработки бухгалтерских данных",
+        "text": "Прогноза погоды",
+        "isCorrect": false
+      },
+      {
+        "text": "Учета населения",
         "isCorrect": false
       }
     ]
@@ -664,19 +664,19 @@ const allQuestions = [
     "question": "Кто описал машину для суммирования чисел в 1642 году?",
     "answers": [
       {
-        "text": "Джон Непер",
-        "isCorrect": false
-      },
-      {
         "text": "Блез Паскаль",
         "isCorrect": true
       },
       {
-        "text": "Ли Ди Форест",
+        "text": "Готфрид Лейбниц",
         "isCorrect": false
       },
       {
-        "text": "Алан Тьюринг",
+        "text": "Чарльз Бэббидж",
+        "isCorrect": false
+      },
+      {
+        "text": "Ада Лавлейс",
         "isCorrect": false
       }
     ]
@@ -686,63 +686,63 @@ const allQuestions = [
     "question": "В каком году Блез Паскаль описал машину для суммирования чисел?",
     "answers": [
       {
-        "text": "1623",
-        "isCorrect": false
-      },
-      {
-        "text": "1642",
+        "text": "1642 год",
         "isCorrect": true
       },
       {
-        "text": "1687",
+        "text": "1650 год",
         "isCorrect": false
       },
       {
-        "text": "1720",
+        "text": "1635 год",
+        "isCorrect": false
+      },
+      {
+        "text": "1672 год",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 33,
-    "question": "В каком году Джоном Непером была создана деревянная машина для простейших вычислений?",
+    "question": "В каком году Джоном Непером была создана деревянная машина для вычислений?",
     "answers": [
       {
-        "text": "1617",
+        "text": "1617 год",
         "isCorrect": true
       },
       {
-        "text": "1642",
+        "text": "1600 год",
         "isCorrect": false
       },
       {
-        "text": "1700",
+        "text": "1625 год",
         "isCorrect": false
       },
       {
-        "text": "1769",
+        "text": "1590 год",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 34,
-    "question": "В каком году Ли Ди Форест запатентовал вакуумный триод?",
+    "question": "В каком году Ли де Форест запатентовал вакуумный триод?",
     "answers": [
       {
-        "text": "1906",
+        "text": "1906 год",
         "isCorrect": true
       },
       {
-        "text": "1920",
+        "text": "1912 год",
         "isCorrect": false
       },
       {
-        "text": "1899",
+        "text": "1895 год",
         "isCorrect": false
       },
       {
-        "text": "1915",
+        "text": "1920 год",
         "isCorrect": false
       }
     ]
@@ -752,19 +752,19 @@ const allQuestions = [
     "question": "Кто запатентовал первый вакуумный триод?",
     "answers": [
       {
-        "text": "Блез Паскаль",
-        "isCorrect": false
-      },
-      {
-        "text": "Ли Ди Форест",
+        "text": "Ли де Форест",
         "isCorrect": true
       },
       {
-        "text": "Джон Непер",
+        "text": "Томас Эдисон",
         "isCorrect": false
       },
       {
-        "text": "Алан Тьюринг",
+        "text": "Джон Флеминг",
+        "isCorrect": false
+      },
+      {
+        "text": "Александр Попов",
         "isCorrect": false
       }
     ]
@@ -774,19 +774,19 @@ const allQuestions = [
     "question": "В каком году была создана машина ENIAC?",
     "answers": [
       {
-        "text": "1943",
-        "isCorrect": false
-      },
-      {
-        "text": "1945",
+        "text": "1945 год",
         "isCorrect": true
       },
       {
-        "text": "1950",
+        "text": "1939 год",
         "isCorrect": false
       },
       {
-        "text": "1937",
+        "text": "1951 год",
+        "isCorrect": false
+      },
+      {
+        "text": "1942 год",
         "isCorrect": false
       }
     ]
@@ -796,19 +796,19 @@ const allQuestions = [
     "question": "Кто в 1642 году описал машину для суммирования чисел?",
     "answers": [
       {
-        "text": "Джон Непер",
-        "isCorrect": false
-      },
-      {
-        "text": "Блез Паскаль",
+        "text": "Паскаль",
         "isCorrect": true
       },
       {
-        "text": "Ли Ди Форест",
+        "text": "Леонардо да Винчи",
         "isCorrect": false
       },
       {
-        "text": "Алан Тьюринг",
+        "text": "Непер",
+        "isCorrect": false
+      },
+      {
+        "text": "Шиккард",
         "isCorrect": false
       }
     ]
@@ -818,19 +818,19 @@ const allQuestions = [
     "question": "Когда была придумана первая вычислительная машина?",
     "answers": [
       {
-        "text": "1617",
+        "text": "В XVII веке",
         "isCorrect": true
       },
       {
-        "text": "1642",
+        "text": "В XIX веке",
         "isCorrect": false
       },
       {
-        "text": "1700",
+        "text": "В XX веке",
         "isCorrect": false
       },
       {
-        "text": "1801",
+        "text": "В XV веке",
         "isCorrect": false
       }
     ]
@@ -840,41 +840,41 @@ const allQuestions = [
     "question": "Назовите первую ЭВМ, изобретённую в 1937 году.",
     "answers": [
       {
-        "text": "ENIAC",
-        "isCorrect": false
-      },
-      {
         "text": "ABC",
-        "isCorrect": false
-      },
-      {
-        "text": "Z1",
         "isCorrect": true
       },
       {
-        "text": "Colossus",
+        "text": "Z3",
+        "isCorrect": false
+      },
+      {
+        "text": "Mark I",
+        "isCorrect": false
+      },
+      {
+        "text": "EDVAC",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 40,
-    "question": "В каком году была создана первая ЭВМ – АВС?",
+    "question": "В каком году была создана первая ЭВМ - АВС?",
     "answers": [
       {
-        "text": "1937",
-        "isCorrect": false
-      },
-      {
-        "text": "1942",
+        "text": "1939 год",
         "isCorrect": true
       },
       {
-        "text": "1945",
+        "text": "1945 год",
         "isCorrect": false
       },
       {
-        "text": "1951",
+        "text": "1930 год",
+        "isCorrect": false
+      },
+      {
+        "text": "1950 год",
         "isCorrect": false
       }
     ]
@@ -884,19 +884,19 @@ const allQuestions = [
     "question": "Переведите число A16 из шестнадцатеричной в восьмеричную систему счисления.",
     "answers": [
       {
-        "text": "12456₈",
-        "isCorrect": false
-      },
-      {
-        "text": "12056₈",
+        "text": "12",
         "isCorrect": true
       },
       {
-        "text": "12156₈",
+        "text": "10",
         "isCorrect": false
       },
       {
-        "text": "12345₈",
+        "text": "14",
+        "isCorrect": false
+      },
+      {
+        "text": "22",
         "isCorrect": false
       }
     ]
@@ -906,19 +906,19 @@ const allQuestions = [
     "question": "Переведите число F14 из шестнадцатеричной в восьмеричную систему счисления.",
     "answers": [
       {
-        "text": "16024₈",
+        "text": "7414",
         "isCorrect": false
       },
       {
-        "text": "17024₈",
+        "text": "7424",
         "isCorrect": true
       },
       {
-        "text": "17124₈",
+        "text": "6324",
         "isCorrect": false
       },
       {
-        "text": "17204₈",
+        "text": "7524",
         "isCorrect": false
       }
     ]
@@ -928,19 +928,19 @@ const allQuestions = [
     "question": "Переведите число 88 из десятичной в двоичную систему счисления.",
     "answers": [
       {
-        "text": "1011100₂",
-        "isCorrect": false
-      },
-      {
-        "text": "1011000₂",
+        "text": "1011000",
         "isCorrect": true
       },
       {
-        "text": "1101000₂",
+        "text": "1101000",
         "isCorrect": false
       },
       {
-        "text": "1110000₂",
+        "text": "1011010",
+        "isCorrect": false
+      },
+      {
+        "text": "1001100",
         "isCorrect": false
       }
     ]
@@ -950,19 +950,19 @@ const allQuestions = [
     "question": "Переведите число 129 из десятичной в двоичную систему счисления.",
     "answers": [
       {
-        "text": "10000011₂",
+        "text": "10000011",
         "isCorrect": false
       },
       {
-        "text": "10000001₂",
+        "text": "11000001",
+        "isCorrect": false
+      },
+      {
+        "text": "10000001",
         "isCorrect": true
       },
       {
-        "text": "10000101₂",
-        "isCorrect": false
-      },
-      {
-        "text": "10010001₂",
+        "text": "10010001",
         "isCorrect": false
       }
     ]
@@ -972,19 +972,19 @@ const allQuestions = [
     "question": "Переведите число 110011 из двоичной системы счисления в восьмеричную.",
     "answers": [
       {
-        "text": "63₈",
+        "text": "61",
+        "isCorrect": false
+      },
+      {
+        "text": "63",
         "isCorrect": true
       },
       {
-        "text": "61₈",
+        "text": "53",
         "isCorrect": false
       },
       {
-        "text": "65₈",
-        "isCorrect": false
-      },
-      {
-        "text": "60₈",
+        "text": "67",
         "isCorrect": false
       }
     ]
@@ -994,20 +994,20 @@ const allQuestions = [
     "question": "Переведите число 10011101 из двоичной системы счисления в десятичную.",
     "answers": [
       {
+        "text": "153",
+        "isCorrect": false
+      },
+      {
+        "text": "161",
+        "isCorrect": false
+      },
+      {
+        "text": "149",
+        "isCorrect": false
+      },
+      {
         "text": "157",
         "isCorrect": true
-      },
-      {
-        "text": "158",
-        "isCorrect": false
-      },
-      {
-        "text": "159",
-        "isCorrect": false
-      },
-      {
-        "text": "156",
-        "isCorrect": false
       }
     ]
   },
@@ -1016,19 +1016,19 @@ const allQuestions = [
     "question": "Переведите число 800 десятеричной системы счисления в шестнадцатеричную.",
     "answers": [
       {
-        "text": "320₁₆",
+        "text": "320",
         "isCorrect": true
       },
       {
-        "text": "3F0₁₆",
+        "text": "310",
         "isCorrect": false
       },
       {
-        "text": "2F0₁₆",
+        "text": "2F0",
         "isCorrect": false
       },
       {
-        "text": "310₁₆",
+        "text": "3A0",
         "isCorrect": false
       }
     ]
@@ -1038,19 +1038,19 @@ const allQuestions = [
     "question": "Переведите число 1769 из десятеричной системы счисления в шестнадцатеричную.",
     "answers": [
       {
-        "text": "6E9₁₆",
+        "text": "6D9",
+        "isCorrect": false
+      },
+      {
+        "text": "6E9",
         "isCorrect": true
       },
       {
-        "text": "6D9₁₆",
+        "text": "7E9",
         "isCorrect": false
       },
       {
-        "text": "7E9₁₆",
-        "isCorrect": false
-      },
-      {
-        "text": "6F9₁₆",
+        "text": "6F9",
         "isCorrect": false
       }
     ]
@@ -1060,19 +1060,19 @@ const allQuestions = [
     "question": "Вычислить разность чисел 6089 и 4489 в девятеричной системе.",
     "answers": [
       {
-        "text": "1134₉",
-        "isCorrect": false
-      },
-      {
-        "text": "1500₉",
+        "text": "150",
         "isCorrect": true
       },
       {
-        "text": "1200₉",
+        "text": "160",
         "isCorrect": false
       },
       {
-        "text": "1340₉",
+        "text": "250",
+        "isCorrect": false
+      },
+      {
+        "text": "140",
         "isCorrect": false
       }
     ]
@@ -1082,19 +1082,19 @@ const allQuestions = [
     "question": "Вычислить разность чисел 10668 и 5468 в восьмеричной системе.",
     "answers": [
       {
-        "text": "3200₈",
+        "text": "310",
+        "isCorrect": false
+      },
+      {
+        "text": "320",
         "isCorrect": true
       },
       {
-        "text": "3100₈",
+        "text": "420",
         "isCorrect": false
       },
       {
-        "text": "3300₈",
-        "isCorrect": false
-      },
-      {
-        "text": "3210₈",
+        "text": "330",
         "isCorrect": false
       }
     ]
@@ -1104,19 +1104,19 @@ const allQuestions = [
     "question": "Вычислить разность чисел 7778 и 4468 в восьмеричной системе.",
     "answers": [
       {
-        "text": "331₈",
+        "text": "321",
+        "isCorrect": false
+      },
+      {
+        "text": "332",
+        "isCorrect": false
+      },
+      {
+        "text": "331",
         "isCorrect": true
       },
       {
-        "text": "332₈",
-        "isCorrect": false
-      },
-      {
-        "text": "330₈",
-        "isCorrect": false
-      },
-      {
-        "text": "333₈",
+        "text": "231",
         "isCorrect": false
       }
     ]
@@ -1126,20 +1126,20 @@ const allQuestions = [
     "question": "Вычислить разность чисел 55126 и 1155 6 в шестеричной системе.",
     "answers": [
       {
-        "text": "53531₆",
+        "text": "4323",
+        "isCorrect": false
+      },
+      {
+        "text": "4413",
+        "isCorrect": false
+      },
+      {
+        "text": "4213",
+        "isCorrect": false
+      },
+      {
+        "text": "4313",
         "isCorrect": true
-      },
-      {
-        "text": "53530₆",
-        "isCorrect": false
-      },
-      {
-        "text": "53532₆",
-        "isCorrect": false
-      },
-      {
-        "text": "53431₆",
-        "isCorrect": false
       }
     ]
   },
@@ -1148,19 +1148,19 @@ const allQuestions = [
     "question": "Переведите число 158 из десятеричной системы счисления в четверичную.",
     "answers": [
       {
-        "text": "2132₄",
+        "text": "2132",
         "isCorrect": true
       },
       {
-        "text": "2312₄",
+        "text": "2232",
         "isCorrect": false
       },
       {
-        "text": "2123₄",
+        "text": "2122",
         "isCorrect": false
       },
       {
-        "text": "1232₄",
+        "text": "2133",
         "isCorrect": false
       }
     ]
@@ -1170,19 +1170,19 @@ const allQuestions = [
     "question": "Вычислить сумму чисел 8876 и 4856 в девятеричной системе.",
     "answers": [
       {
-        "text": "1483₉",
+        "text": "1473",
+        "isCorrect": false
+      },
+      {
+        "text": "1483",
         "isCorrect": true
       },
       {
-        "text": "1482₉",
+        "text": "1383",
         "isCorrect": false
       },
       {
-        "text": "1473₉",
-        "isCorrect": false
-      },
-      {
-        "text": "1484₉",
+        "text": "1583",
         "isCorrect": false
       }
     ]
@@ -1192,19 +1192,19 @@ const allQuestions = [
     "question": "Вычислить сумму чисел 4A16 и F116 в восьмеричной системе.",
     "answers": [
       {
-        "text": "473₈",
+        "text": "463",
+        "isCorrect": false
+      },
+      {
+        "text": "573",
+        "isCorrect": false
+      },
+      {
+        "text": "473",
         "isCorrect": true
       },
       {
-        "text": "471₈",
-        "isCorrect": false
-      },
-      {
-        "text": "474₈",
-        "isCorrect": false
-      },
-      {
-        "text": "472₈",
+        "text": "471",
         "isCorrect": false
       }
     ]
@@ -1214,19 +1214,19 @@ const allQuestions = [
     "question": "Вычислить сумму чисел 5168 и 7778 в восьмеричной системе.",
     "answers": [
       {
-        "text": "1515₈",
+        "text": "1515",
         "isCorrect": true
       },
       {
-        "text": "1514₈",
+        "text": "1415",
         "isCorrect": false
       },
       {
-        "text": "1525₈",
+        "text": "1525",
         "isCorrect": false
       },
       {
-        "text": "1505₈",
+        "text": "1516",
         "isCorrect": false
       }
     ]
@@ -1236,85 +1236,85 @@ const allQuestions = [
     "question": "Вычислить сумму чисел 5126 и 456 в шестеричной системе.",
     "answers": [
       {
-        "text": "10330₆",
+        "text": "1011",
+        "isCorrect": false
+      },
+      {
+        "text": "601",
+        "isCorrect": false
+      },
+      {
+        "text": "1001",
         "isCorrect": true
       },
       {
-        "text": "10331₆",
-        "isCorrect": false
-      },
-      {
-        "text": "10320₆",
-        "isCorrect": false
-      },
-      {
-        "text": "10332₆",
+        "text": "1002",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 58,
-    "question": "Двоичное представление данных основывается на …",
+    "question": "Двоичное представление данных основывается на ...",
     "answers": [
       {
-        "text": "Трёх состояниях сигнала",
+        "text": "десяти цифрах",
         "isCorrect": false
       },
       {
-        "text": "Двух состояниях сигнала",
+        "text": "двух устойчивых состояниях",
         "isCorrect": true
       },
       {
-        "text": "Числах от 0 до 9",
+        "text": "магнитных полях",
         "isCorrect": false
       },
       {
-        "text": "Неопределённом сигнале",
+        "text": "скорости процессора",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 59,
-    "question": "Способ именования и изображения чисел с помощью символов, имеющих определенные количественные значения называется …",
+    "question": "Способ именования и изображения чисел с помощью символов называется ...",
     "answers": [
       {
-        "text": "Алгоритм",
-        "isCorrect": false
-      },
-      {
-        "text": "Кодирование",
-        "isCorrect": false
-      },
-      {
-        "text": "Система счисления",
+        "text": "система счисления",
         "isCorrect": true
       },
       {
-        "text": "Шифрование",
+        "text": "кодирование данных",
+        "isCorrect": false
+      },
+      {
+        "text": "алгоритм вычисления",
+        "isCorrect": false
+      },
+      {
+        "text": "математический базис",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 60,
-    "question": "Информация кодируется в двоичной форме и разделяется на единицы или элементы называемые …",
+    "question": "Информация кодируется в двоичной форме и разделяется на элементы называемые ...",
     "answers": [
       {
-        "text": "Биты",
+        "text": "биты",
         "isCorrect": true
       },
       {
-        "text": "Байты",
+        "text": "байты данных",
         "isCorrect": false
       },
       {
-        "text": "Символы",
+        "text": "пакеты",
         "isCorrect": false
       },
       {
-        "text": "Сегменты",
+        "text": "регистры",
         "isCorrect": false
       }
     ]
@@ -1324,19 +1324,19 @@ const allQuestions = [
     "question": "Кто изобрёл двоичную систему счисления?",
     "answers": [
       {
-        "text": "Паскаль",
-        "isCorrect": false
-      },
-      {
-        "text": "Лейбниц",
+        "text": "Готфрид Вильгельм Лейбниц",
         "isCorrect": true
       },
       {
-        "text": "Непер",
+        "text": "Блез Паскаль",
         "isCorrect": false
       },
       {
-        "text": "Тьюринг",
+        "text": "Чарльз Бэббидж",
+        "isCorrect": false
+      },
+      {
+        "text": "Алан Тьюринг",
         "isCorrect": false
       }
     ]
@@ -1346,19 +1346,19 @@ const allQuestions = [
     "question": "Что общего между машиной Бэббиджа, современным компьютером и человеческим мозгом?",
     "answers": [
       {
-        "text": "Используют только электричество",
+        "text": "Использование электричества",
         "isCorrect": false
       },
       {
-        "text": "Способность к обработке и хранению информации",
+        "text": "Способность обрабатывать информацию",
         "isCorrect": true
       },
       {
-        "text": "Существуют физически",
+        "text": "Двоичная логика работы",
         "isCorrect": false
       },
       {
-        "text": "Не имеют памяти",
+        "text": "Наличие транзисторов",
         "isCorrect": false
       }
     ]
@@ -1368,19 +1368,19 @@ const allQuestions = [
     "question": "Назовите сигнал, область определения которого есть дискретное пространство.",
     "answers": [
       {
-        "text": "Аналоговый",
+        "text": "Аналоговый сигнал",
         "isCorrect": false
       },
       {
-        "text": "Цифровой",
+        "text": "Гармонический сигнал",
+        "isCorrect": false
+      },
+      {
+        "text": "Дискретный сигнал",
         "isCorrect": true
       },
       {
-        "text": "Электрический",
-        "isCorrect": false
-      },
-      {
-        "text": "Оптический",
+        "text": "Световой поток",
         "isCorrect": false
       }
     ]
@@ -1390,19 +1390,19 @@ const allQuestions = [
     "question": "Назовите сигнал, область определения которого есть непрерывное пространство, то есть пространство, не являющееся дискретным.",
     "answers": [
       {
-        "text": "Аналоговый",
+        "text": "Цифровой код",
+        "isCorrect": false
+      },
+      {
+        "text": "Непрерывный сигнал",
         "isCorrect": true
       },
       {
-        "text": "Цифровой",
+        "text": "Квантованный сигнал",
         "isCorrect": false
       },
       {
-        "text": "Двоичный",
-        "isCorrect": false
-      },
-      {
-        "text": "Бинарный",
+        "text": "Бинарный импульс",
         "isCorrect": false
       }
     ]
@@ -1412,151 +1412,151 @@ const allQuestions = [
     "question": "По принципу Фон Неймана данные и команды представлены в:",
     "answers": [
       {
-        "text": "Разных устройствах",
+        "text": "Текстовом формате",
         "isCorrect": false
       },
       {
-        "text": "Одной памяти",
+        "text": "Двоичном виде",
         "isCorrect": true
       },
       {
-        "text": "На внешних носителях",
+        "text": "Разных типах памяти",
         "isCorrect": false
       },
       {
-        "text": "Только в процессоре",
+        "text": "Виде макрокоманд",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 66,
-    "question": "Дискретная информация – это …",
+    "question": "Дискретная информация - это ...",
     "answers": [
       {
-        "text": "Непрерывная информация",
+        "text": "Постоянный сигнал",
         "isCorrect": false
       },
       {
-        "text": "Которая представлена отдельными элементами",
+        "text": "Прерывистая информация",
         "isCorrect": true
       },
       {
-        "text": "Цветовая информация",
+        "text": "Звуковая волна",
         "isCorrect": false
       },
       {
-        "text": "Звуковая информация",
+        "text": "Аналоговое вещание",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 67,
-    "question": "Какой вид информации использует ГВМ?",
+    "question": "Какой вид информации использует ГВМ (Гибридная вычислительная машина)?",
     "answers": [
       {
-        "text": "Аналоговую",
+        "text": "Цифровую и аналоговую",
         "isCorrect": true
       },
       {
-        "text": "Дискретную",
+        "text": "Только символьную",
         "isCorrect": false
       },
       {
-        "text": "Двоичную",
+        "text": "Исключительно релейную",
         "isCorrect": false
       },
       {
-        "text": "Символьную",
+        "text": "Текстовые блоки",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 68,
-    "question": "Какой вид информации использует АВМ?",
+    "question": "Какой вид информации использует АВМ (Аналоговая вычислительная машина)?",
     "answers": [
       {
-        "text": "Дискретную",
+        "text": "Двоичный код",
+        "isCorrect": false
+      },
+      {
+        "text": "Непрерывные величины",
         "isCorrect": true
       },
       {
-        "text": "Аналоговую",
+        "text": "Логические предикаты",
         "isCorrect": false
       },
       {
-        "text": "Двоичную",
-        "isCorrect": false
-      },
-      {
-        "text": "Цветовую",
+        "text": "Целые числа",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 69,
-    "question": "Какой вид информации использует ЦВМ?",
+    "question": "Какой вид информации использует ЦВМ (Цифровая вычислительная машина)?",
     "answers": [
       {
-        "text": "Аналоговую",
+        "text": "Радиоволны",
         "isCorrect": false
       },
       {
-        "text": "Дискретную",
+        "text": "Переменное напряжение",
         "isCorrect": false
       },
       {
-        "text": "Двоичную",
+        "text": "Дискретные сигналы",
         "isCorrect": true
       },
       {
-        "text": "Цветовую",
+        "text": "Жидкостные потоки",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 70,
-    "question": "Прикладное программное обеспечение –это:",
+    "question": "Прикладное программное обеспечение - это:",
     "answers": [
+      {
+        "text": "Драйверы видеокарты",
+        "isCorrect": false
+      },
+      {
+        "text": "Программы для пользователя",
+        "isCorrect": true
+      },
       {
         "text": "Операционная система",
         "isCorrect": false
       },
       {
-        "text": "Программы для конкретных задач пользователя",
-        "isCorrect": true
-      },
-      {
-        "text": "Драйверы устройств",
-        "isCorrect": false
-      },
-      {
-        "text": "Системные утилиты",
+        "text": "Прошивка BIOS",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 71,
-    "question": "Системное программное обеспечение –это:",
+    "question": "Системное программное обеспечение - это:",
     "answers": [
       {
-        "text": "Игры и офисные программы",
+        "text": "Текстовые редакторы",
         "isCorrect": false
       },
       {
-        "text": "Операционные системы и служебные программы",
+        "text": "Среда работы программ",
         "isCorrect": true
       },
       {
-        "text": "Базы данных",
+        "text": "Графические игры",
         "isCorrect": false
       },
       {
-        "text": "Графические редакторы",
+        "text": "Базы данных",
         "isCorrect": false
       }
     ]
@@ -1566,19 +1566,19 @@ const allQuestions = [
     "question": "Существует 2 вида программного обеспечения. Назовите их.",
     "answers": [
       {
-        "text": "Операционная система и драйверы",
-        "isCorrect": false
-      },
-      {
         "text": "Системное и прикладное",
         "isCorrect": true
+      },
+      {
+        "text": "Платное и свободное",
+        "isCorrect": false
       },
       {
         "text": "Игровое и офисное",
         "isCorrect": false
       },
       {
-        "text": "Аналоговое и цифровое",
+        "text": "Серверное и клиентское",
         "isCorrect": false
       }
     ]
@@ -1592,15 +1592,15 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "Транзисторы",
-        "isCorrect": false
-      },
-      {
         "text": "Искусственные нейроны",
         "isCorrect": true
       },
       {
-        "text": "Микропроцессоры",
+        "text": "Кремниевые транзисторы",
+        "isCorrect": false
+      },
+      {
+        "text": "Магнитные сердечники",
         "isCorrect": false
       }
     ]
@@ -1610,19 +1610,19 @@ const allQuestions = [
     "question": "По каким признакам ЭВМ делятся на поколения?",
     "answers": [
       {
-        "text": "По скорости и мощности",
+        "text": "По объему памяти",
         "isCorrect": false
       },
       {
-        "text": "По элементной базе и технологиям изготовления",
+        "text": "По элементной базе",
         "isCorrect": true
       },
       {
-        "text": "По цвету корпуса",
+        "text": "По весу устройства",
         "isCorrect": false
       },
       {
-        "text": "По размеру экрана",
+        "text": "По языку программирования",
         "isCorrect": false
       }
     ]
@@ -1632,11 +1632,7 @@ const allQuestions = [
     "question": "Четвёртое поколение ПК использует:",
     "answers": [
       {
-        "text": "Вакуумные лампы",
-        "isCorrect": false
-      },
-      {
-        "text": "Транзисторы",
+        "text": "Перфокарты",
         "isCorrect": false
       },
       {
@@ -1644,7 +1640,11 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Механические реле",
+        "text": "Электронные лампы",
+        "isCorrect": false
+      },
+      {
+        "text": "Ферритовые кольца",
         "isCorrect": false
       }
     ]
@@ -1654,19 +1654,19 @@ const allQuestions = [
     "question": "Третье поколение ПК использует:",
     "answers": [
       {
-        "text": "Вакуумные лампы",
-        "isCorrect": false
-      },
-      {
-        "text": "Транзисторы",
-        "isCorrect": false
-      },
-      {
         "text": "Интегральные схемы",
         "isCorrect": true
       },
       {
-        "text": "Микропроцессоры",
+        "text": "Дискретные транзисторы",
+        "isCorrect": false
+      },
+      {
+        "text": "Механические реле",
+        "isCorrect": false
+      },
+      {
+        "text": "Квантовые точки",
         "isCorrect": false
       }
     ]
@@ -1676,19 +1676,19 @@ const allQuestions = [
     "question": "Как называется коэффициент, на который следует умножить тактовую частоту материнской платы, для достижения частоты процессора?",
     "answers": [
       {
-        "text": "Делитель",
+        "text": "Системная шина",
         "isCorrect": false
       },
       {
-        "text": "Множитель",
+        "text": "Множитель частоты",
         "isCorrect": true
       },
       {
-        "text": "Частотный индекс",
+        "text": "Делитель напряжения",
         "isCorrect": false
       },
       {
-        "text": "Режим синхронизации",
+        "text": "Тайминг задержки",
         "isCorrect": false
       }
     ]
@@ -1698,19 +1698,19 @@ const allQuestions = [
     "question": "Что такое процессор?",
     "answers": [
       {
-        "text": "Устройство хранения данных",
+        "text": "Устройство ввода текста",
         "isCorrect": false
       },
       {
-        "text": "Центральное устройство обработки данных",
+        "text": "Устройство обработки данных",
         "isCorrect": true
       },
       {
-        "text": "Устройство ввода",
+        "text": "Блок питания системы",
         "isCorrect": false
       },
       {
-        "text": "Внешний накопитель",
+        "text": "Хранилище документов",
         "isCorrect": false
       }
     ]
@@ -1720,19 +1720,19 @@ const allQuestions = [
     "question": "Что такое регистры?",
     "answers": [
       {
-        "text": "Элементы памяти внутри процессора для временного хранения данных",
+        "text": "Сверхбыстрая память процессора",
         "isCorrect": true
       },
       {
-        "text": "Внешние устройства памяти",
+        "text": "Внешние жесткие диски",
         "isCorrect": false
       },
       {
-        "text": "Драйверы",
+        "text": "Списки файлов ОС",
         "isCorrect": false
       },
       {
-        "text": "Порты ввода/вывода",
+        "text": "Ячейки видеокарты",
         "isCorrect": false
       }
     ]
@@ -1742,19 +1742,19 @@ const allQuestions = [
     "question": "Как называются проводники связывающие процессор с оперативной памятью и остальными устройствами компьютера?",
     "answers": [
       {
-        "text": "Шины",
+        "text": "Сетевой кабель",
+        "isCorrect": false
+      },
+      {
+        "text": "Системная шина",
         "isCorrect": true
       },
       {
-        "text": "Кабели питания",
+        "text": "Силовой провод",
         "isCorrect": false
       },
       {
-        "text": "Резисторы",
-        "isCorrect": false
-      },
-      {
-        "text": "Транзисторы",
+        "text": "Оптическое волокно",
         "isCorrect": false
       }
     ]
@@ -1764,19 +1764,19 @@ const allQuestions = [
     "question": "Сколько основных шин в компьютере?",
     "answers": [
       {
-        "text": "1",
-        "isCorrect": false
-      },
-      {
-        "text": "2",
-        "isCorrect": false
-      },
-      {
-        "text": "3",
+        "text": "Три основные шины",
         "isCorrect": true
       },
       {
-        "text": "4",
+        "text": "Пять системных линий",
+        "isCorrect": false
+      },
+      {
+        "text": "Десять каналов",
+        "isCorrect": false
+      },
+      {
+        "text": "Только две",
         "isCorrect": false
       }
     ]
@@ -1786,19 +1786,19 @@ const allQuestions = [
     "question": "Выберите правильные варианты основных шин:",
     "answers": [
       {
-        "text": "Адресная, данных, управления",
+        "text": "Системная, локальная, питания",
+        "isCorrect": false
+      },
+      {
+        "text": "Данных, адреса, управления",
         "isCorrect": true
       },
       {
-        "text": "Питания, сигналов, управления",
+        "text": "Видеошина и звуковая",
         "isCorrect": false
       },
       {
-        "text": "Данных, видео, аудио",
-        "isCorrect": false
-      },
-      {
-        "text": "Адресная, графическая, звуковая",
+        "text": "Шины ввода и вывода",
         "isCorrect": false
       }
     ]
@@ -1808,19 +1808,19 @@ const allQuestions = [
     "question": "Сколько проводников входит в адресную шину?",
     "answers": [
       {
-        "text": "Зависит от разрядности памяти",
+        "text": "Зависит от разрядности процессора",
         "isCorrect": true
       },
       {
-        "text": "Всегда 8",
+        "text": "Всегда ровно 64",
         "isCorrect": false
       },
       {
-        "text": "Всегда 16",
+        "text": "Один медный кабель",
         "isCorrect": false
       },
       {
-        "text": "Всегда 32",
+        "text": "Фиксированно 32 линии",
         "isCorrect": false
       }
     ]
@@ -1830,19 +1830,19 @@ const allQuestions = [
     "question": "Из скольких линий состоит шина данных?",
     "answers": [
       {
-        "text": "Зависит от разрядности процессора",
+        "text": "Кратна машинному слову",
         "isCorrect": true
       },
       {
-        "text": "Всегда 8",
+        "text": "Всего 4 линии",
         "isCorrect": false
       },
       {
-        "text": "Всегда 16",
+        "text": "Зависит от монитора",
         "isCorrect": false
       },
       {
-        "text": "Всегда 32",
+        "text": "Около тысячи проводов",
         "isCorrect": false
       }
     ]
@@ -1852,19 +1852,19 @@ const allQuestions = [
     "question": "Какие устройства называют периферийными?",
     "answers": [
       {
-        "text": "Центральный процессор",
-        "isCorrect": false
-      },
-      {
-        "text": "Внешние устройства ввода/вывода",
+        "text": "Внешние подключаемые устройства",
         "isCorrect": true
       },
       {
-        "text": "Регистры",
+        "text": "Только видеокарты",
         "isCorrect": false
       },
       {
-        "text": "Кэш память",
+        "text": "Внутренние регистры",
+        "isCorrect": false
+      },
+      {
+        "text": "Элементы блока питания",
         "isCorrect": false
       }
     ]
@@ -1874,19 +1874,19 @@ const allQuestions = [
     "question": "Дать определение клавиатуре.",
     "answers": [
       {
-        "text": "Устройство вывода",
+        "text": "Устройство вывода графики",
         "isCorrect": false
       },
       {
-        "text": "Устройство ввода информации с помощью нажатия клавиш",
+        "text": "Основное устройство ввода данных",
         "isCorrect": true
       },
       {
-        "text": "Устройство хранения данных",
+        "text": "Средство хранения информации",
         "isCorrect": false
       },
       {
-        "text": "Устройство обработки данных",
+        "text": "Манипулятор типа мышь",
         "isCorrect": false
       }
     ]
@@ -1896,19 +1896,19 @@ const allQuestions = [
     "question": "Что такое сканер?",
     "answers": [
       {
-        "text": "Устройство ввода изображения в компьютер",
+        "text": "Устройство для печати",
+        "isCorrect": false
+      },
+      {
+        "text": "Оптический ввод изображений",
         "isCorrect": true
       },
       {
-        "text": "Устройство вывода текста",
+        "text": "Считыватель дисков",
         "isCorrect": false
       },
       {
-        "text": "Память",
-        "isCorrect": false
-      },
-      {
-        "text": "Принтер",
+        "text": "Звуковой контроллер",
         "isCorrect": false
       }
     ]
@@ -1918,19 +1918,19 @@ const allQuestions = [
     "question": "Что такое принтер?",
     "answers": [
       {
-        "text": "Устройство вывода текста и графики на бумагу",
+        "text": "Сенсорный экран",
+        "isCorrect": false
+      },
+      {
+        "text": "Устройство вывода на бумагу",
         "isCorrect": true
       },
       {
-        "text": "Устройство ввода",
+        "text": "Сетевой шлюз",
         "isCorrect": false
       },
       {
-        "text": "Устройство хранения",
-        "isCorrect": false
-      },
-      {
-        "text": "Процессор",
+        "text": "Графический планшет",
         "isCorrect": false
       }
     ]
@@ -1940,19 +1940,19 @@ const allQuestions = [
     "question": "Что такое стримеры?",
     "answers": [
       {
-        "text": "Магнитные ленты для хранения больших объемов информации",
+        "text": "Накопители на магнитной ленте",
         "isCorrect": true
       },
       {
-        "text": "Процессоры",
+        "text": "Сетевые трансляторы",
         "isCorrect": false
       },
       {
-        "text": "Устройства ввода",
+        "text": "Охлаждающие вентиляторы",
         "isCorrect": false
       },
       {
-        "text": "Принтеры",
+        "text": "Быстрые видеочипы",
         "isCorrect": false
       }
     ]
@@ -1962,31 +1962,27 @@ const allQuestions = [
     "question": "Что такое модем?",
     "answers": [
       {
-        "text": "Устройство преобразования данных для передачи по телефонной линии",
+        "text": "Устройство преобразования сигналов",
         "isCorrect": true
       },
       {
-        "text": "Устройство ввода",
+        "text": "Модуль оперативной памяти",
         "isCorrect": false
       },
       {
-        "text": "Устройство вывода",
+        "text": "Жесткий диск",
         "isCorrect": false
       },
       {
-        "text": "Центральный процессор",
+        "text": "Усилитель звука",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 91,
-    "question": "Назовите важнейшее для пользователя устройство, с помощью которого осуществляется ввод данных, команд и управляющих воздействий в ПК.",
+    "question": "Назовите важнейшее для пользователя устройство ввода команд в ПК.",
     "answers": [
-      {
-        "text": "Принтер",
-        "isCorrect": false
-      },
       {
         "text": "Клавиатура",
         "isCorrect": true
@@ -1996,58 +1992,62 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "Сканер",
+        "text": "Дисковод",
+        "isCorrect": false
+      },
+      {
+        "text": "Принтер",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 92,
-    "question": "Все микропроцессоры можно разделить на группы: а) с полным набором команд, б) с сокращенным набором команд, в) с минимальным набором команд, г) с максимальным набором команд.(Выбрать правильные варианты ответов).",
+    "question": "На какие группы делятся микропроцессоры по набору команд?",
     "answers": [
       {
-        "text": "С полным набором команд",
+        "text": "CISC и RISC",
         "isCorrect": true
       },
       {
-        "text": "С сокращенным набором команд",
-        "isCorrect": true
+        "text": "Простые и сложные",
+        "isCorrect": false
       },
       {
-        "text": "С минимальным набором команд",
-        "isCorrect": true
+        "text": "Бинарные и десятичные",
+        "isCorrect": false
       },
       {
-        "text": "С максимальным набором команд",
+        "text": "Статичные и динамичные",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 93,
-    "question": "Как называется шина, по которой из оперативной памяти поступают команды выполняемые процессором?",
+    "question": "Как называется шина, по которой из памяти поступают команды?",
     "answers": [
       {
-        "text": "Адресная шина",
-        "isCorrect": false
-      },
-      {
-        "text": "Шина управления",
+        "text": "Шина данных",
         "isCorrect": true
       },
       {
-        "text": "Шина данных",
+        "text": "Шина прерываний",
         "isCorrect": false
       },
       {
-        "text": "Видеошина",
+        "text": "Шина питания",
+        "isCorrect": false
+      },
+      {
+        "text": "Локальная шина видео",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 94,
-    "question": "Как называется шина, по которой происходит копирование данных из оперативной памяти в регистры процессора и наоборот?",
+    "question": "По какой шине происходит копирование данных в регистры процессора?",
     "answers": [
       {
         "text": "Шина данных",
@@ -2058,21 +2058,21 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "Шина управления",
+        "text": "Шина USB",
         "isCorrect": false
       },
       {
-        "text": "Питания",
+        "text": "Шина тактовой частоты",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 95,
-    "question": "Данные, которые передаются по этой шине трактуются как адреса ячеек оперативной памяти.",
+    "question": "Данные по какой шине трактуются как адреса ячеек памяти?",
     "answers": [
       {
-        "text": "Шина данных",
+        "text": "Шина управления",
         "isCorrect": false
       },
       {
@@ -2080,99 +2080,99 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Шина управления",
+        "text": "Системный таймер",
         "isCorrect": false
       },
       {
-        "text": "Видеошина",
+        "text": "Контроллер прерываний",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 96,
-    "question": "Как называются шины, специализирующиеся на обслуживании небольшого количества устройств определенного класса?",
+    "question": "Как называются шины для небольшого количества устройств одного класса?",
     "answers": [
-      {
-        "text": "Шины общего назначения",
-        "isCorrect": false
-      },
       {
         "text": "Локальные шины",
         "isCorrect": true
       },
       {
-        "text": "Адресные шины",
+        "text": "Магистральные шины",
         "isCorrect": false
       },
       {
-        "text": "Контроллерные шины",
+        "text": "Глобальные сети",
+        "isCorrect": false
+      },
+      {
+        "text": "Универсальные порты",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 97,
-    "question": "Как называются шины общего назначения, позволяющие подключать большое число самых разнообразных устройств?",
+    "question": "Как называются шины общего назначения для множества устройств?",
     "answers": [
       {
-        "text": "Локальные шины",
-        "isCorrect": false
-      },
-      {
-        "text": "Шины общего назначения",
+        "text": "Системные шины",
         "isCorrect": true
       },
       {
-        "text": "Адресные шины",
+        "text": "Частные каналы",
         "isCorrect": false
       },
       {
-        "text": "Контроллерные шины",
+        "text": "Шины кэша",
+        "isCorrect": false
+      },
+      {
+        "text": "Вторичные линии",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 98,
-    "question": "К каким устройствам можно отнести принтер, графопостроители?",
+    "question": "К каким устройствам можно отнести принтер и графопостроители?",
     "answers": [
       {
-        "text": "Ввод",
-        "isCorrect": false
-      },
-      {
-        "text": "Вывод",
+        "text": "Устройства вывода",
         "isCorrect": true
       },
       {
-        "text": "Хранение",
+        "text": "Устройства ввода",
         "isCorrect": false
       },
       {
-        "text": "Обработка",
+        "text": "Вычислительные блоки",
+        "isCorrect": false
+      },
+      {
+        "text": "Сетевые адаптеры",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 99,
-    "question": "К каким устройствам можно отнести клавиатуру, сканер, графический планшет, манипуляторы?",
+    "question": "К каким устройствам относятся клавиатура и сканер?",
     "answers": [
       {
-        "text": "Ввод",
+        "text": "Устройства ввода",
         "isCorrect": true
       },
       {
-        "text": "Вывод",
+        "text": "Устройства хранения",
         "isCorrect": false
       },
       {
-        "text": "Память",
+        "text": "Устройства вывода",
         "isCorrect": false
       },
       {
-        "text": "Процессор",
+        "text": "Системы охлаждения",
         "isCorrect": false
       }
     ]
@@ -2182,19 +2182,19 @@ const allQuestions = [
     "question": "Что обеспечивает взаимодействие машины с окружающей средой?",
     "answers": [
       {
-        "text": "Центральный процессор",
-        "isCorrect": false
-      },
-      {
-        "text": "Устройства ввода и вывода",
+        "text": "Внешние устройства",
         "isCorrect": true
       },
       {
-        "text": "Оперативная память",
+        "text": "Математический сопроцессор",
         "isCorrect": false
       },
       {
-        "text": "Шины данных",
+        "text": "Регистры общего назначения",
+        "isCorrect": false
+      },
+      {
+        "text": "Кэш-память первого уровня",
         "isCorrect": false
       }
     ]
@@ -2204,19 +2204,19 @@ const allQuestions = [
     "question": "Какая шина имеет провода и схемы сопряжения для подключения блоков ПК к системе энергопитания?",
     "answers": [
       {
-        "text": "Адресная",
-        "isCorrect": false
-      },
-      {
-        "text": "Шина данных",
-        "isCorrect": false
-      },
-      {
-        "text": "Силовая шина",
+        "text": "Шина питания",
         "isCorrect": true
       },
       {
         "text": "Шина управления",
+        "isCorrect": false
+      },
+      {
+        "text": "Локальная шина",
+        "isCorrect": false
+      },
+      {
+        "text": "Шина данных",
         "isCorrect": false
       }
     ]
@@ -2226,7 +2226,7 @@ const allQuestions = [
     "question": "Второе поколение ПК использовало:",
     "answers": [
       {
-        "text": "Вакуумные лампы",
+        "text": "Электронные лампы",
         "isCorrect": false
       },
       {
@@ -2248,19 +2248,19 @@ const allQuestions = [
     "question": "Первое поколение ПК использовало:",
     "answers": [
       {
+        "text": "Полупроводники",
+        "isCorrect": false
+      },
+      {
+        "text": "Реле",
+        "isCorrect": false
+      },
+      {
         "text": "Вакуумные лампы",
         "isCorrect": true
       },
       {
-        "text": "Транзисторы",
-        "isCorrect": false
-      },
-      {
-        "text": "Интегральные схемы",
-        "isCorrect": false
-      },
-      {
-        "text": "Микропроцессоры",
+        "text": "Магнитные сердечники",
         "isCorrect": false
       }
     ]
@@ -2270,19 +2270,19 @@ const allQuestions = [
     "question": "По поколениям персональные компьютеры делятся на:",
     "answers": [
       {
-        "text": "Первое, второе, третье, четвёртое",
+        "text": "Пять поколений",
         "isCorrect": true
       },
       {
-        "text": "Малые, средние, большие",
+        "text": "Три типа",
         "isCorrect": false
       },
       {
-        "text": "Стационарные и портативные",
+        "text": "Десять классов",
         "isCorrect": false
       },
       {
-        "text": "Аналоговые и цифровые",
+        "text": "Семь уровней",
         "isCorrect": false
       }
     ]
@@ -2292,19 +2292,19 @@ const allQuestions = [
     "question": "По принципу действия ЭВМ делятся на:",
     "answers": [
       {
-        "text": "Аналоговые, цифровые, гибридные",
+        "text": "Серверные и клиентские",
+        "isCorrect": false
+      },
+      {
+        "text": "Стационарные и переносные",
+        "isCorrect": false
+      },
+      {
+        "text": "Цифровые, аналоговые, гибридные",
         "isCorrect": true
       },
       {
-        "text": "Малые, средние, большие",
-        "isCorrect": false
-      },
-      {
-        "text": "Стационарные и портативные",
-        "isCorrect": false
-      },
-      {
-        "text": "Первое, второе, третье поколение",
+        "text": "Бинарные и десятичные",
         "isCorrect": false
       }
     ]
@@ -2314,41 +2314,41 @@ const allQuestions = [
     "question": "Кто создал первую аналитическую вычислительную машину в 1822?",
     "answers": [
       {
+        "text": "Алан Тьюринг",
+        "isCorrect": false
+      },
+      {
         "text": "Блез Паскаль",
+        "isCorrect": false
+      },
+      {
+        "text": "Готфрид Лейбниц",
         "isCorrect": false
       },
       {
         "text": "Чарльз Бэббидж",
         "isCorrect": true
-      },
-      {
-        "text": "Алан Тьюринг",
-        "isCorrect": false
-      },
-      {
-        "text": "Джон Непер",
-        "isCorrect": false
       }
     ]
   },
   {
     "id": 107,
-    "question": "Первый программируемый компьютер был создан в…",
+    "question": "Первый программируемый компьютер был создан в...",
     "answers": [
       {
-        "text": "1936",
+        "text": "1941 году",
         "isCorrect": true
       },
       {
-        "text": "1822",
+        "text": "1955 году",
         "isCorrect": false
       },
       {
-        "text": "1945",
+        "text": "1960 году",
         "isCorrect": false
       },
       {
-        "text": "1950",
+        "text": "1930 году",
         "isCorrect": false
       }
     ]
@@ -2358,107 +2358,107 @@ const allQuestions = [
     "question": "Какого типа ПЗУ при классификации по технологии записи информации не существует?",
     "answers": [
       {
-        "text": "ROM",
+        "text": "PROM",
         "isCorrect": false
       },
       {
-        "text": "RWM",
+        "text": "SPROM",
         "isCorrect": true
       },
       {
-        "text": "EPROM",
+        "text": "EEPROM",
         "isCorrect": false
       },
       {
-        "text": "EEPROM",
+        "text": "EPROM",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 109,
-    "question": "DRDRAM - это…",
+    "question": "DRDRAM - это...",
     "answers": [
       {
-        "text": "Тип оперативной памяти",
+        "text": "Динамическая память Rambus",
         "isCorrect": true
       },
       {
-        "text": "Тип процессора",
+        "text": "Двойная статическая память",
         "isCorrect": false
       },
       {
-        "text": "Тип жёсткого диска",
+        "text": "Регистровая видеопамять",
         "isCorrect": false
       },
       {
-        "text": "Тип видеокарты",
+        "text": "Дискретный модуль ОЗУ",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 110,
-    "question": "EEPROM – это…",
+    "question": "EEPROM - это...",
     "answers": [
       {
-        "text": "ПЗУ с возможностью стирания и перезаписи",
+        "text": "Электрически стираемое ПЗУ",
         "isCorrect": true
       },
       {
-        "text": "ПЗУ только для чтения",
+        "text": "Энергозависимое ОЗУ",
         "isCorrect": false
       },
       {
-        "text": "Оперативная память",
+        "text": "Внешний модуль расширения",
         "isCorrect": false
       },
       {
-        "text": "Кэш-память",
+        "text": "Эффективная системная память",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 111,
-    "question": "EPROM – это…",
+    "question": "EPROM - это...",
     "answers": [
       {
-        "text": "ПЗУ, стираемое ультрафиолетом",
+        "text": "ПЗУ со стиранием УФ",
         "isCorrect": true
       },
       {
-        "text": "ПЗУ для постоянного хранения",
+        "text": "Расширенная оперативная память",
         "isCorrect": false
       },
       {
-        "text": "RAM",
+        "text": "Электронный программный модуль",
         "isCorrect": false
       },
       {
-        "text": "Жёсткий диск",
+        "text": "Постоянная кэш-память",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 112,
-    "question": "PROM- это…",
+    "question": "PROM- это...",
     "answers": [
       {
-        "text": "Перезаписываемое ПЗУ",
-        "isCorrect": false
-      },
-      {
-        "text": "ПЗУ программируемое один раз",
+        "text": "Программируемое ПЗУ",
         "isCorrect": true
       },
       {
-        "text": "Кэш-память",
+        "text": "Первичная память",
         "isCorrect": false
       },
       {
-        "text": "Оперативная память",
+        "text": "Процессорный модуль",
+        "isCorrect": false
+      },
+      {
+        "text": "Память только для чтения",
         "isCorrect": false
       }
     ]
@@ -2468,19 +2468,19 @@ const allQuestions = [
     "question": "Как расшифровывается EEPROM?",
     "answers": [
       {
-        "text": "Electrically Erasable Programmable Read-Only Memory",
+        "text": "Electrically Erasable Programmable ROM",
         "isCorrect": true
       },
       {
-        "text": "Electronically Erasable Programmable Read-Only Memory",
+        "text": "Electronic Engine Programmable ROM",
         "isCorrect": false
       },
       {
-        "text": "Electric Erasable RAM",
+        "text": "Extra Erasable Portable ROM",
         "isCorrect": false
       },
       {
-        "text": "None",
+        "text": "Extended Erased Program ROM",
         "isCorrect": false
       }
     ]
@@ -2490,19 +2490,19 @@ const allQuestions = [
     "question": "Как расшифровывается EPROM?",
     "answers": [
       {
-        "text": "Electrically Programmable ROM",
-        "isCorrect": false
-      },
-      {
         "text": "Erasable Programmable ROM",
         "isCorrect": true
       },
       {
-        "text": "Electric PROM",
+        "text": "Every Programmable ROM",
         "isCorrect": false
       },
       {
-        "text": "Enhanced PROM",
+        "text": "Easy Program Read Memory",
+        "isCorrect": false
+      },
+      {
+        "text": "Extended Programmable ROM",
         "isCorrect": false
       }
     ]
@@ -2516,15 +2516,15 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Permanent ROM",
+        "text": "Primary Read-Only Memory",
         "isCorrect": false
       },
       {
-        "text": "Process ROM",
+        "text": "Port Read-Only Memory",
         "isCorrect": false
       },
       {
-        "text": "Primary ROM",
+        "text": "Portable Read-Only Memory",
         "isCorrect": false
       }
     ]
@@ -2534,19 +2534,19 @@ const allQuestions = [
     "question": "Как расшифровывается DDR SDRAM?",
     "answers": [
       {
-        "text": "Double Data Rate Synchronous DRAM",
+        "text": "Double Data Rate SDRAM",
         "isCorrect": true
       },
       {
-        "text": "Dual Dynamic RAM",
+        "text": "Dual Data Register SDRAM",
         "isCorrect": false
       },
       {
-        "text": "Direct Data RAM",
+        "text": "Direct Data Rate SDRAM",
         "isCorrect": false
       },
       {
-        "text": "Double DRAM",
+        "text": "Digital Data Rate SDRAM",
         "isCorrect": false
       }
     ]
@@ -2556,19 +2556,19 @@ const allQuestions = [
     "question": "Как расшифровывается SDRAM?",
     "answers": [
       {
-        "text": "Synchronous DRAM",
+        "text": "Synchronous Dynamic RAM",
         "isCorrect": true
       },
       {
-        "text": "Static DRAM",
+        "text": "Static Dynamic RAM",
         "isCorrect": false
       },
       {
-        "text": "Serial DRAM",
+        "text": "Single Dynamic RAM",
         "isCorrect": false
       },
       {
-        "text": "Synchronous Disk RAM",
+        "text": "System Dynamic RAM",
         "isCorrect": false
       }
     ]
@@ -2578,19 +2578,19 @@ const allQuestions = [
     "question": "Как расшифровывается BEDO DRAM?",
     "answers": [
       {
-        "text": "Burst Extended Data Output DRAM",
+        "text": "Burst Extended Data Out",
         "isCorrect": true
       },
       {
-        "text": "Basic Extended DRAM Output",
+        "text": "Basic Extended Data Out",
         "isCorrect": false
       },
       {
-        "text": "Binary EDO DRAM",
+        "text": "Binary Extended Data Out",
         "isCorrect": false
       },
       {
-        "text": "Block EDO RAM",
+        "text": "Buffer Extended Data Out",
         "isCorrect": false
       }
     ]
@@ -2604,7 +2604,7 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Dynamic Rambus DRAM",
+        "text": "Digital Rambus DRAM",
         "isCorrect": false
       },
       {
@@ -2612,7 +2612,7 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "Data Rate RAM",
+        "text": "Data Rambus DRAM",
         "isCorrect": false
       }
     ]
@@ -2622,19 +2622,19 @@ const allQuestions = [
     "question": "Как расшифровывается RAM EDO?",
     "answers": [
       {
-        "text": "Extended Data Out DRAM",
+        "text": "Extended Data Output",
         "isCorrect": true
       },
       {
-        "text": "Random Access Memory",
+        "text": "External Data Output",
         "isCorrect": false
       },
       {
-        "text": "Enhanced Data Output RAM",
+        "text": "Electronic Data Output",
         "isCorrect": false
       },
       {
-        "text": "External Data Output RAM",
+        "text": "Energy Data Output",
         "isCorrect": false
       }
     ]
@@ -2644,19 +2644,19 @@ const allQuestions = [
     "question": "Как расшифровывается FPM DRAM?",
     "answers": [
       {
-        "text": "Fast Page Mode DRAM",
+        "text": "Fast Page Mode",
         "isCorrect": true
       },
       {
-        "text": "Full Page Memory",
+        "text": "Frequency Phase Mode",
         "isCorrect": false
       },
       {
-        "text": "First Page Mode",
+        "text": "Fast Peripheral Module",
         "isCorrect": false
       },
       {
-        "text": "Fast Processor Memory",
+        "text": "Fixed Power Memory",
         "isCorrect": false
       }
     ]
@@ -2666,19 +2666,19 @@ const allQuestions = [
     "question": "Как расшифровывается RIMM?",
     "answers": [
       {
+        "text": "Rapid Internal Memory Method",
+        "isCorrect": false
+      },
+      {
         "text": "Rambus Inline Memory Module",
         "isCorrect": true
       },
       {
-        "text": "Random Inline Memory Module",
+        "text": "Registered Internal Multi Module",
         "isCorrect": false
       },
       {
-        "text": "Rapid Interface Memory Module",
-        "isCorrect": false
-      },
-      {
-        "text": "RAM Integrated Memory Module",
+        "text": "Reliable Interface Memory",
         "isCorrect": false
       }
     ]
@@ -2688,19 +2688,19 @@ const allQuestions = [
     "question": "Как расшифровывается DIMM?",
     "answers": [
       {
+        "text": "Direct Interconnect Memory",
+        "isCorrect": false
+      },
+      {
+        "text": "Double Integrated Main Module",
+        "isCorrect": false
+      },
+      {
         "text": "Dual Inline Memory Module",
         "isCorrect": true
       },
       {
-        "text": "Double Inline Memory Module",
-        "isCorrect": false
-      },
-      {
-        "text": "Dynamic Inline Memory Module",
-        "isCorrect": false
-      },
-      {
-        "text": "Data Inline Memory Module",
+        "text": "Digital Inline Multi Module",
         "isCorrect": false
       }
     ]
@@ -2714,15 +2714,15 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Synchronous Inline Memory Module",
+        "text": "Simple Integrated Memory Mode",
         "isCorrect": false
       },
       {
-        "text": "Standard Inline Memory Module",
+        "text": "Static Internal Main Module",
         "isCorrect": false
       },
       {
-        "text": "Simple Inline Memory Module",
+        "text": "System Inline Memory Matrix",
         "isCorrect": false
       }
     ]
@@ -2732,19 +2732,19 @@ const allQuestions = [
     "question": "Как расшифровывается SIPP?",
     "answers": [
       {
+        "text": "System Integrated Port Package",
+        "isCorrect": false
+      },
+      {
+        "text": "Simple Inline Pin Process",
+        "isCorrect": false
+      },
+      {
         "text": "Single Inline Pin Package",
         "isCorrect": true
       },
       {
-        "text": "Single Integrated Pin Package",
-        "isCorrect": false
-      },
-      {
-        "text": "Standard Inline Pin Package",
-        "isCorrect": false
-      },
-      {
-        "text": "Simple Inline Pin Package",
+        "text": "Static Interface Peripheral Port",
         "isCorrect": false
       }
     ]
@@ -2758,15 +2758,15 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Single Integrated Package",
+        "text": "Serial Interface Port",
         "isCorrect": false
       },
       {
-        "text": "Standard Inline Package",
+        "text": "System Information Protocol",
         "isCorrect": false
       },
       {
-        "text": "Simple Inline Package",
+        "text": "Standard Integrated Pinout",
         "isCorrect": false
       }
     ]
@@ -2776,20 +2776,20 @@ const allQuestions = [
     "question": "Как расшифровывается DIP?",
     "answers": [
       {
+        "text": "Data Interchange Port",
+        "isCorrect": false
+      },
+      {
+        "text": "Digital Input Pin",
+        "isCorrect": false
+      },
+      {
+        "text": "Direct Integrated Process",
+        "isCorrect": false
+      },
+      {
         "text": "Dual Inline Package",
         "isCorrect": true
-      },
-      {
-        "text": "Double Integrated Package",
-        "isCorrect": false
-      },
-      {
-        "text": "Dual Integrated Package",
-        "isCorrect": false
-      },
-      {
-        "text": "Data Inline Package",
-        "isCorrect": false
       }
     ]
   },
@@ -2798,19 +2798,19 @@ const allQuestions = [
     "question": "Как расшифровывается ROM?",
     "answers": [
       {
-        "text": "Read-Only Memory",
+        "text": "Read Only Memory",
         "isCorrect": true
-      },
-      {
-        "text": "Random-Access Memory",
-        "isCorrect": false
       },
       {
         "text": "Rapid Output Memory",
         "isCorrect": false
       },
       {
-        "text": "Recordable Output Memory",
+        "text": "Real-time Operations Module",
+        "isCorrect": false
+      },
+      {
+        "text": "Registered Output Matrix",
         "isCorrect": false
       }
     ]
@@ -2820,19 +2820,19 @@ const allQuestions = [
     "question": "Как расшифровывается RAM?",
     "answers": [
       {
-        "text": "Random-Access Memory",
-        "isCorrect": true
-      },
-      {
-        "text": "Read-Active Memory",
-        "isCorrect": false
-      },
-      {
         "text": "Rapid Access Module",
         "isCorrect": false
       },
       {
-        "text": "Readable Access Memory",
+        "text": "Random Access Memory",
+        "isCorrect": true
+      },
+      {
+        "text": "Remote Audio Management",
+        "isCorrect": false
+      },
+      {
+        "text": "Real Advanced Memory",
         "isCorrect": false
       }
     ]
@@ -2842,19 +2842,19 @@ const allQuestions = [
     "question": "Назовите типы кэш-памяти различаемых по принципу записи результатов в оперативную память.",
     "answers": [
       {
-        "text": "Write-through, Write-back",
+        "text": "Прямая и косвенная",
+        "isCorrect": false
+      },
+      {
+        "text": "Статическая и динамическая",
+        "isCorrect": false
+      },
+      {
+        "text": "Сквозная и обратная запись",
         "isCorrect": true
       },
       {
-        "text": "Level 1, Level 2",
-        "isCorrect": false
-      },
-      {
-        "text": "Static, Dynamic",
-        "isCorrect": false
-      },
-      {
-        "text": "RAM, ROM",
+        "text": "Системная и прикладная",
         "isCorrect": false
       }
     ]
@@ -2864,63 +2864,63 @@ const allQuestions = [
     "question": "Сколько типов кэш памяти различают по принципу записи результатов в оперативную память?",
     "answers": [
       {
-        "text": "1",
-        "isCorrect": false
-      },
-      {
-        "text": "2",
+        "text": "Два",
         "isCorrect": true
       },
       {
-        "text": "3",
+        "text": "Три",
         "isCorrect": false
       },
       {
-        "text": "4",
+        "text": "Четыре",
+        "isCorrect": false
+      },
+      {
+        "text": "Пять",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 132,
-    "question": "Что означает с английского Cache (кэш) ?",
+    "question": "Что означает с английского Cache (кэш)?",
     "answers": [
       {
-        "text": "Быстрая память",
+        "text": "Быстрое вычисление",
+        "isCorrect": false
+      },
+      {
+        "text": "Тайник или склад",
         "isCorrect": true
       },
       {
-        "text": "Постоянная память",
+        "text": "Лишняя память",
         "isCorrect": false
       },
       {
-        "text": "Оперативная память",
-        "isCorrect": false
-      },
-      {
-        "text": "Память на диске",
+        "text": "Промежуточное звено",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 133,
-    "question": "Что такое «Регистровая кэш-память»?",
+    "question": "Что такое 'Регистровая кэш-память'?",
     "answers": [
       {
-        "text": "Память процессора для временного хранения данных",
+        "text": "Сверхбыстрые регистры процессора",
         "isCorrect": true
       },
       {
-        "text": "Постоянная память",
+        "text": "Кэш жесткого диска",
         "isCorrect": false
       },
       {
-        "text": "Жёсткий диск",
+        "text": "Память контроллера прерываний",
         "isCorrect": false
       },
       {
-        "text": "Внешняя память",
+        "text": "Буфер системной шины",
         "isCorrect": false
       }
     ]
@@ -2930,19 +2930,19 @@ const allQuestions = [
     "question": "Как расшифровывается SRAM?",
     "answers": [
       {
-        "text": "Static RAM",
+        "text": "Serial Random Access Memory",
+        "isCorrect": false
+      },
+      {
+        "text": "Synchronous Rapid Access Memory",
+        "isCorrect": false
+      },
+      {
+        "text": "Static Random Access Memory",
         "isCorrect": true
       },
       {
-        "text": "Synchronous RAM",
-        "isCorrect": false
-      },
-      {
-        "text": "Serial RAM",
-        "isCorrect": false
-      },
-      {
-        "text": "Standard RAM",
+        "text": "Single Random Access Module",
         "isCorrect": false
       }
     ]
@@ -2952,19 +2952,19 @@ const allQuestions = [
     "question": "Как расшифровывается DRAM?",
     "answers": [
       {
-        "text": "Dynamic RAM",
+        "text": "Dynamic Random Access Memory",
         "isCorrect": true
       },
       {
-        "text": "Direct RAM",
+        "text": "Digital Random Access Module",
         "isCorrect": false
       },
       {
-        "text": "Dual RAM",
+        "text": "Direct Random Access Method",
         "isCorrect": false
       },
       {
-        "text": "Data RAM",
+        "text": "Dual Random Access Memory",
         "isCorrect": false
       }
     ]
@@ -2974,19 +2974,19 @@ const allQuestions = [
     "question": "От чего жесткий диск получил название винчестер?",
     "answers": [
       {
-        "text": "От производителя",
+        "text": "Имя создателя устройства",
+        "isCorrect": false
+      },
+      {
+        "text": "Название города производства",
+        "isCorrect": false
+      },
+      {
+        "text": "Маркировка IBM 3030",
         "isCorrect": true
       },
       {
-        "text": "От размера",
-        "isCorrect": false
-      },
-      {
-        "text": "От формы",
-        "isCorrect": false
-      },
-      {
-        "text": "От скорости",
+        "text": "Форма корпуса диска",
         "isCorrect": false
       }
     ]
@@ -2996,19 +2996,19 @@ const allQuestions = [
     "question": "Чем известен один из основателей фирмы Seagate, Алан Шугарт?",
     "answers": [
       {
-        "text": "Создал первый жёсткий диск",
-        "isCorrect": true
+        "text": "Изобрел транзистор",
+        "isCorrect": false
       },
       {
-        "text": "Создал первый компьютер",
-        "isCorrect": false
+        "text": "Разработал первый гибкий диск",
+        "isCorrect": true
       },
       {
         "text": "Создал первый процессор",
         "isCorrect": false
       },
       {
-        "text": "Создал первый принтер",
+        "text": "Основал компанию Intel",
         "isCorrect": false
       }
     ]
@@ -3018,11 +3018,11 @@ const allQuestions = [
     "question": "Кто является изобретателем первой дискеты?",
     "answers": [
       {
-        "text": "Алан Шугарт",
-        "isCorrect": true
+        "text": "Билл Гейтс",
+        "isCorrect": false
       },
       {
-        "text": "Билл Гейтс",
+        "text": "Гордон Мур",
         "isCorrect": false
       },
       {
@@ -3030,39 +3030,43 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "Чарльз Бэббидж",
-        "isCorrect": false
+        "text": "Алан Шугарт",
+        "isCorrect": true
       }
     ]
   },
   {
     "id": 139,
-    "question": "Файлы, хранящиеся в разбросанных по диску кластерах, называются…",
+    "question": "Файлы, хранящиеся в разбросанных по диску кластерах, называются...",
     "answers": [
+      {
+        "text": "Индексированные",
+        "isCorrect": false
+      },
       {
         "text": "Фрагментированные",
         "isCorrect": true
       },
       {
-        "text": "Последовательные",
+        "text": "Сегментированные",
         "isCorrect": false
       },
       {
-        "text": "Системные",
-        "isCorrect": false
-      },
-      {
-        "text": "Архивные",
+        "text": "Сжатые",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 140,
-    "question": "Минимальная единица размещения информации на диске, состоящая из двух или большего числа смежных секторов дорожки, называется…",
+    "question": "Минимальная единица размещения информации на диске, состоящая из двух или большего числа смежных секторов дорожки, называется...",
     "answers": [
       {
         "text": "Сектор",
+        "isCorrect": false
+      },
+      {
+        "text": "Трек",
         "isCorrect": false
       },
       {
@@ -3070,11 +3074,7 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Блок",
-        "isCorrect": false
-      },
-      {
-        "text": "Трек",
+        "text": "Цилиндр",
         "isCorrect": false
       }
     ]
@@ -3084,19 +3084,19 @@ const allQuestions = [
     "question": "Какое количество установленных атрибутов должен иметь файл?",
     "answers": [
       {
-        "text": "1",
-        "isCorrect": false
-      },
-      {
-        "text": "Несколько",
+        "text": "Любое количество",
         "isCorrect": true
       },
       {
-        "text": "0",
+        "text": "Только четыре",
         "isCorrect": false
       },
       {
-        "text": "10",
+        "text": "Минимум один",
+        "isCorrect": false
+      },
+      {
+        "text": "Все существующие",
         "isCorrect": false
       }
     ]
@@ -3106,19 +3106,19 @@ const allQuestions = [
     "question": "Каких атрибутов файла не существует?",
     "answers": [
       {
-        "text": "Read-only",
+        "text": "Скрытый",
         "isCorrect": false
       },
       {
-        "text": "Hidden",
-        "isCorrect": false
-      },
-      {
-        "text": "Executable",
+        "text": "Анонимный",
         "isCorrect": true
       },
       {
-        "text": "System",
+        "text": "Только для чтения",
+        "isCorrect": false
+      },
+      {
+        "text": "Системный",
         "isCorrect": false
       }
     ]
@@ -3128,19 +3128,19 @@ const allQuestions = [
     "question": "Какое расширение графические файлы?",
     "answers": [
       {
-        "text": ".exe",
+        "text": "EXE",
         "isCorrect": false
       },
       {
-        "text": ".doc",
+        "text": "TXT",
         "isCorrect": false
       },
       {
-        "text": ".bmp, .jpg, .png",
+        "text": "BMP",
         "isCorrect": true
       },
       {
-        "text": ".txt",
+        "text": "DLL",
         "isCorrect": false
       }
     ]
@@ -3150,19 +3150,19 @@ const allQuestions = [
     "question": "Какое расширение имеют исполняемые файлы?",
     "answers": [
       {
-        "text": ".exe",
+        "text": "EXE",
         "isCorrect": true
       },
       {
-        "text": ".bmp",
+        "text": "DOCX",
         "isCorrect": false
       },
       {
-        "text": ".txt",
+        "text": "MP3",
         "isCorrect": false
       },
       {
-        "text": ".jpg",
+        "text": "LOG",
         "isCorrect": false
       }
     ]
@@ -3176,15 +3176,15 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "4 КБ",
+        "text": "4 Кб",
         "isCorrect": true
       },
       {
-        "text": "8 КБ",
+        "text": "64 Кб",
         "isCorrect": false
       },
       {
-        "text": "16 КБ",
+        "text": "1 Мб",
         "isCorrect": false
       }
     ]
@@ -3194,19 +3194,19 @@ const allQuestions = [
     "question": "Какой стандартный размер кластера файловой системы NTFS?",
     "answers": [
       {
-        "text": "512 байт",
+        "text": "1024 байта",
         "isCorrect": false
       },
       {
-        "text": "4 КБ",
+        "text": "128 байт",
+        "isCorrect": false
+      },
+      {
+        "text": "4 Кб",
         "isCorrect": true
       },
       {
-        "text": "8 КБ",
-        "isCorrect": false
-      },
-      {
-        "text": "16 КБ",
+        "text": "32 Кб",
         "isCorrect": false
       }
     ]
@@ -3216,19 +3216,19 @@ const allQuestions = [
     "question": "За счет чего достигается надежность файловой системы NTFS?",
     "answers": [
       {
-        "text": "Жёсткого диска",
+        "text": "Сжатие тома",
         "isCorrect": false
       },
       {
-        "text": "Журналирования",
+        "text": "Журналирование транзакций",
         "isCorrect": true
       },
       {
-        "text": "RAID",
+        "text": "Индексация поиска",
         "isCorrect": false
       },
       {
-        "text": "Размеров кластеров",
+        "text": "Очистка кэша",
         "isCorrect": false
       }
     ]
@@ -3238,19 +3238,19 @@ const allQuestions = [
     "question": "Какое главное преимущество файловой системы NTFS?",
     "answers": [
       {
-        "text": "Совместимость с DOS",
+        "text": "Скорость в DOS",
         "isCorrect": false
       },
       {
-        "text": "Безопасность и надежность",
+        "text": "Разграничение прав доступа",
         "isCorrect": true
       },
       {
-        "text": "Малый размер",
+        "text": "Отсутствие фрагментации",
         "isCorrect": false
       },
       {
-        "text": "Простота",
+        "text": "Малый размер метаданных",
         "isCorrect": false
       }
     ]
@@ -3260,20 +3260,20 @@ const allQuestions = [
     "question": "Какая файловая система рекомендуется для использования в Windows 98?",
     "answers": [
       {
-        "text": "FAT16",
+        "text": "NTFS",
+        "isCorrect": false
+      },
+      {
+        "text": "ReFS",
+        "isCorrect": false
+      },
+      {
+        "text": "ext3",
         "isCorrect": false
       },
       {
         "text": "FAT32",
         "isCorrect": true
-      },
-      {
-        "text": "NTFS",
-        "isCorrect": false
-      },
-      {
-        "text": "EXT4",
-        "isCorrect": false
       }
     ]
   },
@@ -3282,19 +3282,19 @@ const allQuestions = [
     "question": "Какая файловая система не поддерживается Windows XP?",
     "answers": [
       {
-        "text": "FAT16",
-        "isCorrect": false
+        "text": "ext4",
+        "isCorrect": true
       },
       {
         "text": "FAT32",
         "isCorrect": false
       },
       {
-        "text": "EXT4",
-        "isCorrect": true
+        "text": "NTFS",
+        "isCorrect": false
       },
       {
-        "text": "NTFS",
+        "text": "CDFS",
         "isCorrect": false
       }
     ]
@@ -3308,7 +3308,7 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "FAT32",
+        "text": "HPFS",
         "isCorrect": false
       },
       {
@@ -3316,7 +3316,7 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "EXT4",
+        "text": "NFS",
         "isCorrect": false
       }
     ]
@@ -3326,19 +3326,19 @@ const allQuestions = [
     "question": "Какая файловая система является многопоточной?",
     "answers": [
       {
-        "text": "FAT32",
-        "isCorrect": false
-      },
-      {
         "text": "NTFS",
         "isCorrect": true
       },
       {
-        "text": "FAT16",
+        "text": "FAT12",
         "isCorrect": false
       },
       {
-        "text": "EXT4",
+        "text": "FAT32",
+        "isCorrect": false
+      },
+      {
+        "text": "ISO9660",
         "isCorrect": false
       }
     ]
@@ -3348,19 +3348,19 @@ const allQuestions = [
     "question": "Каким знаком отделяется имя файла от имени потока в файловой системе NTFS?",
     "answers": [
       {
-        "text": ":",
+        "text": "Точка",
+        "isCorrect": false
+      },
+      {
+        "text": "Двоеточие",
         "isCorrect": true
       },
       {
-        "text": ".",
+        "text": "Решетка",
         "isCorrect": false
       },
       {
-        "text": "/",
-        "isCorrect": false
-      },
-      {
-        "text": "\\",
+        "text": "Обратный слэш",
         "isCorrect": false
       }
     ]
@@ -3370,19 +3370,19 @@ const allQuestions = [
     "question": "Какова длина имени файла в ОС Windows 98?",
     "answers": [
       {
-        "text": "8+3 символа",
-        "isCorrect": true
+        "text": "8 символов",
+        "isCorrect": false
       },
       {
         "text": "255 символов",
-        "isCorrect": false
-      },
-      {
-        "text": "32 символа",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "text": "128 символов",
+        "isCorrect": false
+      },
+      {
+        "text": "11 символов",
         "isCorrect": false
       }
     ]
@@ -3392,7 +3392,7 @@ const allQuestions = [
     "question": "Какова длина имени файла в ОС DOS?",
     "answers": [
       {
-        "text": "8+3 символа",
+        "text": "8 символов",
         "isCorrect": true
       },
       {
@@ -3400,11 +3400,11 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "32 символа",
+        "text": "64 символа",
         "isCorrect": false
       },
       {
-        "text": "128 символов",
+        "text": "32 символа",
         "isCorrect": false
       }
     ]
@@ -3414,19 +3414,19 @@ const allQuestions = [
     "question": "Какая информация связывается с файлом в системе FAT16?",
     "answers": [
       {
-        "text": "Имя файла, атрибуты, адрес первого кластера",
+        "text": "Права доступа",
+        "isCorrect": false
+      },
+      {
+        "text": "Дата создания",
         "isCorrect": true
       },
       {
-        "text": "Контрольная сумма",
+        "text": "Квота пользователя",
         "isCorrect": false
       },
       {
-        "text": "Версия файла",
-        "isCorrect": false
-      },
-      {
-        "text": "Доступ пользователей",
+        "text": "Список потоков",
         "isCorrect": false
       }
     ]
@@ -3436,19 +3436,19 @@ const allQuestions = [
     "question": "Какая информация не связывается с файлом в системе FAT32?",
     "answers": [
       {
+        "text": "Размер файла",
+        "isCorrect": false
+      },
+      {
         "text": "Имя файла",
         "isCorrect": false
       },
       {
-        "text": "Атрибуты",
-        "isCorrect": false
-      },
-      {
-        "text": "Доступ пользователей",
+        "text": "Права доступа",
         "isCorrect": true
       },
       {
-        "text": "Адрес кластера",
+        "text": "Атрибут архивации",
         "isCorrect": false
       }
     ]
@@ -3458,19 +3458,19 @@ const allQuestions = [
     "question": "Какая информация связывается с файлом в системе NTFS?",
     "answers": [
       {
-        "text": "Имя, атрибуты, права доступа",
+        "text": "Цвет ярлыка",
+        "isCorrect": false
+      },
+      {
+        "text": "Дескриптор защиты",
         "isCorrect": true
       },
       {
-        "text": "Только имя",
+        "text": "Температура диска",
         "isCorrect": false
       },
       {
-        "text": "Только атрибуты",
-        "isCorrect": false
-      },
-      {
-        "text": "Только размер",
+        "text": "Частота процессора",
         "isCorrect": false
       }
     ]
@@ -3484,37 +3484,37 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "FAT32",
-        "isCorrect": false
-      },
-      {
         "text": "NTFS",
         "isCorrect": true
       },
       {
-        "text": "EXT2",
+        "text": "FAT32",
+        "isCorrect": false
+      },
+      {
+        "text": "FAT12",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 160,
-    "question": "Совокупность программ, обеспечивающих доступ к данным на носителе информации называется…",
+    "question": "Совокупность программ, обеспечивающих доступ к данным на носителе информации называется...",
     "answers": [
       {
-        "text": "BIOS",
+        "text": "Драйвер шины",
         "isCorrect": false
       },
       {
-        "text": "Драйвер",
+        "text": "Файловая система",
         "isCorrect": true
       },
       {
-        "text": "Операционная система",
+        "text": "Архиватор данных",
         "isCorrect": false
       },
       {
-        "text": "Архиватор",
+        "text": "Менеджер памяти",
         "isCorrect": false
       }
     ]
@@ -3524,19 +3524,19 @@ const allQuestions = [
     "question": "Какой тип данных не может храниться в файле?",
     "answers": [
       {
-        "text": "Текст",
-        "isCorrect": false
-      },
-      {
-        "text": "Числа",
-        "isCorrect": false
-      },
-      {
-        "text": "Команды микропроцессора",
+        "text": "Непрерывный аналоговый сигнал",
         "isCorrect": true
       },
       {
-        "text": "Графика",
+        "text": "Текстовые символы",
+        "isCorrect": false
+      },
+      {
+        "text": "Двоичный код",
+        "isCorrect": false
+      },
+      {
+        "text": "Табличные значения",
         "isCorrect": false
       }
     ]
@@ -3546,19 +3546,19 @@ const allQuestions = [
     "question": "Как называется именованная область внешней памяти, выделенная для хранения массива данных?",
     "answers": [
       {
+        "text": "Кластер",
+        "isCorrect": false
+      },
+      {
         "text": "Файл",
         "isCorrect": true
       },
       {
-        "text": "Папка",
+        "text": "Сектор диска",
         "isCorrect": false
       },
       {
-        "text": "Диск",
-        "isCorrect": false
-      },
-      {
-        "text": "Сектор",
+        "text": "Ячейка",
         "isCorrect": false
       }
     ]
@@ -3568,63 +3568,63 @@ const allQuestions = [
     "question": "Как называется именованная совокупность данных на внешнем носителе информации?",
     "answers": [
       {
-        "text": "Папка",
-        "isCorrect": true
+        "text": "Каталог",
+        "isCorrect": false
+      },
+      {
+        "text": "Запись",
+        "isCorrect": false
+      },
+      {
+        "text": "Атрибут",
+        "isCorrect": false
       },
       {
         "text": "Файл",
-        "isCorrect": false
-      },
-      {
-        "text": "Диск",
-        "isCorrect": false
-      },
-      {
-        "text": "Блок",
-        "isCorrect": false
+        "isCorrect": true
       }
     ]
   },
   {
     "id": 164,
-    "question": "Какова скорость последовательного чтения накопителей DVD?",
+    "question": "Какова скорость последовательного чтения накопителей DVD (1x)?",
     "answers": [
       {
-        "text": "1,32 МБ/с",
-        "isCorrect": false
-      },
-      {
-        "text": "11 МБ/с",
+        "text": "1.35 Мбайт/с",
         "isCorrect": true
       },
       {
-        "text": "150 МБ/с",
+        "text": "150 Кбайт/с",
         "isCorrect": false
       },
       {
-        "text": "1 ГБ/с",
+        "text": "10 Мбайт/с",
+        "isCorrect": false
+      },
+      {
+        "text": "480 Мбит/с",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 165,
-    "question": "Какова скорость последовательного чтения накопителей CD – ROM?",
+    "question": "Какова скорость последовательного чтения накопителей CD-ROM (1x)?",
     "answers": [
       {
-        "text": "1,32 МБ/с",
+        "text": "150 Кбайт/с",
         "isCorrect": true
       },
       {
-        "text": "11 МБ/с",
+        "text": "1.35 Мбайт/с",
         "isCorrect": false
       },
       {
-        "text": "150 МБ/с",
+        "text": "500 Кбайт/с",
         "isCorrect": false
       },
       {
-        "text": "1 ГБ/с",
+        "text": "2 Мбайт/с",
         "isCorrect": false
       }
     ]
@@ -3634,19 +3634,19 @@ const allQuestions = [
     "question": "Какова скорость последовательного чтения жестких магнитных дисков?",
     "answers": [
       {
-        "text": "11 МБ/с",
-        "isCorrect": false
-      },
-      {
-        "text": "50–150 МБ/с",
+        "text": "100-250 Мбайт/с",
         "isCorrect": true
       },
       {
-        "text": "1,32 МБ/с",
+        "text": "10 Гбайт/с",
         "isCorrect": false
       },
       {
-        "text": "1 ГБ/с",
+        "text": "150 Кбайт/с",
+        "isCorrect": false
+      },
+      {
+        "text": "500 Кбит/с",
         "isCorrect": false
       }
     ]
@@ -3656,19 +3656,19 @@ const allQuestions = [
     "question": "Какова скорость последовательного чтения гибких магнитных дисков?",
     "answers": [
       {
-        "text": "0,05–0,5 МБ/с",
+        "text": "Около 50 Кбайт/с",
         "isCorrect": true
       },
       {
-        "text": "50–150 МБ/с",
+        "text": "10 Мбайт/с",
         "isCorrect": false
       },
       {
-        "text": "1,32 МБ/с",
+        "text": "1.5 Мбайт/с",
         "isCorrect": false
       },
       {
-        "text": "11 МБ/с",
+        "text": "150 Кбайт/с",
         "isCorrect": false
       }
     ]
@@ -3678,19 +3678,19 @@ const allQuestions = [
     "question": "Чему равно время доступа накопителей DVD?",
     "answers": [
       {
-        "text": "100–200 мс",
-        "isCorrect": false
-      },
-      {
-        "text": "150–200 мс",
+        "text": "100–150 мс",
         "isCorrect": true
       },
       {
-        "text": "1–10 мс",
+        "text": "5–10 мс",
         "isCorrect": false
       },
       {
-        "text": "0,5–1 мс",
+        "text": "1–2 с",
+        "isCorrect": false
+      },
+      {
+        "text": "10–20 мкс",
         "isCorrect": false
       }
     ]
@@ -3700,19 +3700,19 @@ const allQuestions = [
     "question": "Чему равно время доступа накопителей CD-ROM?",
     "answers": [
       {
-        "text": "100–200 мс",
+        "text": "150–400 мс",
         "isCorrect": true
       },
       {
-        "text": "1–10 мс",
+        "text": "10–15 мс",
         "isCorrect": false
       },
       {
-        "text": "0,5–1 мс",
+        "text": "500–900 нс",
         "isCorrect": false
       },
       {
-        "text": "10–50 мс",
+        "text": "2–5 мкс",
         "isCorrect": false
       }
     ]
@@ -3722,19 +3722,19 @@ const allQuestions = [
     "question": "Чему равно время доступа накопителей на жестких магнитных дисках?",
     "answers": [
       {
-        "text": "0,5–10 мс",
-        "isCorrect": true
-      },
-      {
         "text": "100–200 мс",
         "isCorrect": false
       },
       {
-        "text": "1–50 мс",
+        "text": "3–15 мс",
+        "isCorrect": true
+      },
+      {
+        "text": "1–2 мкс",
         "isCorrect": false
       },
       {
-        "text": "10–50 с",
+        "text": "300–500 нс",
         "isCorrect": false
       }
     ]
@@ -3744,19 +3744,19 @@ const allQuestions = [
     "question": "Чему равно время доступа накопителей на гибких магнитных дисках?",
     "answers": [
       {
-        "text": "100–200 мс",
-        "isCorrect": false
-      },
-      {
-        "text": "20–50 мс",
+        "text": "100–300 мс",
         "isCorrect": true
       },
       {
-        "text": "0,5–1 мс",
+        "text": "5–10 мс",
         "isCorrect": false
       },
       {
-        "text": "1–10 мс",
+        "text": "1–2 мкс",
+        "isCorrect": false
+      },
+      {
+        "text": "40–50 нс",
         "isCorrect": false
       }
     ]
@@ -3766,19 +3766,19 @@ const allQuestions = [
     "question": "Наиболее полное определение носителя информации:",
     "answers": [
       {
-        "text": "Устройство хранения данных",
+        "text": "Физическая среда хранения",
         "isCorrect": true
       },
       {
-        "text": "Оперативная память",
+        "text": "Кабель передачи данных",
         "isCorrect": false
       },
       {
-        "text": "Процессор",
+        "text": "Процессорный регистр",
         "isCorrect": false
       },
       {
-        "text": "Кэш",
+        "text": "Электрический импульс",
         "isCorrect": false
       }
     ]
@@ -3788,173 +3788,173 @@ const allQuestions = [
     "question": "Что такое абсолютный адрес?",
     "answers": [
       {
-        "text": "Адрес в регистре",
-        "isCorrect": false
-      },
-      {
-        "text": "Адрес, фиксированный для всей системы",
+        "text": "Числовой номер ячейки памяти",
         "isCorrect": true
       },
       {
-        "text": "Относительный адрес",
+        "text": "Имя переменной",
         "isCorrect": false
       },
       {
-        "text": "Адрес в файле",
+        "text": "Смещение относительно базы",
+        "isCorrect": false
+      },
+      {
+        "text": "Сетевой путь к файлу",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 174,
-    "question": "Емкость жестких дисков современных компьютеров равна…",
+    "question": "Емкость жестких дисков современных компьютеров равна...",
     "answers": [
       {
-        "text": "128–500 МБ",
+        "text": "512 мегабайт",
         "isCorrect": false
       },
       {
-        "text": "500 ГБ – 10 ТБ",
+        "text": "100 килобайт",
+        "isCorrect": false
+      },
+      {
+        "text": "1–20 терабайт",
         "isCorrect": true
       },
       {
-        "text": "1–10 ГБ",
-        "isCorrect": false
-      },
-      {
-        "text": "1–5 МБ",
+        "text": "10 гигабайт",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 175,
-    "question": "Емкость кэш памяти современных компьютеров равна…",
+    "question": "Емкость кэш памяти современных компьютеров равна...",
     "answers": [
       {
-        "text": "32–256 КБ",
+        "text": "16 гигабайт",
+        "isCorrect": false
+      },
+      {
+        "text": "Несколько десятков мегабайт",
         "isCorrect": true
       },
       {
-        "text": "1–4 МБ",
+        "text": "1 терабайт",
         "isCorrect": false
       },
       {
-        "text": "1–10 ГБ",
-        "isCorrect": false
-      },
-      {
-        "text": "512–1024 МБ",
+        "text": "512 байт",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 176,
-    "question": "Емкость оперативной памяти современных компьютеров равна…",
+    "question": "Емкость оперативной памяти современных компьютеров равна...",
     "answers": [
       {
-        "text": "2–128 МБ",
-        "isCorrect": false
-      },
-      {
-        "text": "4–128 ГБ",
+        "text": "8–64 гигабайта",
         "isCorrect": true
       },
       {
-        "text": "1–4 КБ",
+        "text": "1–2 мегабайта",
         "isCorrect": false
       },
       {
-        "text": "512–1024 МБ",
+        "text": "500 терабайт",
+        "isCorrect": false
+      },
+      {
+        "text": "128 килобайт",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 177,
-    "question": "Емкость ПЗУ, используемой для BIOS не превышает…",
+    "question": "Емкость ПЗУ, используемой для BIOS не превышает...",
     "answers": [
       {
-        "text": "128–512 КБ",
+        "text": "1 терабайт",
+        "isCorrect": false
+      },
+      {
+        "text": "16 мегабайт",
         "isCorrect": true
       },
       {
-        "text": "1–2 МБ",
+        "text": "2 гигабайта",
         "isCorrect": false
       },
       {
-        "text": "2–4 ГБ",
-        "isCorrect": false
-      },
-      {
-        "text": "512–1024 МБ",
+        "text": "500 мегабайт",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 178,
-    "question": "На основе чего создаются «полупостоянные» ПЗУ?",
+    "question": "На основе чего создаются 'полупостоянные' ПЗУ?",
     "answers": [
       {
-        "text": "128–512 КБ",
+        "text": "Технология Flash",
         "isCorrect": true
       },
       {
-        "text": "1–2 МБ",
+        "text": "Магнитные ленты",
         "isCorrect": false
       },
       {
-        "text": "2–4 ГБ",
+        "text": "Оптические слои",
         "isCorrect": false
       },
       {
-        "text": "512–1024 МБ",
+        "text": "Жидкие кристаллы",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 179,
-    "question": "ПЗУ используется для хранения…",
+    "question": "ПЗУ используется для хранения...",
     "answers": [
       {
-        "text": "Программ, необходимых для запуска ПК",
+        "text": "Программ загрузки системы",
         "isCorrect": true
       },
       {
-        "text": "Временных данных",
+        "text": "Временных переменных",
         "isCorrect": false
       },
       {
-        "text": "Файлов пользователя",
+        "text": "Текстов пользователя",
         "isCorrect": false
       },
       {
-        "text": "Видео",
+        "text": "Очереди печати",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 180,
-    "question": "ПЗУ не используется для хранения…",
+    "question": "ПЗУ не используется для хранения...",
     "answers": [
       {
-        "text": "BIOS",
-        "isCorrect": false
-      },
-      {
-        "text": "Операционной системы",
-        "isCorrect": false
-      },
-      {
-        "text": "Временных данных",
+        "text": "Промежуточных результатов вычислений",
         "isCorrect": true
       },
       {
-        "text": "Процессов",
+        "text": "Кода BIOS",
+        "isCorrect": false
+      },
+      {
+        "text": "Программ самотестирования",
+        "isCorrect": false
+      },
+      {
+        "text": "Таблиц знакогенератора",
         "isCorrect": false
       }
     ]
@@ -3964,19 +3964,19 @@ const allQuestions = [
     "question": "Что представляет собой оперативная память?",
     "answers": [
       {
-        "text": "Постоянная память",
-        "isCorrect": false
-      },
-      {
-        "text": "Временное хранилище данных и команд",
+        "text": "Энергозависимое запоминающее устройство",
         "isCorrect": true
       },
       {
-        "text": "Кэш",
+        "text": "Постоянный накопитель данных",
         "isCorrect": false
       },
       {
-        "text": "Видеопамять",
+        "text": "Устройство для вычислений",
+        "isCorrect": false
+      },
+      {
+        "text": "Шина передачи сигналов",
         "isCorrect": false
       }
     ]
@@ -3986,19 +3986,19 @@ const allQuestions = [
     "question": "Каково назначение оперативной памяти?",
     "answers": [
       {
-        "text": "Хранение данных на постоянной основе",
-        "isCorrect": false
-      },
-      {
-        "text": "Временное хранение и быстрый доступ к данным и программам",
+        "text": "Хранение исполняемого программного кода",
         "isCorrect": true
       },
       {
-        "text": "Увеличение объема диска",
+        "text": "Долгосрочное архивирование файлов",
         "isCorrect": false
       },
       {
-        "text": "Ввод команд",
+        "text": "Управление видеосигналом монитора",
+        "isCorrect": false
+      },
+      {
+        "text": "Охлаждение центрального процессора",
         "isCorrect": false
       }
     ]
@@ -4008,19 +4008,19 @@ const allQuestions = [
     "question": "Что включает в себя основная память?",
     "answers": [
       {
-        "text": "ПЗУ и ОЗУ",
+        "text": "ОЗУ и ПЗУ",
         "isCorrect": true
       },
       {
-        "text": "Кэш",
+        "text": "Жесткий диск и кэш",
         "isCorrect": false
       },
       {
-        "text": "Жёсткий диск",
+        "text": "Регистры процессора",
         "isCorrect": false
       },
       {
-        "text": "Видеокарту",
+        "text": "Видеопамять и BIOS",
         "isCorrect": false
       }
     ]
@@ -4030,41 +4030,41 @@ const allQuestions = [
     "question": "Каково назначение регистровой кэш-памяти?",
     "answers": [
       {
-        "text": "Временное хранение данных процессора для ускорения работы",
+        "text": "Ускорение доступа к данным",
         "isCorrect": true
       },
       {
-        "text": "Долговременное хранение файлов",
+        "text": "Увеличение объема дискового пространства",
         "isCorrect": false
       },
       {
-        "text": "Хранение BIOS",
+        "text": "Защита от скачков напряжения",
         "isCorrect": false
       },
       {
-        "text": "Хранение дисковых файлов",
+        "text": "Кодирование текстовой информации",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 185,
-    "question": "Кэш-память имеет такое название потому что…",
+    "question": "Кэш-память имеет такое название потому что...",
     "answers": [
       {
-        "text": "Она хранит только программы",
-        "isCorrect": false
-      },
-      {
-        "text": "Она хранит данные, чтобы ускорить доступ процессора",
+        "text": "Она скрыта от пользователя",
         "isCorrect": true
       },
       {
-        "text": "Она подключается напрямую к жёсткому диску",
+        "text": "Очень быстро работает",
         "isCorrect": false
       },
       {
-        "text": "Она является постоянной память",
+        "text": "Имеет маленький физический размер",
+        "isCorrect": false
+      },
+      {
+        "text": "Использует только двоичный код",
         "isCorrect": false
       }
     ]
@@ -4074,19 +4074,19 @@ const allQuestions = [
     "question": "Какими параметрами характеризуется внешняя память ПК?",
     "answers": [
       {
-        "text": "Ёмкость, скорость, тип хранения",
+        "text": "Емкость и время доступа",
         "isCorrect": true
       },
       {
-        "text": "Цвет и размер",
+        "text": "Тактовая частота шины",
         "isCorrect": false
       },
       {
-        "text": "Название производителя",
+        "text": "Количество ядер процессора",
         "isCorrect": false
       },
       {
-        "text": "Тактовая частота",
+        "text": "Разрешение экрана",
         "isCorrect": false
       }
     ]
@@ -4096,19 +4096,19 @@ const allQuestions = [
     "question": "Что такое системная шина?",
     "answers": [
       {
-        "text": "Кабель USB",
-        "isCorrect": false
-      },
-      {
-        "text": "Совокупность линий связи, обеспечивающих обмен информацией между всеми устройствами ПК",
+        "text": "Магистраль передачи данных",
         "isCorrect": true
       },
       {
-        "text": "Видеокарта",
+        "text": "Программа управления оборудованием",
         "isCorrect": false
       },
       {
-        "text": "Контроллер дисков",
+        "text": "Слот для видеокарты",
+        "isCorrect": false
+      },
+      {
+        "text": "Разъем питания платы",
         "isCorrect": false
       }
     ]
@@ -4118,19 +4118,19 @@ const allQuestions = [
     "question": "Основная часть системной платы - это:",
     "answers": [
       {
-        "text": "Процессор",
-        "isCorrect": false
-      },
-      {
-        "text": "Микросхема BIOS",
-        "isCorrect": false
-      },
-      {
         "text": "Чипсет",
         "isCorrect": true
       },
       {
-        "text": "Видеокарта",
+        "text": "Жесткий диск",
+        "isCorrect": false
+      },
+      {
+        "text": "Блок питания",
+        "isCorrect": false
+      },
+      {
+        "text": "Оптический привод",
         "isCorrect": false
       }
     ]
@@ -4140,41 +4140,41 @@ const allQuestions = [
     "question": "Сколько видов операций существует в булевой алгебре?",
     "answers": [
       {
-        "text": "1",
-        "isCorrect": false
-      },
-      {
-        "text": "2",
-        "isCorrect": false
-      },
-      {
-        "text": "3 (Конъюнкция, дизъюнкция, инверсия)",
+        "text": "Три основные операции",
         "isCorrect": true
       },
       {
-        "text": "4",
+        "text": "Более ста вариантов",
+        "isCorrect": false
+      },
+      {
+        "text": "Только одна",
+        "isCorrect": false
+      },
+      {
+        "text": "Десять базовых",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 190,
-    "question": "Что означает понятие «высказывание» в алгебре логики?",
+    "question": "Что означает понятие 'высказывание' в алгебре логики?",
     "answers": [
       {
-        "text": "Любое предложение, которое можно оценить как истинное или ложное",
+        "text": "Утверждение, принимающее истинность/ложь",
         "isCorrect": true
       },
       {
-        "text": "Только числовое выражение",
+        "text": "Любое вопросительное предложение",
         "isCorrect": false
       },
       {
-        "text": "Только текст",
+        "text": "Математическая формула с X",
         "isCorrect": false
       },
       {
-        "text": "Только формулу",
+        "text": "Текст в кавычках",
         "isCorrect": false
       }
     ]
@@ -4184,19 +4184,19 @@ const allQuestions = [
     "question": "Унарные(ая) операции(ия) алгебры логики:",
     "answers": [
       {
-        "text": "И, ИЛИ",
-        "isCorrect": false
-      },
-      {
-        "text": "НЕ",
+        "text": "Отрицание (НЕ)",
         "isCorrect": true
       },
       {
-        "text": "XOR",
+        "text": "Сложение (ИЛИ)",
         "isCorrect": false
       },
       {
-        "text": "NAND",
+        "text": "Умножение (И)",
+        "isCorrect": false
+      },
+      {
+        "text": "Эквивалентность",
         "isCorrect": false
       }
     ]
@@ -4206,19 +4206,19 @@ const allQuestions = [
     "question": "Бинарные(ая) операции(ия) алгебры логики:",
     "answers": [
       {
-        "text": "НЕ",
-        "isCorrect": false
-      },
-      {
-        "text": "И, ИЛИ",
+        "text": "Конъюнкция и дизъюнкция",
         "isCorrect": true
       },
       {
-        "text": "Инверсия",
+        "text": "Только инверсия",
         "isCorrect": false
       },
       {
-        "text": "Транзистор",
+        "text": "Извлечение квадратного корня",
+        "isCorrect": false
+      },
+      {
+        "text": "Возведение в степень",
         "isCorrect": false
       }
     ]
@@ -4228,19 +4228,19 @@ const allQuestions = [
     "question": "Виды операции алгебры логики:",
     "answers": [
       {
-        "text": "Арифметические",
-        "isCorrect": false
-      },
-      {
-        "text": "Логические",
+        "text": "Унарные и бинарные",
         "isCorrect": true
       },
       {
-        "text": "Памяти",
+        "text": "Простые и сложные",
         "isCorrect": false
       },
       {
-        "text": "Дисковые",
+        "text": "Целые и дробные",
+        "isCorrect": false
+      },
+      {
+        "text": "Прямые и обратные",
         "isCorrect": false
       }
     ]
@@ -4250,19 +4250,19 @@ const allQuestions = [
     "question": "Для алгебры логики применимы следующие законы:",
     "answers": [
       {
+        "text": "Законы де Моргана",
+        "isCorrect": true
+      },
+      {
+        "text": "Закон Ома",
+        "isCorrect": false
+      },
+      {
         "text": "Законы Ньютона",
         "isCorrect": false
       },
       {
-        "text": "Законы Булева алгебра",
-        "isCorrect": true
-      },
-      {
-        "text": "Законы термодинамики",
-        "isCorrect": false
-      },
-      {
-        "text": "Законы Ома",
+        "text": "Правило буравчика",
         "isCorrect": false
       }
     ]
@@ -4276,22 +4276,22 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "{–1, 0}",
+        "text": "{Ложь, Неправда}",
         "isCorrect": false
       },
       {
-        "text": "{0, 2}",
+        "text": "{+, -}",
         "isCorrect": false
       },
       {
-        "text": "{1, 2}",
+        "text": "{A, B}",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 196,
-    "question": "Каким является высказывание «Логическая единица соответствует логическому ДА»?",
+    "question": "Каким является высказывание 'Логическая единица соответствует логическому ДА'?",
     "answers": [
       {
         "text": "Истинным",
@@ -4302,33 +4302,33 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "Неопределённым",
+        "text": "Бессмысленным",
         "isCorrect": false
       },
       {
-        "text": "Контроверсионным",
+        "text": "Неопределенным",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 197,
-    "question": "Каким является высказывание «Микропроцессор является внешним устройством ПК»?",
+    "question": "Каким является высказывание 'Микропроцессор является внешним устройством ПК'?",
     "answers": [
-      {
-        "text": "Истинным",
-        "isCorrect": false
-      },
       {
         "text": "Ложным",
         "isCorrect": true
       },
       {
-        "text": "Неопределённым",
+        "text": "Истинным",
         "isCorrect": false
       },
       {
-        "text": "Контроверсионным",
+        "text": "Аксиомой",
+        "isCorrect": false
+      },
+      {
+        "text": "Гипотезой",
         "isCorrect": false
       }
     ]
@@ -4338,19 +4338,19 @@ const allQuestions = [
     "question": "Чему в алгебре логики равно НЕ (1 ИЛИ 0)?",
     "answers": [
       {
-        "text": "1",
-        "isCorrect": false
-      },
-      {
         "text": "0",
         "isCorrect": true
       },
       {
-        "text": "–1",
+        "text": "1",
         "isCorrect": false
       },
       {
-        "text": "0,5",
+        "text": "Истина",
+        "isCorrect": false
+      },
+      {
+        "text": "10",
         "isCorrect": false
       }
     ]
@@ -4360,19 +4360,19 @@ const allQuestions = [
     "question": "Чему в алгебре логики равно НЕ (1 И 1)?",
     "answers": [
       {
+        "text": "Ложь",
+        "isCorrect": true
+      },
+      {
         "text": "1",
         "isCorrect": false
       },
       {
-        "text": "0",
-        "isCorrect": true
-      },
-      {
-        "text": "–1",
+        "text": "2",
         "isCorrect": false
       },
       {
-        "text": "0,5",
+        "text": "11",
         "isCorrect": false
       }
     ]
@@ -4382,19 +4382,19 @@ const allQuestions = [
     "question": "Чему в алгебре логики равно НЕ 0?",
     "answers": [
       {
-        "text": "0",
-        "isCorrect": false
-      },
-      {
         "text": "1",
         "isCorrect": true
       },
       {
-        "text": "2",
+        "text": "0",
         "isCorrect": false
       },
       {
-        "text": "–1",
+        "text": "-1",
+        "isCorrect": false
+      },
+      {
+        "text": "Пустоте",
         "isCorrect": false
       }
     ]
@@ -4404,19 +4404,19 @@ const allQuestions = [
     "question": "Чему в алгебре логики равно 1 ИЛИ 0?",
     "answers": [
       {
-        "text": "0",
-        "isCorrect": false
-      },
-      {
         "text": "1",
         "isCorrect": true
       },
       {
-        "text": "0,5",
+        "text": "0",
         "isCorrect": false
       },
       {
-        "text": "–1",
+        "text": "Логическая ошибка",
+        "isCorrect": false
+      },
+      {
+        "text": "2",
         "isCorrect": false
       }
     ]
@@ -4426,6 +4426,10 @@ const allQuestions = [
     "question": "Чему в алгебре логики равно 1 И 0?",
     "answers": [
       {
+        "text": "Истина",
+        "isCorrect": false
+      },
+      {
         "text": "0",
         "isCorrect": true
       },
@@ -4434,11 +4438,7 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "–1",
-        "isCorrect": false
-      },
-      {
-        "text": "0,5",
+        "text": "Неопределенность",
         "isCorrect": false
       }
     ]
@@ -4448,51 +4448,51 @@ const allQuestions = [
     "question": "Чему в алгебре логики равно 1 ИЛИ 1?",
     "answers": [
       {
-        "text": "0",
+        "text": "10",
         "isCorrect": false
       },
       {
-        "text": "1",
-        "isCorrect": true
+        "text": "0",
+        "isCorrect": false
       },
       {
         "text": "2",
         "isCorrect": false
       },
       {
-        "text": "–1",
-        "isCorrect": false
+        "text": "1",
+        "isCorrect": true
       }
     ]
   },
   {
     "id": 204,
-    "question": "Чему в алгебре логики равно 1 И 1 ?",
+    "question": "Чему в алгебре логики равно 1 И 1?",
     "answers": [
-      {
-        "text": "0",
-        "isCorrect": false
-      },
       {
         "text": "1",
         "isCorrect": true
       },
       {
-        "text": "2",
+        "text": "0",
         "isCorrect": false
       },
       {
-        "text": "–1",
+        "text": "Логический ноль",
+        "isCorrect": false
+      },
+      {
+        "text": "Два",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 205,
-    "question": "Логическому нулю соответствует …",
+    "question": "Логическому нулю соответствует ...",
     "answers": [
       {
-        "text": "Истина",
+        "text": "Инверсия",
         "isCorrect": false
       },
       {
@@ -4500,19 +4500,23 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Неопределённость",
+        "text": "Истина",
         "isCorrect": false
       },
       {
-        "text": "Отрицание",
+        "text": "Дизъюнкция",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 206,
-    "question": "Логической единице соответствует …",
+    "question": "Логической единице соответствует ...",
     "answers": [
+      {
+        "text": "Отрицание",
+        "isCorrect": false
+      },
       {
         "text": "Ложь",
         "isCorrect": false
@@ -4522,78 +4526,74 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Отрицание",
-        "isCorrect": false
-      },
-      {
-        "text": "Случайное значение",
+        "text": "Пустое значение",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 207,
-    "question": "Инверсии соответствует …",
+    "question": "Инверсии соответствует ...",
     "answers": [
       {
-        "text": "И",
+        "text": "Логическое ИЛИ",
         "isCorrect": false
       },
       {
-        "text": "ИЛИ",
+        "text": "Логическое И",
         "isCorrect": false
       },
       {
-        "text": "НЕ",
+        "text": "Частица НЕ",
         "isCorrect": true
       },
       {
-        "text": "XOR",
+        "text": "Сложение",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 208,
-    "question": "Конъюнкции соответствует …",
+    "question": "Конъюнкции соответствует ...",
     "answers": [
       {
-        "text": "И",
+        "text": "Связка И",
         "isCorrect": true
       },
       {
-        "text": "ИЛИ",
+        "text": "Связка ИЛИ",
         "isCorrect": false
       },
       {
-        "text": "НЕ",
+        "text": "Отрицание",
         "isCorrect": false
       },
       {
-        "text": "XOR",
+        "text": "Сложение",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 209,
-    "question": "Дизъюнкции соответствует …",
+    "question": "Дизъюнкции соответствует ...",
     "answers": [
       {
-        "text": "НЕ",
+        "text": "Логическое умножение",
         "isCorrect": false
       },
       {
-        "text": "И",
+        "text": "Связка И",
         "isCorrect": false
       },
       {
-        "text": "ИЛИ",
+        "text": "Отрицание",
+        "isCorrect": false
+      },
+      {
+        "text": "Связка ИЛИ",
         "isCorrect": true
-      },
-      {
-        "text": "XOR",
-        "isCorrect": false
       }
     ]
   },
@@ -4602,85 +4602,85 @@ const allQuestions = [
     "question": "Инверсия - это:",
     "answers": [
       {
-        "text": "Логическое И",
-        "isCorrect": false
-      },
-      {
-        "text": "Логическое ИЛИ",
-        "isCorrect": false
-      },
-      {
         "text": "Логическое отрицание",
         "isCorrect": true
       },
       {
-        "text": "Логическое сложение по модулю 2",
+        "text": "Логическое сложение",
+        "isCorrect": false
+      },
+      {
+        "text": "Логическое умножение",
+        "isCorrect": false
+      },
+      {
+        "text": "Логическое следование",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 211,
-    "question": "Конъюнкция – это…",
+    "question": "Конъюнкция - это...",
     "answers": [
       {
-        "text": "Логическое И",
+        "text": "Логическое сложение",
+        "isCorrect": false
+      },
+      {
+        "text": "Логическое умножение",
         "isCorrect": true
       },
       {
-        "text": "Логическое ИЛИ",
+        "text": "Инвертирование",
         "isCorrect": false
       },
       {
-        "text": "Логическое НЕ",
-        "isCorrect": false
-      },
-      {
-        "text": "Логическое XOR",
+        "text": "Эквиваленция",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 212,
-    "question": "Дизъюнкция – это…",
+    "question": "Дизъюнкция - это...",
     "answers": [
       {
-        "text": "Логическое И",
-        "isCorrect": false
-      },
-      {
-        "text": "Логическое ИЛИ",
+        "text": "Логическое сложение",
         "isCorrect": true
       },
       {
-        "text": "Логическое НЕ",
+        "text": "Логическое умножение",
         "isCorrect": false
       },
       {
-        "text": "Логическое XOR",
+        "text": "Отрицание аргумента",
+        "isCorrect": false
+      },
+      {
+        "text": "Строгая конъюнкция",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 213,
-    "question": "Раздел математической логики, значение всех элементов (функций и аргументов) которой определены в двухэлементном множестве 0 и 1 называют…",
+    "question": "Раздел математической логики, значение всех элементов которой определены в двухэлементном множестве 0 и 1 называют...",
     "answers": [
       {
-        "text": "Булевой алгеброй",
+        "text": "Теория алгоритмов",
+        "isCorrect": false
+      },
+      {
+        "text": "Алгебра логики",
         "isCorrect": true
       },
       {
-        "text": "Теорией множеств",
+        "text": "Линейная алгебра",
         "isCorrect": false
       },
       {
-        "text": "Дискретной математикой",
-        "isCorrect": false
-      },
-      {
-        "text": "Линейной алгеброй",
+        "text": "Дискретный анализ",
         "isCorrect": false
       }
     ]
@@ -4691,18 +4691,18 @@ const allQuestions = [
     "answers": [
       {
         "text": "2030",
-        "isCorrect": false
-      },
-      {
-        "text": "2032",
         "isCorrect": true
       },
       {
-        "text": "2102",
+        "text": "2130",
         "isCorrect": false
       },
       {
-        "text": "2120",
+        "text": "1020",
+        "isCorrect": false
+      },
+      {
+        "text": "2020",
         "isCorrect": false
       }
     ]
@@ -4712,151 +4712,151 @@ const allQuestions = [
     "question": "Переведите число 1A из шестнадцатеричной в двоичную систему счисления.",
     "answers": [
       {
+        "text": "11011",
+        "isCorrect": false
+      },
+      {
+        "text": "10010",
+        "isCorrect": false
+      },
+      {
         "text": "11010",
         "isCorrect": true
       },
       {
         "text": "10110",
         "isCorrect": false
-      },
-      {
-        "text": "11100",
-        "isCorrect": false
-      },
-      {
-        "text": "10011",
-        "isCorrect": false
       }
     ]
   },
   {
     "id": 216,
-    "question": "Устройства, использующиеся для связи с приборами и другими средствами автоматизации и для подключения ПК к каналам связи, к другим ЭВМ и вычислительным сетям- это…",
+    "question": "Устройства, использующиеся для связи с приборами и другими средствами автоматизации и для подключения ПК к каналам связи- это...",
     "answers": [
       {
         "text": "Видеокарты",
         "isCorrect": false
       },
       {
-        "text": "Сетевые интерфейсы",
+        "text": "Сетевые адаптеры",
         "isCorrect": true
       },
       {
-        "text": "Жёсткие диски",
+        "text": "Процессоры",
         "isCorrect": false
       },
       {
-        "text": "Микропроцессоры",
+        "text": "Оперативная память",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 217,
-    "question": "Печатающие устройства для регистрации информации на бумажный носитель - это…",
+    "question": "Печатающие устройства для регистрации информации на бумажный носитель - это...",
     "answers": [
-      {
-        "text": "Принтеры",
-        "isCorrect": true
-      },
       {
         "text": "Сканеры",
         "isCorrect": false
+      },
+      {
+        "text": "Принтеры",
+        "isCorrect": true
       },
       {
         "text": "Мониторы",
         "isCorrect": false
       },
       {
-        "text": "Клавиатуры",
+        "text": "Плоттеры",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 218,
-    "question": "Устройство для автоматического считывания с бумажных носителей и ввода в ПК машинописных текстов, графиков, рисунков, чертежей-это…",
+    "question": "Устройство для автоматического считывания с бумажных носителей и ввода в ПК текстов и рисунков-это...",
     "answers": [
       {
-        "text": "Принтер",
-        "isCorrect": false
-      },
-      {
-        "text": "Сканер",
-        "isCorrect": true
-      },
-      {
-        "text": "Мышь",
+        "text": "Оцифровщик",
         "isCorrect": false
       },
       {
         "text": "Модем",
         "isCorrect": false
+      },
+      {
+        "text": "Световое перо",
+        "isCorrect": false
+      },
+      {
+        "text": "Сканер",
+        "isCorrect": true
       }
     ]
   },
   {
     "id": 219,
-    "question": "Устройство для ручного ввода числовой, текстовой и управляющей информации в ПК- это…",
+    "question": "Устройство для ручного ввода числовой, текстовой и управляющей информации в ПК- это...",
     "answers": [
+      {
+        "text": "Мышь",
+        "isCorrect": false
+      },
+      {
+        "text": "Джойстик",
+        "isCorrect": false
+      },
       {
         "text": "Клавиатура",
         "isCorrect": true
       },
       {
-        "text": "Монитор",
-        "isCorrect": false
-      },
-      {
-        "text": "Сканер",
-        "isCorrect": false
-      },
-      {
-        "text": "Принтер",
+        "text": "Микрофон",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 220,
-    "question": "Что такое синхронизация данных",
+    "question": "Что такое синхронизация данных?",
     "answers": [
       {
-        "text": "Процесс передачи данных",
+        "text": "Обновление версий ПО",
         "isCorrect": false
       },
       {
-        "text": "Процесс согласования времени передачи данных между устройствами",
+        "text": "Форматирование носителя",
+        "isCorrect": false
+      },
+      {
+        "text": "Устранение различий копий",
         "isCorrect": true
       },
       {
-        "text": "Процесс хранения данных",
-        "isCorrect": false
-      },
-      {
-        "text": "Процесс кодирования",
+        "text": "Архивация старых файлов",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 221,
-    "question": "Процессы передачи и приема данных, обратные синхронным называются…",
+    "question": "Процессы передачи и приема данных, обратные синхронным называются...",
     "answers": [
       {
         "text": "Асинхронными",
         "isCorrect": true
       },
       {
-        "text": "Дуплексными",
-        "isCorrect": false
-      },
-      {
-        "text": "Полудуплексными",
+        "text": "Параллельными",
         "isCorrect": false
       },
       {
         "text": "Симплексными",
+        "isCorrect": false
+      },
+      {
+        "text": "Дискретными",
         "isCorrect": false
       }
     ]
@@ -4866,19 +4866,19 @@ const allQuestions = [
     "question": "В каком случае процессы называются синхронными?",
     "answers": [
       {
-        "text": "Когда передача и прием данных происходят независимо",
+        "text": "При случайном интервале",
         "isCorrect": false
       },
       {
-        "text": "Когда передача и прием данных согласованы по времени",
+        "text": "При совпадении во времени",
         "isCorrect": true
       },
       {
-        "text": "Когда данные не передаются",
+        "text": "Через буфер обмена",
         "isCorrect": false
       },
       {
-        "text": "Когда используется флэш-память",
+        "text": "В режиме ожидания",
         "isCorrect": false
       }
     ]
@@ -4888,19 +4888,19 @@ const allQuestions = [
     "question": "В каком режиме передачи данных передача происходит одновременно с приемом данных?",
     "answers": [
       {
-        "text": "Симплекс",
+        "text": "Симплексный режим",
         "isCorrect": false
       },
       {
-        "text": "Полудуплекс",
-        "isCorrect": false
-      },
-      {
-        "text": "Дуплекс",
+        "text": "Дуплексный режим",
         "isCorrect": true
       },
       {
-        "text": "Асинхронный",
+        "text": "Полудуплексный режим",
+        "isCorrect": false
+      },
+      {
+        "text": "Пакетный режим",
         "isCorrect": false
       }
     ]
@@ -4910,19 +4910,19 @@ const allQuestions = [
     "question": "В каком режиме передачи данных передача происходит только в одном направлении?",
     "answers": [
       {
-        "text": "Дуплекс",
+        "text": "Дуплексном",
         "isCorrect": false
       },
       {
-        "text": "Симплекс",
+        "text": "Полудуплексном",
+        "isCorrect": false
+      },
+      {
+        "text": "Симплексном",
         "isCorrect": true
       },
       {
-        "text": "Полудуплекс",
-        "isCorrect": false
-      },
-      {
-        "text": "Асинхронный",
+        "text": "Асинхронном",
         "isCorrect": false
       }
     ]
@@ -4932,19 +4932,19 @@ const allQuestions = [
     "question": "Перечислите виды режимов передачи данных:",
     "answers": [
       {
-        "text": "Симплекс, полудуплекс, дуплекс",
+        "text": "Симплексный, полудуплексный, дуплексный",
         "isCorrect": true
       },
       {
-        "text": "USB, PCI, COM",
+        "text": "Проводной и беспроводной",
         "isCorrect": false
       },
       {
-        "text": "RISC, CISC",
+        "text": "Внутренний, внешний, локальный",
         "isCorrect": false
       },
       {
-        "text": "LIFO, FIFO",
+        "text": "Аналоговый и цифровой",
         "isCorrect": false
       }
     ]
@@ -4954,19 +4954,19 @@ const allQuestions = [
     "question": "По степени централизации управления вычислительные системы делятся на:",
     "answers": [
       {
-        "text": "Однопользовательские и многопользовательские",
-        "isCorrect": false
-      },
-      {
-        "text": "Централизованные и распределенные",
+        "text": "Централизованные и децентрализованные",
         "isCorrect": true
       },
       {
-        "text": "Мобильные и стационарные",
+        "text": "Линейные и кольцевые",
         "isCorrect": false
       },
       {
-        "text": "Десктопные и серверные",
+        "text": "Открытые и закрытые",
+        "isCorrect": false
+      },
+      {
+        "text": "Простые и сложные",
         "isCorrect": false
       }
     ]
@@ -4976,85 +4976,85 @@ const allQuestions = [
     "question": "Для передачи информации по каналам связи используются коды:",
     "answers": [
       {
-        "text": "Двоичные",
+        "text": "Машинные инструкции",
+        "isCorrect": false
+      },
+      {
+        "text": "Десятичные числа",
+        "isCorrect": false
+      },
+      {
+        "text": "ASCII и подобные коды",
         "isCorrect": true
       },
       {
-        "text": "Шестнадцатеричные",
-        "isCorrect": false
-      },
-      {
-        "text": "Десятичные",
-        "isCorrect": false
-      },
-      {
-        "text": "Базовые",
+        "text": "Аналоговые сигналы",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 228,
-    "question": "Дуплексный режим –это…",
+    "question": "Дуплексный режим - это...",
     "answers": [
       {
-        "text": "Передача данных только в одном направлении",
-        "isCorrect": false
-      },
-      {
-        "text": "Передача и прием данных одновременно",
+        "text": "Связь в обе стороны",
         "isCorrect": true
       },
       {
-        "text": "Передача данных через флэш-память",
+        "text": "Связь по очереди",
         "isCorrect": false
       },
       {
-        "text": "Передача данных с задержкой",
+        "text": "Передача без приема",
+        "isCorrect": false
+      },
+      {
+        "text": "Связь через спутник",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 229,
-    "question": "Полудуплексный режим –это…",
+    "question": "Полудуплексный режим - это...",
     "answers": [
       {
-        "text": "Одновременная передача и прием данных",
+        "text": "Одновременный обмен данными",
         "isCorrect": false
       },
       {
-        "text": "Передача и прием данных поочередно",
+        "text": "Поочередная передача и прием",
         "isCorrect": true
       },
       {
-        "text": "Передача данных только в одном направлении",
+        "text": "Только односторонняя связь",
         "isCorrect": false
       },
       {
-        "text": "Асинхронная передача данных",
+        "text": "Передача данных частями",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 230,
-    "question": "Симплексный режим – это…",
+    "question": "Симплексный режим - это...",
     "answers": [
       {
-        "text": "Передача данных только в одном направлении",
+        "text": "Передача в обе стороны",
+        "isCorrect": false
+      },
+      {
+        "text": "Связь по запросу",
+        "isCorrect": false
+      },
+      {
+        "text": "Передача только в одном направлении",
         "isCorrect": true
       },
       {
-        "text": "Одновременная передача и прием",
-        "isCorrect": false
-      },
-      {
-        "text": "Передача данных поочередно",
-        "isCorrect": false
-      },
-      {
-        "text": "Дуплексная передача",
+        "text": "Двусторонний обмен по очереди",
         "isCorrect": false
       }
     ]
@@ -5064,63 +5064,63 @@ const allQuestions = [
     "question": "При обмене данными между узлами используются три метода передачи данных:",
     "answers": [
       {
-        "text": "Параллельная, последовательная, радиосвязь",
+        "text": "Медные, оптика, радио",
+        "isCorrect": false
+      },
+      {
+        "text": "Симплекс, полудуплекс, дуплекс",
         "isCorrect": true
       },
       {
-        "text": "Только последовательная",
+        "text": "Бит, байт, слово",
         "isCorrect": false
       },
       {
-        "text": "Только параллельная",
-        "isCorrect": false
-      },
-      {
-        "text": "USB, HDMI, COM",
+        "text": "Шина, звезда, кольцо",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 232,
-    "question": "Связные интерфейсы обеспечивают передачу данных на любые расстояния с небольшой скоростью в пределах…",
+    "question": "Связные интерфейсы обеспечивают передачу данных на любые расстояния с небольшой скоростью в пределах...",
     "answers": [
       {
-        "text": "Нескольких метров",
-        "isCorrect": false
-      },
-      {
-        "text": "Нескольких километров",
+        "text": "300 - 9600 бит/с",
         "isCorrect": true
       },
       {
-        "text": "Нескольких сантиметров",
+        "text": "10 - 100 Гбит/с",
         "isCorrect": false
       },
       {
-        "text": "Нескольких сотен метров",
+        "text": "1 - 5 Мбайт/с",
+        "isCorrect": false
+      },
+      {
+        "text": "100 - 500 Мбит/с",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 233,
-    "question": "Шины – это…",
+    "question": "Шины - это...",
     "answers": [
       {
-        "text": "Кабели для подключения принтера",
+        "text": "Программные драйверы устройств",
         "isCorrect": false
       },
       {
-        "text": "Совокупность линий связи для передачи данных между устройствами ПК",
+        "text": "Совокупность линий передачи сигналов",
         "isCorrect": true
       },
       {
-        "text": "Память процессора",
+        "text": "Разъемы для процессора",
         "isCorrect": false
       },
       {
-        "text": "Видеокарты",
+        "text": "Ячейки оперативной памяти",
         "isCorrect": false
       }
     ]
@@ -5130,107 +5130,107 @@ const allQuestions = [
     "question": "При какой организации внутримашинного интерфейса все блоки ПК связаны друг с другом через общую или системную шину?",
     "answers": [
       {
-        "text": "Локальная шина",
+        "text": "Радиальная структура",
         "isCorrect": false
       },
       {
-        "text": "Общая (системная) шина",
+        "text": "Магистральная структура",
         "isCorrect": true
       },
       {
-        "text": "Сетевой интерфейс",
+        "text": "Звездообразная структура",
         "isCorrect": false
       },
       {
-        "text": "USB",
+        "text": "Цепочечная структура",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 235,
-    "question": "Последовательной интерфейс обладает пропускной способностью порядка…",
+    "question": "Последовательной интерфейс обладает пропускной способностью порядка...",
     "answers": [
       {
-        "text": "Несколько бит в секунду",
-        "isCorrect": false
-      },
-      {
-        "text": "Несколько килобит в секунду",
-        "isCorrect": false
-      },
-      {
-        "text": "Несколько сотен килобит в секунду",
+        "text": "До 115 Кбит/с",
         "isCorrect": true
       },
       {
-        "text": "Несколько гигабит в секунду",
+        "text": "Более 10 Гбайт/с",
+        "isCorrect": false
+      },
+      {
+        "text": "Около 2 Мбайт/с",
+        "isCorrect": false
+      },
+      {
+        "text": "Ровно 1 бит/с",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 236,
-    "question": "Параллельный интерфейс обладает пропускной способностью порядка…",
+    "question": "Параллельный интерфейс обладает пропускной способностью порядка...",
     "answers": [
       {
-        "text": "Несколько бит в секунду",
-        "isCorrect": false
-      },
-      {
-        "text": "Несколько килобит в секунду",
-        "isCorrect": false
-      },
-      {
-        "text": "Несколько мегабит в секунду",
+        "text": "Около 1-2 Мбайт/с",
         "isCorrect": true
       },
       {
-        "text": "Несколько терабит в секунду",
+        "text": "До 56 Кбит/с",
+        "isCorrect": false
+      },
+      {
+        "text": "Примерно 1 Тбайт/с",
+        "isCorrect": false
+      },
+      {
+        "text": "Менее 10 бит/с",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 237,
-    "question": "Пункты системного интерфейса ПК, через которые процессор обменивается информацией с другими устройствами-это…",
+    "question": "Пункты системного интерфейса ПК, через которые процессор обменивается информацией с другими устройствами - это...",
     "answers": [
       {
-        "text": "Порты",
+        "text": "Регистры памяти",
+        "isCorrect": false
+      },
+      {
+        "text": "Порты ввода-вывода",
         "isCorrect": true
       },
       {
-        "text": "Процессоры",
+        "text": "Слоты расширения",
         "isCorrect": false
       },
       {
-        "text": "Кэш-память",
-        "isCorrect": false
-      },
-      {
-        "text": "Микросхемы",
+        "text": "Кэш-линии",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 238,
-    "question": "Шины общего назначения, позволяющие подключать большое число самых разнообразных устройств-это…",
+    "question": "Шины общего назначения, позволяющие подключать большое число самых разнообразных устройств - это...",
     "answers": [
       {
-        "text": "Системные шины",
+        "text": "Шины расширения",
         "isCorrect": true
       },
       {
-        "text": "USB",
+        "text": "Локальные шины видеокарты",
         "isCorrect": false
       },
       {
-        "text": "PCI",
+        "text": "Шины кэш-памяти",
         "isCorrect": false
       },
       {
-        "text": "COM",
+        "text": "Служебные шины питания",
         "isCorrect": false
       }
     ]
@@ -5240,63 +5240,63 @@ const allQuestions = [
     "question": "При какой организации внутримашинного интерфейса каждый блок ПК связан с прочими блоками своими локальными проводами?",
     "answers": [
       {
-        "text": "Системная шина",
-        "isCorrect": false
-      },
-      {
-        "text": "Локальные соединения",
+        "text": "Радиальная организация",
         "isCorrect": true
       },
       {
-        "text": "USB",
+        "text": "Магистральная организация",
         "isCorrect": false
       },
       {
-        "text": "Ethernet",
+        "text": "Сетевая организация",
+        "isCorrect": false
+      },
+      {
+        "text": "Гибридная организация",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 240,
-    "question": "Обслуживает процедуры прерывания, принимает запрос на прерывание от внешних устройств, определяет уровень приоритета этого запроса и выдает сигнал прерывания в процессор…",
+    "question": "Обслуживает процедуры прерывания, принимает запрос на прерывание от внешних устройств, определяет уровень приоритета этого запроса и выдает сигнал прерывания в процессор...",
     "answers": [
+      {
+        "text": "Южный мост",
+        "isCorrect": false
+      },
       {
         "text": "Контроллер прерываний",
         "isCorrect": true
       },
       {
-        "text": "Центральный процессор",
+        "text": "Системный таймер",
         "isCorrect": false
       },
       {
-        "text": "Шина данных",
-        "isCorrect": false
-      },
-      {
-        "text": "Тактовый генератор",
+        "text": "АЛУ процессора",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 241,
-    "question": "Какая плата за счет параллельной работы с процессором значительно ускоряет выполнение процедур ввода-вывода при обслуживании нескольких внешних устройств; освобождает процессор от обработки процедур ввода-вывода, в т.ч. реализуют и режим прямого доступа к памяти?",
+    "question": "Какая плата за счет параллельной работы с процессором значительно ускоряет выполнение процедур ввода-вывода; освобождает процессор от обработки процедур ввода-вывода, в т.ч. реализуют и режим прямого доступа к памяти?",
     "answers": [
+      {
+        "text": "Контроллер ввода-вывода",
+        "isCorrect": true
+      },
+      {
+        "text": "Сетевой адаптер",
+        "isCorrect": false
+      },
       {
         "text": "Видеокарта",
         "isCorrect": false
       },
       {
-        "text": "Плата DMA",
-        "isCorrect": true
-      },
-      {
-        "text": "Звуковая карта",
-        "isCorrect": false
-      },
-      {
-        "text": "Сетевая карта",
+        "text": "Модуль ОЗУ",
         "isCorrect": false
       }
     ]
@@ -5306,49 +5306,53 @@ const allQuestions = [
     "question": "Какая плата освобождает процессор от прямого управления накопителями на магнитных дисках, что существенно повышает эффективное быстродействие ПК?",
     "answers": [
       {
-        "text": "Контроллер дисков",
+        "text": "Математический сопроцессор",
+        "isCorrect": false
+      },
+      {
+        "text": "Дисковый контроллер",
         "isCorrect": true
       },
       {
-        "text": "Звуковая карта",
+        "text": "Шина данных",
         "isCorrect": false
       },
       {
-        "text": "Видеокарта",
-        "isCorrect": false
-      },
-      {
-        "text": "Сетевая карта",
+        "text": "Плоттер",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 243,
-    "question": "Базовая система ввода-вывода – микросхема, установленная на материнской плате. Назовите её.",
+    "question": "Базовая система ввода-вывода - микросхема, установленная на материнской плате. Назовите её.",
     "answers": [
       {
-        "text": "BIOS",
+        "text": "Чипсет",
+        "isCorrect": false
+      },
+      {
+        "text": "Микросхема BIOS",
         "isCorrect": true
       },
       {
-        "text": "ОЗУ",
+        "text": "Контроллер DMA",
         "isCorrect": false
       },
       {
-        "text": "Кэш",
-        "isCorrect": false
-      },
-      {
-        "text": "Процессор",
+        "text": "Северный мост",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 244,
-    "question": "Устройство, необходимое для редактирования и вывода звука, посредством звуковых колонок-это…",
+    "question": "Устройство, необходимое для редактирования и вывода звука, посредством звуковых колонок-это...",
     "answers": [
+      {
+        "text": "Усилитель мощности",
+        "isCorrect": false
+      },
       {
         "text": "Звуковая карта",
         "isCorrect": true
@@ -5358,11 +5362,7 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "Модем",
-        "isCorrect": false
-      },
-      {
-        "text": "Видеокарта",
+        "text": "Синтезатор частот",
         "isCorrect": false
       }
     ]
@@ -5372,63 +5372,63 @@ const allQuestions = [
     "question": "Что предназначено для постоянного хранения информации, используемой при работе компьютера: операционной системы, документов, игр и т.д.?",
     "answers": [
       {
-        "text": "ОЗУ",
+        "text": "Кэш-память процессора",
         "isCorrect": false
       },
       {
-        "text": "Жёсткий диск",
+        "text": "Жесткий диск",
         "isCorrect": true
       },
       {
-        "text": "Кэш",
+        "text": "Регистры",
         "isCorrect": false
       },
       {
-        "text": "Процессор",
+        "text": "Стример",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 246,
-    "question": "Контроллер, предназначенный для работы в графическом режиме - …",
+    "question": "Контроллер, предназначенный для работы в графическом режиме - ...",
     "answers": [
       {
-        "text": "Видеокарта",
+        "text": "Драйвер",
+        "isCorrect": false
+      },
+      {
+        "text": "Видеоадаптер",
         "isCorrect": true
       },
       {
-        "text": "Звуковая карта",
+        "text": "Монитор",
         "isCorrect": false
       },
       {
-        "text": "Контроллер дисков",
-        "isCorrect": false
-      },
-      {
-        "text": "Сетевая карта",
+        "text": "Сплиттер",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 247,
-    "question": "Название основной платы компьютера –",
+    "question": "Название основной платы компьютера -",
     "answers": [
-      {
-        "text": "Видеокарта",
-        "isCorrect": false
-      },
       {
         "text": "Материнская плата",
         "isCorrect": true
       },
       {
-        "text": "ОЗУ",
+        "text": "Системная шина",
         "isCorrect": false
       },
       {
-        "text": "Процессор",
+        "text": "Шасси",
+        "isCorrect": false
+      },
+      {
+        "text": "Процессорный блок",
         "isCorrect": false
       }
     ]
@@ -5438,41 +5438,41 @@ const allQuestions = [
     "question": "Какая память обеспечивает работу с программным обеспечением?",
     "answers": [
       {
-        "text": "Постоянная",
+        "text": "Постоянная память",
         "isCorrect": false
       },
       {
-        "text": "Оперативная",
+        "text": "Оперативная память",
         "isCorrect": true
       },
       {
-        "text": "Кэш",
+        "text": "Стэк",
         "isCorrect": false
       },
       {
-        "text": "ROM",
+        "text": "Виртуальная память",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 249,
-    "question": "Память первого уровня – небольшая (несколько десятков килобайт) сверхбыстрая память, предназначена для хранения промежуточных результатов –",
+    "question": "Память первого уровня - небольшая (несколько десятков килобайт) сверхбыстрая память, предназначена для хранения промежуточных результатов -",
     "answers": [
       {
-        "text": "ОЗУ",
+        "text": "Регистровая память",
         "isCorrect": false
       },
       {
-        "text": "ROM",
-        "isCorrect": false
-      },
-      {
-        "text": "Кэш-память",
+        "text": "Кэш L1",
         "isCorrect": true
       },
       {
-        "text": "Жёсткий диск",
+        "text": "Буфер обмена",
+        "isCorrect": false
+      },
+      {
+        "text": "Файл подкачки",
         "isCorrect": false
       }
     ]
@@ -5482,7 +5482,7 @@ const allQuestions = [
     "question": "В каком году был создан первый микропроцессор?",
     "answers": [
       {
-        "text": "1969",
+        "text": "1965",
         "isCorrect": false
       },
       {
@@ -5490,21 +5490,21 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "1973",
+        "text": "1980",
         "isCorrect": false
       },
       {
-        "text": "1975",
+        "text": "1947",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 251,
-    "question": "Самым главным элементом в компьютере, его «мозгом» является …",
+    "question": "Самым главным элементом в компьютере, его 'мозгом' является ...",
     "answers": [
       {
-        "text": "Оперативная память",
+        "text": "Блок питания",
         "isCorrect": false
       },
       {
@@ -5512,11 +5512,11 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Жёсткий диск",
+        "text": "Жесткий диск",
         "isCorrect": false
       },
       {
-        "text": "Видеокарта",
+        "text": "Монитор",
         "isCorrect": false
       }
     ]
@@ -5526,7 +5526,7 @@ const allQuestions = [
     "question": "Название передатчика в виде светодиода и приемника в виде фотодиода, работающих в инфракрасном диапазоне.",
     "answers": [
       {
-        "text": "LED-порт",
+        "text": "Оптопара",
         "isCorrect": false
       },
       {
@@ -5534,11 +5534,11 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "USB-порт",
+        "text": "Bluetooth",
         "isCorrect": false
       },
       {
-        "text": "HDMI-порт",
+        "text": "Лазер",
         "isCorrect": false
       }
     ]
@@ -5548,19 +5548,19 @@ const allQuestions = [
     "question": "Что такое параллельная обработка?",
     "answers": [
       {
-        "text": "Последовательное выполнение команд",
-        "isCorrect": false
-      },
-      {
-        "text": "Одновременное выполнение нескольких операций",
+        "text": "Одновременное выполнение вычислений",
         "isCorrect": true
       },
       {
-        "text": "Выполнение одной команды за много тактов",
+        "text": "Запись в кэш",
         "isCorrect": false
       },
       {
-        "text": "Передача данных между памятью и процессором",
+        "text": "Передача данных битами",
+        "isCorrect": false
+      },
+      {
+        "text": "Ускорение шины",
         "isCorrect": false
       }
     ]
@@ -5570,11 +5570,11 @@ const allQuestions = [
     "question": "Выберите порт соответствующий данному определению - порт, осуществляющий ввод /вывод данных байтами (все биты одновременно):",
     "answers": [
       {
-        "text": "Последовательный порт",
+        "text": "COM-порт",
         "isCorrect": false
       },
       {
-        "text": "Параллельный порт",
+        "text": "LPT-порт",
         "isCorrect": true
       },
       {
@@ -5582,7 +5582,7 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "COM-порт",
+        "text": "PS/2",
         "isCorrect": false
       }
     ]
@@ -5592,41 +5592,41 @@ const allQuestions = [
     "question": "Сколько ячеек зарезервировано для каждого порта ввода-вывода в памяти ввода-вывода?",
     "answers": [
       {
-        "text": "1",
+        "text": "Восемь бит",
+        "isCorrect": false
+      },
+      {
+        "text": "Одна ячейка",
         "isCorrect": true
       },
       {
-        "text": "2",
+        "text": "Целый сегмент",
         "isCorrect": false
       },
       {
-        "text": "4",
-        "isCorrect": false
-      },
-      {
-        "text": "8",
+        "text": "Половина слова",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 256,
-    "question": "Все порты ввода-вывода (ПВВ) AVR-микроконтроллеров работают по принципу…",
+    "question": "Все порты ввода-вывода (ПВВ) AVR-микроконтроллеров работают по принципу...",
     "answers": [
       {
-        "text": "Последовательного обмена",
+        "text": "Прямой доступ",
         "isCorrect": false
       },
       {
-        "text": "Прямого доступа к памяти",
-        "isCorrect": false
-      },
-      {
-        "text": "Параллельного ввода/вывода",
+        "text": "Чтение-модификация-запись",
         "isCorrect": true
       },
       {
-        "text": "Динамического адреса",
+        "text": "Последовательная передача",
+        "isCorrect": false
+      },
+      {
+        "text": "Конвейерная обработка",
         "isCorrect": false
       }
     ]
@@ -5636,19 +5636,19 @@ const allQuestions = [
     "question": "Что для процессора представляет собой операция ввода-вывода?",
     "answers": [
       {
-        "text": "Чтение или запись данных в память",
+        "text": "Смена тактовой частоты",
         "isCorrect": false
       },
       {
-        "text": "Обмен данными с внешними устройствами",
+        "text": "Обмен с портами",
         "isCorrect": true
       },
       {
-        "text": "Выполнение арифметических операций",
+        "text": "Прерывание ядра",
         "isCorrect": false
       },
       {
-        "text": "Кэширование данных",
+        "text": "Очистка кэша",
         "isCorrect": false
       }
     ]
@@ -5658,7 +5658,7 @@ const allQuestions = [
     "question": "Что называется виртуальной ячейкой, соответствующей внешнему входу (или выходу) в компьютере?",
     "answers": [
       {
-        "text": "Регистр",
+        "text": "Ячейка ОЗУ",
         "isCorrect": false
       },
       {
@@ -5666,11 +5666,11 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Буфер",
+        "text": "Слот расширения",
         "isCorrect": false
       },
       {
-        "text": "Адрес памяти",
+        "text": "Прерывание",
         "isCorrect": false
       }
     ]
@@ -5680,19 +5680,19 @@ const allQuestions = [
     "question": "При помощи чего осуществляется управление работой большинства устройств ввода-вывода компьютера?",
     "answers": [
       {
-        "text": "Центральный процессор",
+        "text": "Блок питания",
         "isCorrect": false
       },
       {
-        "text": "Контроллер ввода-вывода",
+        "text": "Специальные контроллеры",
         "isCorrect": true
       },
       {
-        "text": "Шина данных",
+        "text": "Видеокарта",
         "isCorrect": false
       },
       {
-        "text": "Тактовый генератор",
+        "text": "Системный таймер",
         "isCorrect": false
       }
     ]
@@ -5702,19 +5702,19 @@ const allQuestions = [
     "question": "Какие две основные архитектуры существует для построения процессора БД?",
     "answers": [
       {
-        "text": "RISC и CISC",
+        "text": "Шинная и кольцевая",
+        "isCorrect": false
+      },
+      {
+        "text": "Конвейерная и параллельная",
         "isCorrect": true
       },
       {
-        "text": "VLIW и DSP",
+        "text": "Аналоговая и цифровая",
         "isCorrect": false
       },
       {
-        "text": "Intel и AMD",
-        "isCorrect": false
-      },
-      {
-        "text": "ARM и x86",
+        "text": "Статическая и динамическая",
         "isCorrect": false
       }
     ]
@@ -5724,63 +5724,63 @@ const allQuestions = [
     "question": "Сколько существует основных архитектур для построения процессора БД?",
     "answers": [
       {
-        "text": "1",
-        "isCorrect": false
-      },
-      {
-        "text": "2",
+        "text": "Три основных типа",
         "isCorrect": true
       },
       {
-        "text": "3",
+        "text": "Только две архитектуры",
         "isCorrect": false
       },
       {
-        "text": "4",
+        "text": "Пять различных моделей",
+        "isCorrect": false
+      },
+      {
+        "text": "Одна универсальная структура",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 262,
-    "question": "Основное требование к серверу БД –",
+    "question": "Основное требование к серверу БД -",
     "answers": [
+      {
+        "text": "Наличие видеокарты",
+        "isCorrect": false
+      },
       {
         "text": "Высокая производительность",
         "isCorrect": true
       },
       {
-        "text": "Малый размер",
+        "text": "Минимальный объем диска",
         "isCorrect": false
       },
       {
-        "text": "Низкое энергопотребление",
-        "isCorrect": false
-      },
-      {
-        "text": "Универсальность",
+        "text": "Компактный размер корпуса",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 263,
-    "question": "Что является основной частью любой системы “клиент-сервер”?",
+    "question": "Что является основной частью любой системы 'клиент-сервер'?",
     "answers": [
       {
-        "text": "Только сервер",
+        "text": "Струйный принтер",
         "isCorrect": false
       },
       {
-        "text": "Только клиент",
+        "text": "Оптический привод",
         "isCorrect": false
       },
       {
-        "text": "Клиент и сервер",
+        "text": "Сетевая среда передачи",
         "isCorrect": true
       },
       {
-        "text": "База данных",
+        "text": "Графический планшет",
         "isCorrect": false
       }
     ]
@@ -5790,41 +5790,41 @@ const allQuestions = [
     "question": "Какие черты технология клиент-сервер позаимствовала от мэйнфреймов?",
     "answers": [
       {
-        "text": "Распределение ресурсов и централизованное управление",
+        "text": "Централизованное управление данными",
         "isCorrect": true
       },
       {
-        "text": "Однопроцессорность",
+        "text": "Низкую скорость обработки",
         "isCorrect": false
       },
       {
-        "text": "Локальный ввод-вывод",
+        "text": "Отсутствие сетевых протоколов",
         "isCorrect": false
       },
       {
-        "text": "Использование флэш-памяти",
+        "text": "Использование перфокарт",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 265,
-    "question": "Что предназначена для непосредственной работы пользователя или категории пользователей и обладает ресурсами, соответствующими локальным потребностям данного пользователя?",
+    "question": "Что предназначена для непосредственной работы пользователя и обладает ресурсами, соответствующими локальным потребностям?",
     "answers": [
       {
-        "text": "Сервер",
+        "text": "Серверная стойка",
         "isCorrect": false
       },
       {
-        "text": "Клиент",
+        "text": "Магистральный кабель",
+        "isCorrect": false
+      },
+      {
+        "text": "Рабочая станция",
         "isCorrect": true
       },
       {
-        "text": "Мейнфрейм",
-        "isCorrect": false
-      },
-      {
-        "text": "Суперкомпьютер",
+        "text": "Коммутатор доступа",
         "isCorrect": false
       }
     ]
@@ -5834,19 +5834,19 @@ const allQuestions = [
     "question": "Какая идея лежит в основе широкого распространения локальных сетей компьютеров?",
     "answers": [
       {
-        "text": "Дешёвые процессоры",
-        "isCorrect": false
-      },
-      {
-        "text": "Возможность совместного использования ресурсов",
+        "text": "Разделение дорогостоящих ресурсов",
         "isCorrect": true
       },
       {
-        "text": "Объединение суперкомпьютеров",
+        "text": "Увеличение стоимости оборудования",
         "isCorrect": false
       },
       {
-        "text": "Использование облачных технологий",
+        "text": "Отказ от цифровой передачи",
+        "isCorrect": false
+      },
+      {
+        "text": "Изоляция рабочих мест",
         "isCorrect": false
       }
     ]
@@ -5856,41 +5856,41 @@ const allQuestions = [
     "question": "В связи с чем открытые системы приобретают еще большее значение и масштабность?",
     "answers": [
       {
-        "text": "Стандартизация и совместимость оборудования и ПО",
+        "text": "Глобализация компьютерных сетей",
         "isCorrect": true
       },
       {
-        "text": "Высокая цена оборудования",
+        "text": "Закрытие исходного кода",
         "isCorrect": false
       },
       {
-        "text": "Закрытые протоколы",
+        "text": "Ограничение числа пользователей",
         "isCorrect": false
       },
       {
-        "text": "Ограничение доступа",
+        "text": "Использование магнитных лент",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 268,
-    "question": "Благодаря чему стало возможным реальное распространение архитектуры \"клиент-сервер\"?",
+    "question": "Благодаря чему стало возможным реальное распространение архитектуры 'клиент-сервер'?",
     "answers": [
       {
-        "text": "Высокая производительность процессоров",
-        "isCorrect": false
-      },
-      {
-        "text": "Развитие сетевых технологий",
+        "text": "Стандартизация сетевых протоколов",
         "isCorrect": true
       },
       {
-        "text": "Появление микропроцессоров",
+        "text": "Изобретение манипулятора мышь",
         "isCorrect": false
       },
       {
-        "text": "Энергонезависимая память",
+        "text": "Снижение мощности процессоров",
+        "isCorrect": false
+      },
+      {
+        "text": "Отказ от баз данных",
         "isCorrect": false
       }
     ]
@@ -5900,85 +5900,85 @@ const allQuestions = [
     "question": "Что построили ученые из группы теоретической астрофизики в 1998 году в Лос-Аламосской национальной лаборатории?",
     "answers": [
       {
+        "text": "Новый тип транзистора",
+        "isCorrect": false
+      },
+      {
         "text": "Суперкомпьютер Avalon",
         "isCorrect": true
       },
       {
-        "text": "Первый мейнфрейм",
+        "text": "Глобальный интернет-шлюз",
         "isCorrect": false
       },
       {
-        "text": "Персональный компьютер",
-        "isCorrect": false
-      },
-      {
-        "text": "Кластер Intel Pentium",
+        "text": "Прототип квантовой памяти",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 270,
-    "question": "Где в 1998 году астрофизик Michael Warren и другие ученые из группы теоретической астрофизики построили суперкомпьютер Avalon?",
+    "question": "Где в 1998 году астрофизик Michael Warren и другие ученые построили суперкомпьютер Avalon?",
     "answers": [
       {
-        "text": "Университет Калифорнии",
-        "isCorrect": false
-      },
-      {
-        "text": "Лос-Аламосская национальная лаборатория",
+        "text": "В лаборатории Лос-Аламоса",
         "isCorrect": true
       },
       {
-        "text": "Массачусетский технологический институт",
+        "text": "В университете Беркли",
         "isCorrect": false
       },
       {
-        "text": "IBM Research Center",
+        "text": "В штаб-квартире IBM",
+        "isCorrect": false
+      },
+      {
+        "text": "В офисе Microsoft",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 271,
-    "question": "В каком году в Лос-Аламосской национальной лаборатории астрофизик Michael Warren и другие ученые из группы теоретической астрофизики построили суперкомпьютер Avalon?",
+    "question": "В каком году в Лос-Аламосской национальной лаборатории построили суперкомпьютер Avalon?",
     "answers": [
       {
-        "text": "1995",
+        "text": "В 1990 году",
         "isCorrect": false
       },
       {
-        "text": "1998",
+        "text": "В 1985 году",
+        "isCorrect": false
+      },
+      {
+        "text": "В 2005 году",
+        "isCorrect": false
+      },
+      {
+        "text": "В 1998 году",
         "isCorrect": true
-      },
-      {
-        "text": "2000",
-        "isCorrect": false
-      },
-      {
-        "text": "2002",
-        "isCorrect": false
       }
     ]
   },
   {
     "id": 272,
-    "question": "Как определила компания DEC концепцию кластерной системы, которую она же анонсировала в 1983 году?",
+    "question": "Как определила компания DEC концепцию кластерной системы?",
     "answers": [
       {
-        "text": "Несколько компьютеров, работающих независимо",
-        "isCorrect": false
-      },
-      {
-        "text": "Система, объединяющая несколько машин в единый ресурс",
+        "text": "Группа независимых систем",
         "isCorrect": true
       },
       {
-        "text": "Персональные компьютеры в сети",
+        "text": "Одиночный мощный компьютер",
         "isCorrect": false
       },
       {
-        "text": "Однопроцессорные серверы",
+        "text": "Виртуальный эмулятор ОС",
+        "isCorrect": false
+      },
+      {
+        "text": "Набор периферийных устройств",
         "isCorrect": false
       }
     ]
@@ -5988,19 +5988,19 @@ const allQuestions = [
     "question": "В каком году компания DEC первой анонсировала концепцию кластерной системы?",
     "answers": [
       {
-        "text": "1980",
-        "isCorrect": false
-      },
-      {
-        "text": "1983",
+        "text": "В 1983 году",
         "isCorrect": true
       },
       {
-        "text": "1985",
+        "text": "В 1975 году",
         "isCorrect": false
       },
       {
-        "text": "1990",
+        "text": "В 1995 году",
+        "isCorrect": false
+      },
+      {
+        "text": "В 2000 году",
         "isCorrect": false
       }
     ]
@@ -6010,151 +6010,151 @@ const allQuestions = [
     "question": "Какая компания первой анонсировала концепцию кластерной системы в 1983 году?",
     "answers": [
       {
-        "text": "IBM",
+        "text": "Intel Corporation",
         "isCorrect": false
       },
       {
-        "text": "DEC",
+        "text": "Digital Equipment Corporation",
         "isCorrect": true
       },
       {
-        "text": "Intel",
+        "text": "Apple Computers",
         "isCorrect": false
       },
       {
-        "text": "HP",
+        "text": "Oracle Systems",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 275,
-    "question": "Дисковый массив RAID —",
+    "question": "Дисковый массив RAID -",
     "answers": [
       {
-        "text": "Группа жёстких дисков, объединённых для повышения производительности и надёжности",
+        "text": "Избыточный массив дисков",
         "isCorrect": true
       },
       {
-        "text": "Тип флэш-памяти",
+        "text": "Быстрая оперативная память",
         "isCorrect": false
       },
       {
-        "text": "Оперативная память",
+        "text": "Протокол беспроводной связи",
         "isCorrect": false
       },
       {
-        "text": "Микропроцессор",
+        "text": "Алгоритм сжатия текста",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 276,
-    "question": "Какое понятие означает наличие программного обеспечения, дающего возможность пользователям, администраторам и прикладным программам считать, что имеется только одна сущность, с которой они работают - кластер?",
+    "question": "Какое понятие означает возможность считать кластер одной сущностью?",
     "answers": [
       {
-        "text": "Виртуализация",
+        "text": "Многозадачность системы",
+        "isCorrect": false
+      },
+      {
+        "text": "Единый образ системы",
         "isCorrect": true
       },
       {
-        "text": "Многопоточность",
+        "text": "Распределенная база данных",
         "isCorrect": false
       },
       {
-        "text": "Суперкомпьютер",
-        "isCorrect": false
-      },
-      {
-        "text": "Параллельная обработка",
+        "text": "Сетевая топология шина",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 277,
-    "question": "Вычислительный кластер — это совокупность компьютеров, объединенных в рамках некоторой сети для решения одной задачи, которая для пользователя представляется в качестве единого ресурса. В каких годах корпорация Digital Equipment предложила и реализовала такую концепцию кластера?",
+    "question": "В каких годах корпорация Digital Equipment реализовала концепцию кластера?",
     "answers": [
       {
-        "text": "1970-е",
-        "isCorrect": false
-      },
-      {
-        "text": "1980-е",
+        "text": "Начало 1980-х годов",
         "isCorrect": true
       },
       {
-        "text": "1990-е",
+        "text": "Конец 1960-х годов",
         "isCorrect": false
       },
       {
-        "text": "2000-е",
+        "text": "Середина 1990-х годов",
+        "isCorrect": false
+      },
+      {
+        "text": "После 2010 года",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 278,
-    "question": "Дайте определение «вычислительный кластер» -",
+    "question": "Дайте определение 'вычислительный кластер' -",
     "answers": [
       {
-        "text": "Один суперкомпьютер",
+        "text": "Одиночный домашний ПК",
         "isCorrect": false
       },
       {
-        "text": "Несколько компьютеров, объединённых для решения одной задачи",
+        "text": "Группа связанных компьютеров",
         "isCorrect": true
       },
       {
-        "text": "Мейнфрейм",
+        "text": "Сенсорная панель управления",
         "isCorrect": false
       },
       {
-        "text": "Серверная ферма",
+        "text": "Модем для связи",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 279,
-    "question": "Как называются слабосвязанные системы, в связи узлов которых используется одна из стандартных сетевых технологий (Fast/Gigabit Ethernet, Myrinet) на базе шинной архитектуры или коммутатора?",
+    "question": "Как называются слабосвязанные системы на базе стандартных сетевых технологий?",
     "answers": [
       {
-        "text": "Кластеры",
+        "text": "Кластерные системы",
         "isCorrect": true
       },
       {
-        "text": "Суперкомпьютеры",
+        "text": "Микропроцессорные сборки",
         "isCorrect": false
       },
       {
-        "text": "Мейнфреймы",
+        "text": "Автономные контроллеры",
         "isCorrect": false
       },
       {
-        "text": "Мини-компьютеры",
+        "text": "Аналоговые вычислители",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 280,
-    "question": "Как называется завершенная компьютерная система, обладающая всем, что требуется для ее функционирования, включая процессоры, память, подсистему ввода/вывода, а также операционную систему, подсистемы, приложения и т.д.?",
+    "question": "Как называется завершенная компьютерная система со всеми ресурсами внутри кластера?",
     "answers": [
       {
-        "text": "Компьютер",
+        "text": "Файловый архив",
+        "isCorrect": false
+      },
+      {
+        "text": "Сетевой экран",
+        "isCorrect": false
+      },
+      {
+        "text": "Вычислительный узел",
         "isCorrect": true
       },
       {
-        "text": "Сервер",
-        "isCorrect": false
-      },
-      {
-        "text": "Кластер",
-        "isCorrect": false
-      },
-      {
-        "text": "Мейнфрейм",
+        "text": "Шина данных",
         "isCorrect": false
       }
     ]
@@ -6164,19 +6164,19 @@ const allQuestions = [
     "question": "Как называется связанный набор полноценных компьютеров, используемый в качестве единого ресурса?",
     "answers": [
       {
-        "text": "Кластер",
+        "text": "Вычислительный кластер",
         "isCorrect": true
       },
       {
-        "text": "Мейнфрейм",
+        "text": "Системный блок",
         "isCorrect": false
       },
       {
-        "text": "Суперкомпьютер",
+        "text": "Локальная шина",
         "isCorrect": false
       },
       {
-        "text": "Серверная ферма",
+        "text": "Оперативная память",
         "isCorrect": false
       }
     ]
@@ -6186,19 +6186,19 @@ const allQuestions = [
     "question": "Что является многоканальными устройствами согласования?",
     "answers": [
       {
-        "text": "Контроллеры ввода-вывода",
+        "text": "Мультиплексоры передачи данных",
         "isCorrect": true
       },
       {
-        "text": "Микропроцессоры",
+        "text": "Внутренние регистры",
         "isCorrect": false
       },
       {
-        "text": "Тактовые генераторы",
+        "text": "Блоки питания",
         "isCorrect": false
       },
       {
-        "text": "Жёсткие диски",
+        "text": "Жесткие диски",
         "isCorrect": false
       }
     ]
@@ -6208,19 +6208,19 @@ const allQuestions = [
     "question": "Что не включает в себя система телеобработки информации?",
     "answers": [
       {
+        "text": "Локальное периферийное оборудование",
+        "isCorrect": true
+      },
+      {
         "text": "Каналы связи",
         "isCorrect": false
       },
       {
-        "text": "Центральный процессор",
+        "text": "Абонентские пункты",
         "isCorrect": false
       },
       {
-        "text": "Портативные носители",
-        "isCorrect": true
-      },
-      {
-        "text": "Устройства ввода-вывода",
+        "text": "Средства сопряжения",
         "isCorrect": false
       }
     ]
@@ -6230,63 +6230,63 @@ const allQuestions = [
     "question": "Назовите первых представителей(я) систем распределенной обработки данных?",
     "answers": [
       {
-        "text": "DEC VAXcluster",
+        "text": "Системы телеобработки",
         "isCorrect": true
       },
       {
-        "text": "IBM PC",
+        "text": "Квантовые серверы",
         "isCorrect": false
       },
       {
-        "text": "Apple Lisa",
+        "text": "Облачные хранилища",
         "isCorrect": false
       },
       {
-        "text": "Intel Pentium",
+        "text": "Нейронные сети",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 285,
-    "question": "Распределенная обработка данных – это…",
+    "question": "Распределенная обработка данных - это...",
     "answers": [
       {
-        "text": "Обработка данных на одном компьютере",
-        "isCorrect": false
-      },
-      {
-        "text": "Обработка данных на нескольких взаимосвязанных компьютерах",
+        "text": "Обработка на нескольких узлах",
         "isCorrect": true
       },
       {
-        "text": "Параллельная обработка в одной системе",
+        "text": "Архивация файлов",
         "isCorrect": false
       },
       {
-        "text": "Хранение данных в базе",
+        "text": "Форматирование диска",
+        "isCorrect": false
+      },
+      {
+        "text": "Печать документа",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 286,
-    "question": "Многомашинные вычислительные системы – это…",
+    "question": "Многомашинные вычислительные системы - это...",
     "answers": [
       {
-        "text": "Один суперкомпьютер",
-        "isCorrect": false
-      },
-      {
-        "text": "Система из нескольких компьютеров, работающих совместно",
+        "text": "Комплекс взаимосвязанных ЭВМ",
         "isCorrect": true
       },
       {
-        "text": "Персональный компьютер",
+        "text": "Многоядерный процессор",
         "isCorrect": false
       },
       {
-        "text": "Мини-компьютер",
+        "text": "Виртуальная машина",
+        "isCorrect": false
+      },
+      {
+        "text": "Видеокарта с двумя чипами",
         "isCorrect": false
       }
     ]
@@ -6296,19 +6296,19 @@ const allQuestions = [
     "question": "Что подразумевается под помехоустойчивостью системы связи?",
     "answers": [
       {
-        "text": "Способность системы сохранять работоспособность при наличии помех",
+        "text": "Способность противостоять искажениям",
         "isCorrect": true
       },
       {
-        "text": "Высокая скорость передачи данных",
+        "text": "Скорость передачи тока",
         "isCorrect": false
       },
       {
-        "text": "Уменьшение задержек",
+        "text": "Длина кабеля",
         "isCorrect": false
       },
       {
-        "text": "Распределение нагрузки",
+        "text": "Вес оборудования",
         "isCorrect": false
       }
     ]
@@ -6318,19 +6318,19 @@ const allQuestions = [
     "question": "Дайте определение линии связи?",
     "answers": [
       {
-        "text": "Средство передачи данных между устройствами",
+        "text": "Физическая среда передачи сигналов",
         "isCorrect": true
       },
       {
-        "text": "Порт ввода-вывода",
+        "text": "Программный протокол",
         "isCorrect": false
       },
       {
-        "text": "Контроллер",
+        "text": "Адрес в памяти",
         "isCorrect": false
       },
       {
-        "text": "Процессор",
+        "text": "Алгоритм шифрования",
         "isCorrect": false
       }
     ]
@@ -6340,19 +6340,19 @@ const allQuestions = [
     "question": "Что происходит при передаче сообщения, когда сигнал поступает на кодирующее устройство (кодер)?",
     "answers": [
       {
-        "text": "Сигнал усиливается",
-        "isCorrect": false
-      },
-      {
-        "text": "Сигнал преобразуется в определённый код",
+        "text": "Преобразование в кодовую комбинацию",
         "isCorrect": true
       },
       {
-        "text": "Сигнал теряется",
+        "text": "Удаление информации",
         "isCorrect": false
       },
       {
-        "text": "Сигнал отправляется напрямую",
+        "text": "Нагрев процессора",
+        "isCorrect": false
+      },
+      {
+        "text": "Воспроизведение звука",
         "isCorrect": false
       }
     ]
@@ -6362,19 +6362,19 @@ const allQuestions = [
     "question": "Куда в первую очередь поступает сигнал при передаче сообщения?",
     "answers": [
       {
-        "text": "К приемнику",
-        "isCorrect": false
-      },
-      {
-        "text": "К кодеру",
+        "text": "На кодирующее устройство",
         "isCorrect": true
       },
       {
-        "text": "К диспетчеру",
+        "text": "В монитор",
         "isCorrect": false
       },
       {
-        "text": "К процессору",
+        "text": "На жесткий диск",
+        "isCorrect": false
+      },
+      {
+        "text": "В принтер",
         "isCorrect": false
       }
     ]
@@ -6384,19 +6384,19 @@ const allQuestions = [
     "question": "Для чего служат источник (передатчик) и получатель (приемник)?",
     "answers": [
       {
-        "text": "Для хранения данных",
-        "isCorrect": false
-      },
-      {
-        "text": "Для передачи и приёма информации",
+        "text": "Для преобразования и восприятия",
         "isCorrect": true
       },
       {
-        "text": "Для обработки данных",
+        "text": "Для охлаждения системы",
         "isCorrect": false
       },
       {
-        "text": "Для кодирования",
+        "text": "Для хранения архивов",
+        "isCorrect": false
+      },
+      {
+        "text": "Для фильтрации пыли",
         "isCorrect": false
       }
     ]
@@ -6406,19 +6406,19 @@ const allQuestions = [
     "question": "Для чего используется шина адреса?",
     "answers": [
       {
-        "text": "Для передачи данных",
-        "isCorrect": false
-      },
-      {
-        "text": "Для передачи адресной информации",
+        "text": "Для выбора ячейки памяти",
         "isCorrect": true
       },
       {
-        "text": "Для увеличения скорости процессора",
+        "text": "Для передачи питания",
         "isCorrect": false
       },
       {
-        "text": "Для синхронизации",
+        "text": "Для изменения громкости",
+        "isCorrect": false
+      },
+      {
+        "text": "Для ускорения интернета",
         "isCorrect": false
       }
     ]
@@ -6428,19 +6428,19 @@ const allQuestions = [
     "question": "Чем определяется разрядность шины данных?",
     "answers": [
       {
-        "text": "Количеством адресов памяти",
-        "isCorrect": false
-      },
-      {
-        "text": "Количеством бит данных, передаваемых одновременно",
+        "text": "Разрядностью процессора",
         "isCorrect": true
       },
       {
-        "text": "Тактовой частотой",
+        "text": "Цветом корпуса",
         "isCorrect": false
       },
       {
-        "text": "Размером кэша",
+        "text": "Скоростью мыши",
+        "isCorrect": false
+      },
+      {
+        "text": "Размером экрана",
         "isCorrect": false
       }
     ]
@@ -6450,19 +6450,19 @@ const allQuestions = [
     "question": "Выберите достоинство Инфракрасных излучателей?",
     "answers": [
       {
-        "text": "Высокая скорость передачи данных",
-        "isCorrect": false
-      },
-      {
-        "text": "Простота и безопасность передачи на небольшие расстояния",
+        "text": "Отсутствие радиопомех",
         "isCorrect": true
       },
       {
-        "text": "Длинный радиус действия",
+        "text": "Связь через стены",
         "isCorrect": false
       },
       {
-        "text": "Высокая мощность",
+        "text": "Работа под водой",
+        "isCorrect": false
+      },
+      {
+        "text": "Неограниченная дальность",
         "isCorrect": false
       }
     ]
@@ -6472,19 +6472,19 @@ const allQuestions = [
     "question": "Какой интерфейс позволяет осуществлять связь между парой устройств, удаленных на расстояние, достигающее нескольких метров?",
     "answers": [
       {
-        "text": "USB",
-        "isCorrect": false
-      },
-      {
-        "text": "ИК (инфракрасный)",
+        "text": "Последовательный интерфейс RS-232",
         "isCorrect": true
       },
       {
-        "text": "Ethernet",
+        "text": "Шина PCI",
         "isCorrect": false
       },
       {
-        "text": "HDMI",
+        "text": "Внутренняя шина кэша",
+        "isCorrect": false
+      },
+      {
+        "text": "Контроллер прерываний",
         "isCorrect": false
       }
     ]
@@ -6494,19 +6494,19 @@ const allQuestions = [
     "question": "Какой кабель используют для связи двух компьютеров, удаленных друг от друга на небольшое расстояние, и непосредственное соединение их СОМ-портов?",
     "answers": [
       {
-        "text": "Кроссоверный кабель",
-        "isCorrect": false
-      },
-      {
-        "text": "Null-modem кабель",
+        "text": "Нуль-модемный кабель",
         "isCorrect": true
       },
       {
-        "text": "USB кабель",
+        "text": "Коаксиальный ТВ-кабель",
         "isCorrect": false
       },
       {
-        "text": "HDMI кабель",
+        "text": "Силовой шнур",
+        "isCorrect": false
+      },
+      {
+        "text": "Оптический патч-корд",
         "isCorrect": false
       }
     ]
@@ -6516,19 +6516,19 @@ const allQuestions = [
     "question": "Какой кабель используется для подключения внешних модемов?",
     "answers": [
       {
-        "text": "Параллельный",
-        "isCorrect": false
-      },
-      {
-        "text": "Последовательный COM-кабель",
+        "text": "Стандартный последовательный кабель",
         "isCorrect": true
       },
       {
-        "text": "USB",
+        "text": "Акустический провод",
         "isCorrect": false
       },
       {
-        "text": "RJ45",
+        "text": "SATA шлейф",
+        "isCorrect": false
+      },
+      {
+        "text": "VGA кабель",
         "isCorrect": false
       }
     ]
@@ -6538,19 +6538,19 @@ const allQuestions = [
     "question": "Какой порт используется для подключения электронных ключей (Security Devices), предназначенных для защиты от нелицензированного использования ПО?",
     "answers": [
       {
-        "text": "COM",
-        "isCorrect": false
-      },
-      {
-        "text": "LPT",
-        "isCorrect": false
-      },
-      {
-        "text": "Parallel",
+        "text": "Параллельный LPT-порт",
         "isCorrect": true
       },
       {
-        "text": "USB",
+        "text": "Игровой порт",
+        "isCorrect": false
+      },
+      {
+        "text": "Разъем PS/2",
+        "isCorrect": false
+      },
+      {
+        "text": "Слот расширения AGP",
         "isCorrect": false
       }
     ]
@@ -6560,19 +6560,19 @@ const allQuestions = [
     "question": "Для чего чаще всего используются СОМ-порты?",
     "answers": [
       {
-        "text": "Подключение принтера",
-        "isCorrect": false
-      },
-      {
-        "text": "Последовательная передача данных с внешних устройств",
+        "text": "Для мышей и модемов",
         "isCorrect": true
       },
       {
-        "text": "Подключение флэш-памяти",
+        "text": "Для видеокарт",
         "isCorrect": false
       },
       {
-        "text": "Подключение монитора",
+        "text": "Для оперативной памяти",
+        "isCorrect": false
+      },
+      {
+        "text": "Для питания монитора",
         "isCorrect": false
       }
     ]
@@ -6582,20 +6582,20 @@ const allQuestions = [
     "question": "Хост-компьютер общается с устройствами через контроллер. Какие обязанности не входят в Хост?",
     "answers": [
       {
-        "text": "Управление USB-топологией",
-        "isCorrect": false
-      },
-      {
-        "text": "Планирование передачи данных",
-        "isCorrect": false
-      },
-      {
-        "text": "Выработка тактового сигнала",
-        "isCorrect": false
-      },
-      {
-        "text": "Хранение прошивки подключённых устройств",
+        "text": "Управление сигналами шины",
         "isCorrect": true
+      },
+      {
+        "text": "Обработка данных",
+        "isCorrect": false
+      },
+      {
+        "text": "Выполнение приложений",
+        "isCorrect": false
+      },
+      {
+        "text": "Координация запросов",
+        "isCorrect": false
       }
     ]
   },
@@ -6604,20 +6604,20 @@ const allQuestions = [
     "question": "В каком состоянии не могут находиться нисходящие (Downstream) порты хабов?",
     "answers": [
       {
-        "text": "Powered",
-        "isCorrect": false
-      },
-      {
-        "text": "Enabled",
-        "isCorrect": false
-      },
-      {
-        "text": "Disabled",
-        "isCorrect": false
-      },
-      {
-        "text": "Upstream",
+        "text": "Ожидание запроса",
         "isCorrect": true
+      },
+      {
+        "text": "Отключено",
+        "isCorrect": false
+      },
+      {
+        "text": "Питание подано",
+        "isCorrect": false
+      },
+      {
+        "text": "Сброс",
+        "isCorrect": false
       }
     ]
   },
@@ -6626,20 +6626,20 @@ const allQuestions = [
     "question": "Что позволяет возможность удаленного пробуждения (Remote Wakeup)?",
     "answers": [
       {
-        "text": "Ускорять передачу данных",
-        "isCorrect": false
-      },
-      {
-        "text": "Снижать энергопотребление устройства",
-        "isCorrect": false
-      },
-      {
-        "text": "Принудительно завершать процессы",
-        "isCorrect": false
-      },
-      {
-        "text": "Выводить устройство из режима сна по сигналу",
+        "text": "Вывод системы из сна",
         "isCorrect": true
+      },
+      {
+        "text": "Форматирование диска",
+        "isCorrect": false
+      },
+      {
+        "text": "Перезагрузку BIOS",
+        "isCorrect": false
+      },
+      {
+        "text": "Обновление драйверов",
+        "isCorrect": false
       }
     ]
   },
@@ -6648,20 +6648,20 @@ const allQuestions = [
     "question": "Сплошные передачи (Bulk Data Transfers) допускаются при:",
     "answers": [
       {
-        "text": "Передаче аудио",
-        "isCorrect": false
-      },
-      {
-        "text": "Передаче видео",
-        "isCorrect": false
-      },
-      {
-        "text": "Управляющих запросах",
-        "isCorrect": false
-      },
-      {
-        "text": "Передаче больших объёмов данных без гарантии времени доставки",
+        "text": "Наличии свободного времени шины",
         "isCorrect": true
+      },
+      {
+        "text": "Максимальной загрузке CPU",
+        "isCorrect": false
+      },
+      {
+        "text": "Отключении всех функций",
+        "isCorrect": false
+      },
+      {
+        "text": "Использовании только USB 3.0",
+        "isCorrect": false
       }
     ]
   },
@@ -6670,64 +6670,64 @@ const allQuestions = [
     "question": "Для чего не используется Хаб?",
     "answers": [
       {
-        "text": "Расширение числа USB-портов",
-        "isCorrect": false
-      },
-      {
-        "text": "Передача питания",
-        "isCorrect": false
-      },
-      {
-        "text": "Перенаправление данных",
-        "isCorrect": false
-      },
-      {
-        "text": "Буферизация и хранение данных",
+        "text": "Сложных математических вычислений",
         "isCorrect": true
+      },
+      {
+        "text": "Точки подключения устройств",
+        "isCorrect": false
+      },
+      {
+        "text": "Управления питанием портов",
+        "isCorrect": false
+      },
+      {
+        "text": "Обнаружения новых подключений",
+        "isCorrect": false
       }
     ]
   },
   {
     "id": 305,
-    "question": "Сколько у каждого хаба имеется восходящих портов (Upstream Port), предназначенных для подключения к хосту или хабу верхнего уровня?",
+    "question": "Сколько у каждого хаба имеется восходящих портов (Upstream Port), предназначенных для подключения к хосту?",
     "answers": [
       {
-        "text": "0",
-        "isCorrect": false
-      },
-      {
-        "text": "1",
+        "text": "Ровно один",
         "isCorrect": true
       },
       {
-        "text": "2",
+        "text": "Два дублирующих",
         "isCorrect": false
       },
       {
-        "text": "4",
+        "text": "Зависит от модели",
+        "isCorrect": false
+      },
+      {
+        "text": "Минимум четыре",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 306,
-    "question": "Функции представляют собой устройства, способные передавать или принимать данные или управляющую информацию по шине. Примерами функций не являются:",
+    "question": "Функции представляют собой устройства, способные передавать данные. Примерами функций не являются:",
     "answers": [
       {
-        "text": "Клавиатура",
-        "isCorrect": false
-      },
-      {
-        "text": "Мышь",
-        "isCorrect": false
-      },
-      {
-        "text": "Принтер",
-        "isCorrect": false
-      },
-      {
-        "text": "USB-кабель",
+        "text": "USB-концентратор",
         "isCorrect": true
+      },
+      {
+        "text": "Оптическая мышь",
+        "isCorrect": false
+      },
+      {
+        "text": "Цифровая камера",
+        "isCorrect": false
+      },
+      {
+        "text": "Струйный принтер",
+        "isCorrect": false
       }
     ]
   },
@@ -6736,19 +6736,19 @@ const allQuestions = [
     "question": "Как расшифровывается аббревиатура LPT порта?",
     "answers": [
       {
-        "text": "Last Personal Terminal",
-        "isCorrect": false
-      },
-      {
-        "text": "Local Port Transmission",
-        "isCorrect": false
-      },
-      {
-        "text": "Line Printer Terminal",
+        "text": "Line Print Terminal",
         "isCorrect": true
       },
       {
-        "text": "Logic Port Transport",
+        "text": "Local Port Transfer",
+        "isCorrect": false
+      },
+      {
+        "text": "Low Packet Type",
+        "isCorrect": false
+      },
+      {
+        "text": "Logical Peripheral Tool",
         "isCorrect": false
       }
     ]
@@ -6758,19 +6758,19 @@ const allQuestions = [
     "question": "Что можно подключить к LPT-порту?",
     "answers": [
       {
-        "text": "Флешку",
-        "isCorrect": false
-      },
-      {
-        "text": "USB-хаб",
-        "isCorrect": false
-      },
-      {
         "text": "Принтер",
         "isCorrect": true
       },
       {
-        "text": "HDMI-монитор",
+        "text": "Монитор HDMI",
+        "isCorrect": false
+      },
+      {
+        "text": "Блок питания",
+        "isCorrect": false
+      },
+      {
+        "text": "Оперативную память",
         "isCorrect": false
       }
     ]
@@ -6780,42 +6780,42 @@ const allQuestions = [
     "question": "Как по другому называется LPT-порт?",
     "answers": [
       {
-        "text": "COM",
-        "isCorrect": false
-      },
-      {
-        "text": "USB",
-        "isCorrect": false
-      },
-      {
         "text": "Параллельный порт",
         "isCorrect": true
       },
       {
-        "text": "MIDI",
+        "text": "Последовательная шина",
+        "isCorrect": false
+      },
+      {
+        "text": "Сетевой адаптер",
+        "isCorrect": false
+      },
+      {
+        "text": "Видеовыход",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 310,
-    "question": "К какому интерфейсу относиться международный стандарт для подключения периферийных устройств персонального компьютера IEEE 1284?",
+    "question": "К какому интерфейсу относиться международный стандарт IEEE 1284?",
     "answers": [
       {
-        "text": "Серийному",
-        "isCorrect": false
-      },
-      {
-        "text": "USB",
-        "isCorrect": false
-      },
-      {
-        "text": "VGA",
-        "isCorrect": false
-      },
-      {
-        "text": "Параллельному",
+        "text": "LPT-порт",
         "isCorrect": true
+      },
+      {
+        "text": "Bluetooth 4.0",
+        "isCorrect": false
+      },
+      {
+        "text": "Ethernet",
+        "isCorrect": false
+      },
+      {
+        "text": "SATA",
+        "isCorrect": false
       }
     ]
   },
@@ -6824,20 +6824,20 @@ const allQuestions = [
     "question": "Для чего не используются внешние шины?",
     "answers": [
       {
-        "text": "Подключения устройств",
-        "isCorrect": false
-      },
-      {
-        "text": "Обмена данными",
-        "isCorrect": false
-      },
-      {
-        "text": "Расширения функциональности",
-        "isCorrect": false
-      },
-      {
-        "text": "Обработки данных внутри процессора",
+        "text": "Работы внутреннего кэша CPU",
         "isCorrect": true
+      },
+      {
+        "text": "Подключения периферии",
+        "isCorrect": false
+      },
+      {
+        "text": "Связи с принтером",
+        "isCorrect": false
+      },
+      {
+        "text": "Передачи данных сканеру",
+        "isCorrect": false
       }
     ]
   },
@@ -6846,20 +6846,20 @@ const allQuestions = [
     "question": "Какой тип передачи данных не допускает Архитектура USB?",
     "answers": [
       {
-        "text": "Isochronous",
-        "isCorrect": false
-      },
-      {
-        "text": "Interrupt",
-        "isCorrect": false
-      },
-      {
-        "text": "Bulk",
-        "isCorrect": false
-      },
-      {
-        "text": "Synchronous packet switching",
+        "text": "Прямая передача в память",
         "isCorrect": true
+      },
+      {
+        "text": "Изохронные потоки",
+        "isCorrect": false
+      },
+      {
+        "text": "Прерывания",
+        "isCorrect": false
+      },
+      {
+        "text": "Управляющие посылки",
+        "isCorrect": false
       }
     ]
   },
@@ -6868,19 +6868,19 @@ const allQuestions = [
     "question": "Что используется для низкой скорости передачи сигналов USB?",
     "answers": [
       {
-        "text": "90-омный кабель",
-        "isCorrect": false
-      },
-      {
-        "text": "Экран без витой пары",
-        "isCorrect": false
-      },
-      {
-        "text": "Сигнальная линия с частотой 1,5 Мбит/с",
+        "text": "Неэкранированная витая пара",
         "isCorrect": true
       },
       {
-        "text": "Две витые пары",
+        "text": "Оптоволоконный кабель",
+        "isCorrect": false
+      },
+      {
+        "text": "Коаксиальный провод",
+        "isCorrect": false
+      },
+      {
+        "text": "Медная шина питания",
         "isCorrect": false
       }
     ]
@@ -6890,19 +6890,19 @@ const allQuestions = [
     "question": "Что используется для полной скорости передачи сигналов USB?",
     "answers": [
       {
-        "text": "1,5 Мбит/с",
-        "isCorrect": false
-      },
-      {
-        "text": "12 Мбит/с",
+        "text": "Экранированная витая пара",
         "isCorrect": true
       },
       {
-        "text": "480 Мбит/с",
+        "text": "Обычный телефонный провод",
         "isCorrect": false
       },
       {
-        "text": "5 Гбит/с",
+        "text": "Инфракрасный порт",
+        "isCorrect": false
+      },
+      {
+        "text": "Плоский шлейф IDE",
         "isCorrect": false
       }
     ]
@@ -6912,19 +6912,19 @@ const allQuestions = [
     "question": "Низкая скорость передачи сигналов USB составляет:",
     "answers": [
       {
-        "text": "12 Мбит/с",
-        "isCorrect": false
-      },
-      {
-        "text": "5 Мбит/с",
-        "isCorrect": false
-      },
-      {
-        "text": "1,5 Мбит/с",
+        "text": "1.5 Мбит/с",
         "isCorrect": true
       },
       {
-        "text": "0,5 Мбит/с",
+        "text": "100 Кбит/с",
+        "isCorrect": false
+      },
+      {
+        "text": "10 Мбит/с",
+        "isCorrect": false
+      },
+      {
+        "text": "480 Кбит/с",
         "isCorrect": false
       }
     ]
@@ -6938,15 +6938,15 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "480 Мбит/с",
+        "text": "1.5 Мбит/с",
         "isCorrect": false
       },
       {
-        "text": "1,5 Мбит/с",
+        "text": "100 Мбит/с",
         "isCorrect": false
       },
       {
-        "text": "5 Гбит/с",
+        "text": "56 Кбит/с",
         "isCorrect": false
       }
     ]
@@ -6956,19 +6956,19 @@ const allQuestions = [
     "question": "Сколько базовых типа передачи данных допускает Архитектура USB?",
     "answers": [
       {
-        "text": "2",
-        "isCorrect": false
-      },
-      {
-        "text": "3",
-        "isCorrect": false
-      },
-      {
-        "text": "4",
+        "text": "Четыре",
         "isCorrect": true
       },
       {
-        "text": "5",
+        "text": "Восемь",
+        "isCorrect": false
+      },
+      {
+        "text": "Два",
+        "isCorrect": false
+      },
+      {
+        "text": "Шестнадцать",
         "isCorrect": false
       }
     ]
@@ -6978,19 +6978,19 @@ const allQuestions = [
     "question": "Хост-контроллер (Host Controller), управляющий работой всей системы USB, является:",
     "answers": [
       {
-        "text": "Программой ОС",
-        "isCorrect": false
-      },
-      {
-        "text": "Внешним модулем",
-        "isCorrect": false
-      },
-      {
-        "text": "Аппаратным блоком управления USB",
+        "text": "Программно-аппаратным блоком",
         "isCorrect": true
       },
       {
-        "text": "Самостоятельным ПК",
+        "text": "Внешним устройством ввода",
+        "isCorrect": false
+      },
+      {
+        "text": "Только сетевым протоколом",
+        "isCorrect": false
+      },
+      {
+        "text": "Механическим переключателем",
         "isCorrect": false
       }
     ]
@@ -7000,16 +7000,20 @@ const allQuestions = [
     "question": "Что управляет работой всей системы USB?",
     "answers": [
       {
-        "text": "Хаб",
-        "isCorrect": false
-      },
-      {
-        "text": "Драйвер",
-        "isCorrect": false
-      },
-      {
         "text": "Хост-контроллер",
         "isCorrect": true
+      },
+      {
+        "text": "Операционная система принтера",
+        "isCorrect": false
+      },
+      {
+        "text": "Видеокарта",
+        "isCorrect": false
+      },
+      {
+        "text": "Южный мост отдельно",
+        "isCorrect": false
       }
     ]
   },
@@ -7018,19 +7022,19 @@ const allQuestions = [
     "question": "В каком году была опубликована версия 1.0 Универсальной последовательной шины (USB)?",
     "answers": [
       {
-        "text": "1993",
-        "isCorrect": false
-      },
-      {
-        "text": "1994",
-        "isCorrect": false
-      },
-      {
-        "text": "1996",
+        "text": "1996 год",
         "isCorrect": true
       },
       {
-        "text": "1998",
+        "text": "1990 год",
+        "isCorrect": false
+      },
+      {
+        "text": "2001 год",
+        "isCorrect": false
+      },
+      {
+        "text": "1985 год",
         "isCorrect": false
       }
     ]
@@ -7040,11 +7044,11 @@ const allQuestions = [
     "question": "USB не обеспечивает:",
     "answers": [
       {
-        "text": "Питание",
-        "isCorrect": false
+        "text": "Параллельную передачу данных",
+        "isCorrect": true
       },
       {
-        "text": "Подключение устройств",
+        "text": "Питание внешних устройств",
         "isCorrect": false
       },
       {
@@ -7052,29 +7056,29 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "Гарантированную задержку для Bulk-передач",
-        "isCorrect": true
+        "text": "Последовательный интерфейс",
+        "isCorrect": false
       }
     ]
   },
   {
     "id": 322,
-    "question": "Что означает «конвейерное выполнение команд»?",
+    "question": "Что означает \"конвейерное выполнение команд\"?",
     "answers": [
       {
-        "text": "Ввод данных без задержек",
-        "isCorrect": false
-      },
-      {
-        "text": "Одновременное выполнение разных стадий нескольких команд",
+        "text": "Обработка нескольких стадий одновременно",
         "isCorrect": true
       },
       {
-        "text": "Параллельная обработка потоков",
+        "text": "Увеличение объема памяти",
         "isCorrect": false
       },
       {
-        "text": "Сверхскалярность",
+        "text": "Последовательный запуск программ",
+        "isCorrect": false
+      },
+      {
+        "text": "Использование внешних накопителей",
         "isCorrect": false
       }
     ]
@@ -7084,16 +7088,16 @@ const allQuestions = [
     "question": "В каком процессоре реализовалась возможность многозадачной работы?",
     "answers": [
       {
-        "text": "4004",
-        "isCorrect": false
-      },
-      {
-        "text": "8008",
+        "text": "Intel 4004",
         "isCorrect": false
       },
       {
         "text": "Intel 80286",
         "isCorrect": true
+      },
+      {
+        "text": "MOS 6502",
+        "isCorrect": false
       },
       {
         "text": "Intel 8080",
@@ -7106,41 +7110,41 @@ const allQuestions = [
     "question": "Какого элемента в составе микропроцессора не существует?",
     "answers": [
       {
-        "text": "ALU",
+        "text": "Устройство управления",
         "isCorrect": false
       },
       {
-        "text": "Регистров",
-        "isCorrect": false
-      },
-      {
-        "text": "Контроллера прерываний",
-        "isCorrect": false
-      },
-      {
-        "text": "Оперативной памяти",
+        "text": "Оперативная память (RAM)",
         "isCorrect": true
+      },
+      {
+        "text": "Арифметико-логическое устройство",
+        "isCorrect": false
+      },
+      {
+        "text": "Регистры общего назначения",
+        "isCorrect": false
       }
     ]
   },
   {
     "id": 325,
-    "question": "В современных компьютерах процессоры выполнены в виде компактного модуля размерами около…",
+    "question": "В современных компьютерах процессоры выполнены в виде компактного модуля размерами около...",
     "answers": [
       {
-        "text": "1×1 см",
-        "isCorrect": false
-      },
-      {
-        "text": "2×2 см",
+        "text": "5x5 сантиметров",
         "isCorrect": true
       },
       {
-        "text": "5×5 см",
+        "text": "20x20 сантиметров",
         "isCorrect": false
       },
       {
-        "text": "10×10 см",
+        "text": "1x1 миллиметр",
+        "isCorrect": false
+      },
+      {
+        "text": "50x50 сантиметров",
         "isCorrect": false
       }
     ]
@@ -7150,20 +7154,20 @@ const allQuestions = [
     "question": "Укажите фирму по производству процессоров для персональных компьютеров?",
     "answers": [
       {
-        "text": "Sony",
+        "text": "Adobe",
         "isCorrect": false
       },
       {
-        "text": "LG",
+        "text": "Cisco",
         "isCorrect": false
       },
       {
-        "text": "Panasonic",
-        "isCorrect": false
-      },
-      {
-        "text": "Intel",
+        "text": "AMD",
         "isCorrect": true
+      },
+      {
+        "text": "Western Digital",
+        "isCorrect": false
       }
     ]
   },
@@ -7172,19 +7176,19 @@ const allQuestions = [
     "question": "Какой была стоимость первого микропроцессора Intel 4004?",
     "answers": [
       {
-        "text": "$10",
-        "isCorrect": false
-      },
-      {
-        "text": "$50",
-        "isCorrect": false
-      },
-      {
-        "text": "$60",
+        "text": "200 долларов",
         "isCorrect": true
       },
       {
-        "text": "$100",
+        "text": "1000 долларов",
+        "isCorrect": false
+      },
+      {
+        "text": "50 долларов",
+        "isCorrect": false
+      },
+      {
+        "text": "5 долларов",
         "isCorrect": false
       }
     ]
@@ -7194,19 +7198,19 @@ const allQuestions = [
     "question": "Назовите основные характеристики процессора:",
     "answers": [
       {
-        "text": "Цвет корпуса",
+        "text": "Объем жесткого диска",
         "isCorrect": false
       },
       {
-        "text": "Год выпуска",
+        "text": "Тип видеокарты",
         "isCorrect": false
       },
       {
-        "text": "Разрядность, частота, кэш",
+        "text": "Тактовая частота и разрядность",
         "isCorrect": true
       },
       {
-        "text": "Масса",
+        "text": "Разрешение монитора",
         "isCorrect": false
       }
     ]
@@ -7216,19 +7220,19 @@ const allQuestions = [
     "question": "Когда началась история создания микропроцессоров?",
     "answers": [
       {
-        "text": "1960",
-        "isCorrect": false
-      },
-      {
-        "text": "1965",
-        "isCorrect": false
-      },
-      {
-        "text": "1971",
+        "text": "В начале 1970-х",
         "isCorrect": true
       },
       {
-        "text": "1975",
+        "text": "В конце 1950-х",
+        "isCorrect": false
+      },
+      {
+        "text": "В середине 1980-х",
+        "isCorrect": false
+      },
+      {
+        "text": "В 1945 году",
         "isCorrect": false
       }
     ]
@@ -7238,11 +7242,7 @@ const allQuestions = [
     "question": "Назовите две фирмы - производителя микропроцессоров?",
     "answers": [
       {
-        "text": "Samsung и LG",
-        "isCorrect": false
-      },
-      {
-        "text": "HP и Dell",
+        "text": "Sony и Kingston",
         "isCorrect": false
       },
       {
@@ -7250,29 +7250,33 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Philips и Hyundai",
+        "text": "Microsoft и Google",
+        "isCorrect": false
+      },
+      {
+        "text": "Asus и MSI",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 331,
-    "question": "Укажите верный алгоритм работы процессора: 1.Изменение списка команд. 2.Считывание команды. 3.Расшифровывание машинной команды дешифратором. 4.Выполнение расшифрованной операции арифметико-логическим устройством",
+    "question": "Укажите верный алгоритм работы процессора:",
     "answers": [
       {
-        "text": "1-2-3-4",
-        "isCorrect": false
-      },
-      {
-        "text": "2-1-3-4",
-        "isCorrect": false
-      },
-      {
-        "text": "2-3-4-1",
+        "text": "2, 3, 4, 1",
         "isCorrect": true
       },
       {
-        "text": "4-3-2-1",
+        "text": "1, 2, 3, 4",
+        "isCorrect": false
+      },
+      {
+        "text": "4, 3, 2, 1",
+        "isCorrect": false
+      },
+      {
+        "text": "3, 1, 2, 4",
         "isCorrect": false
       }
     ]
@@ -7282,63 +7286,63 @@ const allQuestions = [
     "question": "Методы увеличения производительности процессора?",
     "answers": [
       {
-        "text": "Увеличение размера корпуса",
+        "text": "Уменьшение кэш-памяти",
         "isCorrect": false
       },
       {
-        "text": "Уменьшение веса",
-        "isCorrect": false
-      },
-      {
-        "text": "Конвейеризация, увеличение частоты, кэширование",
+        "text": "Повышение тактовой частоты",
         "isCorrect": true
       },
       {
-        "text": "Увеличение тепловыделения",
+        "text": "Снижение количества ядер",
+        "isCorrect": false
+      },
+      {
+        "text": "Ограничение шины данных",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 333,
-    "question": "Сколько транзисторов содержал первый микропроцессор Intel 40044?",
+    "question": "Сколько транзисторов содержал первый микропроцессор Intel 4004?",
     "answers": [
       {
-        "text": "500",
-        "isCorrect": false
-      },
-      {
-        "text": "1000",
-        "isCorrect": false
-      },
-      {
-        "text": "2000",
-        "isCorrect": false
-      },
-      {
-        "text": "2300",
+        "text": "Около 2300",
         "isCorrect": true
+      },
+      {
+        "text": "Более 1 миллиона",
+        "isCorrect": false
+      },
+      {
+        "text": "Ровно 500",
+        "isCorrect": false
+      },
+      {
+        "text": "Примерно 10000",
+        "isCorrect": false
       }
     ]
   },
   {
     "id": 334,
-    "question": "Многоядерные процессоры содержат…",
+    "question": "Многоядерные процессоры содержат...",
     "answers": [
       {
-        "text": "Один ALU",
-        "isCorrect": false
-      },
-      {
-        "text": "Несколько видеоядeр",
-        "isCorrect": false
-      },
-      {
-        "text": "Несколько полноценных вычислительных ядер",
+        "text": "Несколько вычислительных ядер",
         "isCorrect": true
       },
       {
-        "text": "Один набор регистров",
+        "text": "Много видеочипов",
+        "isCorrect": false
+      },
+      {
+        "text": "Разные материнские платы",
+        "isCorrect": false
+      },
+      {
+        "text": "Систему водяного охлаждения",
         "isCorrect": false
       }
     ]
@@ -7348,41 +7352,41 @@ const allQuestions = [
     "question": "Какая из перечисленных функций микропроцессора неверна?",
     "answers": [
       {
-        "text": "Выполнение команд",
-        "isCorrect": false
-      },
-      {
-        "text": "Управление устройствами",
-        "isCorrect": false
-      },
-      {
-        "text": "Арифметика",
-        "isCorrect": false
-      },
-      {
-        "text": "Хранение долгосрочных данных",
+        "text": "Длительное хранение файлов",
         "isCorrect": true
+      },
+      {
+        "text": "Обработка данных",
+        "isCorrect": false
+      },
+      {
+        "text": "Управление работой устройств",
+        "isCorrect": false
+      },
+      {
+        "text": "Арифметические вычисления",
+        "isCorrect": false
       }
     ]
   },
   {
     "id": 336,
-    "question": "Первые микропроцессоры появились в 1970-х и применялись в электронных калькуляторах. Какая арифметика в них использовалась?",
+    "question": "Какая арифметика использовалась в первых микропроцессорах?",
     "answers": [
       {
-        "text": "Двоичная с плавающей точкой",
-        "isCorrect": false
-      },
-      {
-        "text": "IEEE 754",
-        "isCorrect": false
-      },
-      {
-        "text": "Десятичная",
+        "text": "Двоично-десятичный код (BCD)",
         "isCorrect": true
       },
       {
-        "text": "Логарифмическая",
+        "text": "Числа с плавающей точкой",
+        "isCorrect": false
+      },
+      {
+        "text": "Троичная логика",
+        "isCorrect": false
+      },
+      {
+        "text": "Квантовые вычисления",
         "isCorrect": false
       }
     ]
@@ -7392,20 +7396,20 @@ const allQuestions = [
     "question": "Где применялись первые микропроцессоры?",
     "answers": [
       {
-        "text": "ПК",
-        "isCorrect": false
-      },
-      {
-        "text": "Серверы",
-        "isCorrect": false
-      },
-      {
-        "text": "Смартфоны",
-        "isCorrect": false
-      },
-      {
-        "text": "Калькуляторы",
+        "text": "В микрокалькуляторах",
         "isCorrect": true
+      },
+      {
+        "text": "В суперкомпьютерах",
+        "isCorrect": false
+      },
+      {
+        "text": "В мобильных телефонах",
+        "isCorrect": false
+      },
+      {
+        "text": "В игровых приставках",
+        "isCorrect": false
       }
     ]
   },
@@ -7414,19 +7418,19 @@ const allQuestions = [
     "question": "В чём измеряется тактовая частота микропроцессора?",
     "answers": [
       {
-        "text": "Байтах",
-        "isCorrect": false
-      },
-      {
-        "text": "Вольтах",
-        "isCorrect": false
-      },
-      {
-        "text": "Герцах",
+        "text": "В Герцах (ГГц)",
         "isCorrect": true
       },
       {
-        "text": "Джоулях",
+        "text": "В Байтах",
+        "isCorrect": false
+      },
+      {
+        "text": "В Ваттах",
+        "isCorrect": false
+      },
+      {
+        "text": "В Амперах",
         "isCorrect": false
       }
     ]
@@ -7436,19 +7440,19 @@ const allQuestions = [
     "question": "Когда был выпущен Apple II?",
     "answers": [
       {
-        "text": "1975",
-        "isCorrect": false
-      },
-      {
-        "text": "1977",
+        "text": "1977 год",
         "isCorrect": true
       },
       {
-        "text": "1979",
+        "text": "1984 год",
         "isCorrect": false
       },
       {
-        "text": "1981",
+        "text": "1971 год",
+        "isCorrect": false
+      },
+      {
+        "text": "1991 год",
         "isCorrect": false
       }
     ]
@@ -7458,19 +7462,19 @@ const allQuestions = [
     "question": "Где формируется адрес команды?",
     "answers": [
       {
-        "text": "В аккумуляторе",
-        "isCorrect": false
-      },
-      {
-        "text": "В ALU",
-        "isCorrect": false
-      },
-      {
         "text": "В счетчике команд",
         "isCorrect": true
       },
       {
-        "text": "В дешифраторе",
+        "text": "В блоке питания",
+        "isCorrect": false
+      },
+      {
+        "text": "На жестком диске",
+        "isCorrect": false
+      },
+      {
+        "text": "В видеопамяти",
         "isCorrect": false
       }
     ]
@@ -7480,19 +7484,19 @@ const allQuestions = [
     "question": "Чьё назначение формировать последовательности тактовых импульсов, которые позволяют провести временное развертывание цикла работы процессора?",
     "answers": [
       {
-        "text": "ALU",
+        "text": "Делитель частоты шины",
         "isCorrect": false
       },
       {
-        "text": "Регистры",
-        "isCorrect": false
-      },
-      {
-        "text": "Генератор тактовой частоты",
+        "text": "Блок тактовых импульсов",
         "isCorrect": true
       },
       {
-        "text": "Таймер",
+        "text": "Системный таймер прерываний",
+        "isCorrect": false
+      },
+      {
+        "text": "Регистр состояний",
         "isCorrect": false
       }
     ]
@@ -7502,19 +7506,19 @@ const allQuestions = [
     "question": "Что такое УС?",
     "answers": [
       {
-        "text": "Устройство Слежения",
+        "text": "Универсальный сумматор",
         "isCorrect": false
       },
       {
-        "text": "Универсальный Слот",
+        "text": "Узловой соединитель",
         "isCorrect": false
       },
       {
-        "text": "Устройство Связи",
+        "text": "Устройство синхронизации",
         "isCorrect": true
       },
       {
-        "text": "Управляющий Сигнал",
+        "text": "Управляющая сетка",
         "isCorrect": false
       }
     ]
@@ -7525,18 +7529,18 @@ const allQuestions = [
     "answers": [
       {
         "text": "Блок управления операциями",
-        "isCorrect": false
-      },
-      {
-        "text": "Блок установки опор",
-        "isCorrect": false
-      },
-      {
-        "text": "Блок управления и обмена",
         "isCorrect": true
       },
       {
-        "text": "Базовый уровень организации",
+        "text": "Буферный узел обмена",
+        "isCorrect": false
+      },
+      {
+        "text": "База удаленных объектов",
+        "isCorrect": false
+      },
+      {
+        "text": "Блок удаления ошибок",
         "isCorrect": false
       }
     ]
@@ -7546,19 +7550,19 @@ const allQuestions = [
     "question": "Что такое БАК?",
     "answers": [
       {
-        "text": "Блок аналоговых кодов",
+        "text": "Базовый адресный контроллер",
         "isCorrect": false
       },
       {
-        "text": "Блок арифметико-логических команд",
+        "text": "Блок анализа команд",
         "isCorrect": true
       },
       {
-        "text": "Блок ассинхронных каналов",
+        "text": "Бинарный аккумулятор кодов",
         "isCorrect": false
       },
       {
-        "text": "Базовый аккумуляторный контур",
+        "text": "Блок аппаратного контроля",
         "isCorrect": false
       }
     ]
@@ -7568,19 +7572,1229 @@ const allQuestions = [
     "question": "Что такое БП?",
     "answers": [
       {
-        "text": "Блок памяти",
+        "text": "Буфер памяти",
         "isCorrect": false
       },
       {
-        "text": "Блок переключения",
+        "text": "Базовый процессор",
         "isCorrect": false
       },
       {
-        "text": "Блок питания",
+        "text": "Блок прерываний",
         "isCorrect": true
       },
       {
-        "text": "Блок передачи",
+        "text": "Бинарный преобразователь",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 346,
+    "question": "Что такое БТИ?",
+    "answers": [
+      {
+        "text": "Базовый таймер интерфейса",
+        "isCorrect": false
+      },
+      {
+        "text": "Блок текстовой индикации",
+        "isCorrect": false
+      },
+      {
+        "text": "Бинарный транслятор инструкций",
+        "isCorrect": false
+      },
+      {
+        "text": "Блок тактовых импульсов",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 347,
+    "question": "Что такое БПА?",
+    "answers": [
+      {
+        "text": "Блок программного адреса",
+        "isCorrect": true
+      },
+      {
+        "text": "Буфер приема адреса",
+        "isCorrect": false
+      },
+      {
+        "text": "Базовый порт адаптера",
+        "isCorrect": false
+      },
+      {
+        "text": "Блок пакетного анализа",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 348,
+    "question": "Что такое БРК?",
+    "answers": [
+      {
+        "text": "Блок расширения команд",
+        "isCorrect": false
+      },
+      {
+        "text": "Бинарный распределитель каналов",
+        "isCorrect": false
+      },
+      {
+        "text": "Блок регистра команд",
+        "isCorrect": true
+      },
+      {
+        "text": "Базовый регистр кэша",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 349,
+    "question": "Что такое ИПУ?",
+    "answers": [
+      {
+        "text": "Интерфейс программных установок",
+        "isCorrect": false
+      },
+      {
+        "text": "Источник питания универсальный",
+        "isCorrect": false
+      },
+      {
+        "text": "Инженерный пульт управления",
+        "isCorrect": true
+      },
+      {
+        "text": "Индикатор параметров узла",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 350,
+    "question": "ИПУ - обеспечивает:",
+    "answers": [
+      {
+        "text": "Сжатие данных",
+        "isCorrect": false
+      },
+      {
+        "text": "Ручной контроль режимов",
+        "isCorrect": true
+      },
+      {
+        "text": "Охлаждение процессора",
+        "isCorrect": false
+      },
+      {
+        "text": "Сетевую маршрутизацию",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 351,
+    "question": "Необходимым атрибутом микропроцессорных схем являются:",
+    "answers": [
+      {
+        "text": "Схемы сброса",
+        "isCorrect": true
+      },
+      {
+        "text": "Механические реле",
+        "isCorrect": false
+      },
+      {
+        "text": "Оптические датчики",
+        "isCorrect": false
+      },
+      {
+        "text": "Магнитные ленты",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 352,
+    "question": "БРК, БТИ, БП, БУО - это структура",
+    "answers": [
+      {
+        "text": "Оперативной памяти",
+        "isCorrect": false
+      },
+      {
+        "text": "Центрального устройства управления",
+        "isCorrect": true
+      },
+      {
+        "text": "Видеоподсистемы",
+        "isCorrect": false
+      },
+      {
+        "text": "Жесткого диска",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 353,
+    "question": "Пуск или остановку ЭВМ, выполнение процессором заданного режима, вывод на средства индикации обеспечивает...",
+    "answers": [
+      {
+        "text": "Математический сопроцессор",
+        "isCorrect": false
+      },
+      {
+        "text": "Блок плавающей запятой",
+        "isCorrect": false
+      },
+      {
+        "text": "Инженерный пульт управления",
+        "isCorrect": true
+      },
+      {
+        "text": "Контроллер прямого доступа",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 354,
+    "question": "Микрокомпьютер или микропроцессор является основой...",
+    "answers": [
+      {
+        "text": "Аналоговых сумматоров",
+        "isCorrect": false
+      },
+      {
+        "text": "Механических машин",
+        "isCorrect": false
+      },
+      {
+        "text": "Оптических линз",
+        "isCorrect": false
+      },
+      {
+        "text": "Систем автоматического управления",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 355,
+    "question": "Схемы сброса являются необходимым атрибутом для...",
+    "answers": [
+      {
+        "text": "Начальной инициализации",
+        "isCorrect": true
+      },
+      {
+        "text": "Защиты от перегрева",
+        "isCorrect": false
+      },
+      {
+        "text": "Кодирования видео",
+        "isCorrect": false
+      },
+      {
+        "text": "Ускорения вычислений",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 356,
+    "question": "Какая из команд не подаётся с панели управления к центральному процессору напрямую?",
+    "answers": [
+      {
+        "text": "Сигнал «Сброс»",
+        "isCorrect": false
+      },
+      {
+        "text": "Арифметическое сложение",
+        "isCorrect": true
+      },
+      {
+        "text": "Команда «Пуск»",
+        "isCorrect": false
+      },
+      {
+        "text": "Режим «Стоп»",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 357,
+    "question": "Где записаны различные рабочие константы?",
+    "answers": [
+      {
+        "text": "В кэш-памяти",
+        "isCorrect": false
+      },
+      {
+        "text": "В АЛУ",
+        "isCorrect": false
+      },
+      {
+        "text": "В ПЗУ",
+        "isCorrect": true
+      },
+      {
+        "text": "В регистрах флагов",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 358,
+    "question": "Отдельный процессор для обработки сигналов, поступающих с приемника команд дистанционного управления?",
+    "answers": [
+      {
+        "text": "Шифратор адреса",
+        "isCorrect": false
+      },
+      {
+        "text": "Микроконтроллер управления",
+        "isCorrect": true
+      },
+      {
+        "text": "Мультиплексор данных",
+        "isCorrect": false
+      },
+      {
+        "text": "Дешифратор команд",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 359,
+    "question": "Центральное устройство управления ....... автоматическое взаимодействие всех устройств ЭВМ в процессе решения задачи.",
+    "answers": [
+      {
+        "text": "Блокирует",
+        "isCorrect": false
+      },
+      {
+        "text": "Координирует",
+        "isCorrect": true
+      },
+      {
+        "text": "Игнорирует",
+        "isCorrect": false
+      },
+      {
+        "text": "Замедляет",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 360,
+    "question": "На какие типы делится ЦУУ?",
+    "answers": [
+      {
+        "text": "Схемное и микропрограммное",
+        "isCorrect": true
+      },
+      {
+        "text": "Аналоговое и релейное",
+        "isCorrect": false
+      },
+      {
+        "text": "Внешнее и скрытое",
+        "isCorrect": false
+      },
+      {
+        "text": "Однобитное и многобитное",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 361,
+    "question": "Пуск или остановку ЭВМ обеспечивает:",
+    "answers": [
+      {
+        "text": "Пульт управления",
+        "isCorrect": true
+      },
+      {
+        "text": "Операционная система",
+        "isCorrect": false
+      },
+      {
+        "text": "Кнопка питания корпуса",
+        "isCorrect": false
+      },
+      {
+        "text": "Системный таймер",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 362,
+    "question": "Организует и координирует автоматическое взаимодействие всех устройств ЭВМ в процессе решения задачи это:",
+    "answers": [
+      {
+        "text": "Устройство управления",
+        "isCorrect": true
+      },
+      {
+        "text": "Системная шина",
+        "isCorrect": false
+      },
+      {
+        "text": "Арифметико-логический блок",
+        "isCorrect": false
+      },
+      {
+        "text": "Контроллер прерываний",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 363,
+    "question": "Поддержанный аппаратными средствами механизм, создающий ощущение, что компьютер имеет больше физической оперативной памяти, чем есть на самом деле это:",
+    "answers": [
+      {
+        "text": "Виртуальная память",
+        "isCorrect": true
+      },
+      {
+        "text": "Кэш-память",
+        "isCorrect": false
+      },
+      {
+        "text": "Развернутая память",
+        "isCorrect": false
+      },
+      {
+        "text": "Видеопамять",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 364,
+    "question": "Процесс, с помощью которого компьютерная система распределяет ограниченный объем физической памяти между различными процессами, называется:",
+    "answers": [
+      {
+        "text": "Управление памятью",
+        "isCorrect": true
+      },
+      {
+        "text": "Дефрагментация данных",
+        "isCorrect": false
+      },
+      {
+        "text": "Сегментация диска",
+        "isCorrect": false
+      },
+      {
+        "text": "Буферизация ввода",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 365,
+    "question": "Память, организованная по принципам спецификации EMS, называется:",
+    "answers": [
+      {
+        "text": "Дополнительная память",
+        "isCorrect": true
+      },
+      {
+        "text": "Расширенная память",
+        "isCorrect": false
+      },
+      {
+        "text": "Базовая область",
+        "isCorrect": false
+      },
+      {
+        "text": "Верхняя память",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 366,
+    "question": "Операционная система MS DOS может использовать лишь первый мегабайт памяти, который часто называют:",
+    "answers": [
+      {
+        "text": "Базовая память",
+        "isCorrect": true
+      },
+      {
+        "text": "Системный кэш",
+        "isCorrect": false
+      },
+      {
+        "text": "Область загрузки",
+        "isCorrect": false
+      },
+      {
+        "text": "Нижняя память",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 367,
+    "question": "Память ПК, остающаяся за вычетом первого мегабайта (т.е. за вычетом базовой памяти), называется:",
+    "answers": [
+      {
+        "text": "Расширенная память",
+        "isCorrect": true
+      },
+      {
+        "text": "Вторичное ОЗУ",
+        "isCorrect": false
+      },
+      {
+        "text": "Регистровая память",
+        "isCorrect": false
+      },
+      {
+        "text": "Дополнительная память",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 368,
+    "question": "EEPROM (ЭСППУ) это:",
+    "answers": [
+      {
+        "text": "Электрически стираемое ПЗУ",
+        "isCorrect": true
+      },
+      {
+        "text": "Динамическое ОЗУ",
+        "isCorrect": false
+      },
+      {
+        "text": "Ультрафиолетовое ПЗУ",
+        "isCorrect": false
+      },
+      {
+        "text": "Маскируемое ПЗУ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 369,
+    "question": "EPROM (СППЗУ) это:",
+    "answers": [
+      {
+        "text": "Стираемое программируемое ПЗУ",
+        "isCorrect": true
+      },
+      {
+        "text": "Статическое ОЗУ",
+        "isCorrect": false
+      },
+      {
+        "text": "Электронное ПЗУ",
+        "isCorrect": false
+      },
+      {
+        "text": "Постоянная память",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 370,
+    "question": "PROM (ППЗУ) это:",
+    "answers": [
+      {
+        "text": "Программируемое ПЗУ",
+        "isCorrect": true
+      },
+      {
+        "text": "Портативное ПЗУ",
+        "isCorrect": false
+      },
+      {
+        "text": "Перезаписываемое ОЗУ",
+        "isCorrect": false
+      },
+      {
+        "text": "Прикладное ЗУ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 371,
+    "question": "ROM (ПЗУ) расшифровывается как:",
+    "answers": [
+      {
+        "text": "Постоянное запоминающее устройство",
+        "isCorrect": true
+      },
+      {
+        "text": "Оперативное запоминающее устройство",
+        "isCorrect": false
+      },
+      {
+        "text": "Регистровое устройство",
+        "isCorrect": false
+      },
+      {
+        "text": "Внешнее хранилище",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 372,
+    "question": "Основой устройства управления является:",
+    "answers": [
+      {
+        "text": "Генератор тактовых импульсов",
+        "isCorrect": true
+      },
+      {
+        "text": "Арифметический сумматор",
+        "isCorrect": false
+      },
+      {
+        "text": "Видеоконтроллер",
+        "isCorrect": false
+      },
+      {
+        "text": "Регистр данных",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 373,
+    "question": "В основе автоматизации вычислительного процесса ЭВМ лежит принцип:",
+    "answers": [
+      {
+        "text": "Программного управления",
+        "isCorrect": true
+      },
+      {
+        "text": "Двоичного кодирования",
+        "isCorrect": false
+      },
+      {
+        "text": "Открытой архитектуры",
+        "isCorrect": false
+      },
+      {
+        "text": "Модульности",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 374,
+    "question": "Необходимым атрибутом микропроцессорных схем являются:",
+    "answers": [
+      {
+        "text": "Внутренние регистры",
+        "isCorrect": true
+      },
+      {
+        "text": "Внешние дисководы",
+        "isCorrect": false
+      },
+      {
+        "text": "Звуковые платы",
+        "isCorrect": false
+      },
+      {
+        "text": "Световые индикаторы",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 375,
+    "question": "Тактовая частота обычно вырабатывается в:",
+    "answers": [
+      {
+        "text": "Кварцевом резонаторе",
+        "isCorrect": true
+      },
+      {
+        "text": "Блоке питания",
+        "isCorrect": false
+      },
+      {
+        "text": "Жестком диске",
+        "isCorrect": false
+      },
+      {
+        "text": "Модуле ОЗУ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 376,
+    "question": "Блок-схема ЦУУ состоит из:",
+    "answers": [
+      {
+        "text": "Регистров и дешифраторов",
+        "isCorrect": true
+      },
+      {
+        "text": "Монитора и клавиатуры",
+        "isCorrect": false
+      },
+      {
+        "text": "Накопителей информации",
+        "isCorrect": false
+      },
+      {
+        "text": "Шины питания",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 377,
+    "question": "В состав блока для формирования исполнительных адресов включаются:",
+    "answers": [
+      {
+        "text": "Индексные регистры",
+        "isCorrect": true
+      },
+      {
+        "text": "Шина данных",
+        "isCorrect": false
+      },
+      {
+        "text": "Счётчик циклов",
+        "isCorrect": false
+      },
+      {
+        "text": "Видеопамять",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 378,
+    "question": "Что такое MISC?",
+    "answers": [
+      {
+        "text": "Компьютер с минимальным набором",
+        "isCorrect": true
+      },
+      {
+        "text": "Многопроцессорная система",
+        "isCorrect": false
+      },
+      {
+        "text": "Интерфейс управления памятью",
+        "isCorrect": false
+      },
+      {
+        "text": "Магистраль передачи данных",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 379,
+    "question": "Что такое VLIW?",
+    "answers": [
+      {
+        "text": "Длинная машинная команда",
+        "isCorrect": true
+      },
+      {
+        "text": "Виртуальный логический интерфейс",
+        "isCorrect": false
+      },
+      {
+        "text": "Векторный графический ускоритель",
+        "isCorrect": false
+      },
+      {
+        "text": "Скоростная шина ввода",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 380,
+    "question": "Что такое RISC?",
+    "answers": [
+      {
+        "text": "Сокращенный набор команд",
+        "isCorrect": true
+      },
+      {
+        "text": "Реальный режим вычислений",
+        "isCorrect": false
+      },
+      {
+        "text": "Расширенный системный контроллер",
+        "isCorrect": false
+      },
+      {
+        "text": "Быстрая шина обмена",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 381,
+    "question": "Что такое CISC?",
+    "answers": [
+      {
+        "text": "Полный набор команд",
+        "isCorrect": true
+      },
+      {
+        "text": "Сокращенный набор команд",
+        "isCorrect": false
+      },
+      {
+        "text": "Параллельная архитектура вычислений",
+        "isCorrect": false
+      },
+      {
+        "text": "Шина передачи данных",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 382,
+    "question": "Какая тактовая частота у микропроцессора Pentium 4 Willamette?",
+    "answers": [
+      {
+        "text": "От 1.4 до 2.0 ГГц",
+        "isCorrect": true
+      },
+      {
+        "text": "Около 800 МГц",
+        "isCorrect": false
+      },
+      {
+        "text": "Свыше 3.2 ГГц",
+        "isCorrect": false
+      },
+      {
+        "text": "400 - 533 МГц",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 383,
+    "question": "Как не обозначаются универсальные регистры?",
+    "answers": [
+      {
+        "text": "IP, SP, BP",
+        "isCorrect": true
+      },
+      {
+        "text": "AX, BX, CX",
+        "isCorrect": false
+      },
+      {
+        "text": "EAX, EBX, ECX",
+        "isCorrect": false
+      },
+      {
+        "text": "R0, R1, R2",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 384,
+    "question": "Как обозначаются регистры флагов?",
+    "answers": [
+      {
+        "text": "FLAGS или EFLAGS",
+        "isCorrect": true
+      },
+      {
+        "text": "STATUS или CONTROL",
+        "isCorrect": false
+      },
+      {
+        "text": "INDEX или POINTER",
+        "isCorrect": false
+      },
+      {
+        "text": "SEGMENT REGISTERS",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 385,
+    "question": "Каких регистров не существует?",
+    "answers": [
+      {
+        "text": "Регистры внешней памяти",
+        "isCorrect": true
+      },
+      {
+        "text": "Регистры общего назначения",
+        "isCorrect": false
+      },
+      {
+        "text": "Сегментные регистры",
+        "isCorrect": false
+      },
+      {
+        "text": "Управляющие регистры",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 386,
+    "question": "С какой информацией выполняет действия АЛУ?",
+    "answers": [
+      {
+        "text": "Двоичные коды данных",
+        "isCorrect": true
+      },
+      {
+        "text": "Текстовые символы",
+        "isCorrect": false
+      },
+      {
+        "text": "Физические адреса диска",
+        "isCorrect": false
+      },
+      {
+        "text": "Аналоговые сигналы напряжения",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 387,
+    "question": "Что принимает команды и преобразует их в сигналы управления?",
+    "answers": [
+      {
+        "text": "Дешифратор команд",
+        "isCorrect": true
+      },
+      {
+        "text": "Мультиплексор шины",
+        "isCorrect": false
+      },
+      {
+        "text": "Счетчик команд",
+        "isCorrect": false
+      },
+      {
+        "text": "Арифметический сумматор",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 388,
+    "question": "Какой регистр может только получать информацию с шин?",
+    "answers": [
+      {
+        "text": "Регистр команд",
+        "isCorrect": true
+      },
+      {
+        "text": "Аккумулятор",
+        "isCorrect": false
+      },
+      {
+        "text": "Индексный регистр",
+        "isCorrect": false
+      },
+      {
+        "text": "Регистр базы",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 389,
+    "question": "Какую разрядность имеет первый регистр (в архитектуре 8086)?",
+    "answers": [
+      {
+        "text": "16 бит",
+        "isCorrect": true
+      },
+      {
+        "text": "8 бит",
+        "isCorrect": false
+      },
+      {
+        "text": "32 бита",
+        "isCorrect": false
+      },
+      {
+        "text": "64 бита",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 390,
+    "question": "Что хранит в своих ячейках ПЗУ?",
+    "answers": [
+      {
+        "text": "Микропрограммы и BIOS",
+        "isCorrect": true
+      },
+      {
+        "text": "Пользовательские документы",
+        "isCorrect": false
+      },
+      {
+        "text": "Кэш-данные процессора",
+        "isCorrect": false
+      },
+      {
+        "text": "Временные результаты вычислений",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 391,
+    "question": "Где находится узел формирования адреса?",
+    "answers": [
+      {
+        "text": "В блоке интерфейса",
+        "isCorrect": true
+      },
+      {
+        "text": "В оперативной памяти",
+        "isCorrect": false
+      },
+      {
+        "text": "На системной шине",
+        "isCorrect": false
+      },
+      {
+        "text": "В устройстве ввода-вывода",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 392,
+    "question": "Что такое АЛУ?",
+    "answers": [
+      {
+        "text": "Арифметико-логическое устройство",
+        "isCorrect": true
+      },
+      {
+        "text": "Автоматический логический узел",
+        "isCorrect": false
+      },
+      {
+        "text": "Адаптивный линейный ускоритель",
+        "isCorrect": false
+      },
+      {
+        "text": "Архивный локальный указатель",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 393,
+    "question": "Когда были разработаны микропроцессоры RISC?",
+    "answers": [
+      {
+        "text": "В начале 1980-х",
+        "isCorrect": true
+      },
+      {
+        "text": "В конце 1990-х",
+        "isCorrect": false
+      },
+      {
+        "text": "В середине 1960-х",
+        "isCorrect": false
+      },
+      {
+        "text": "В 2005 году",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 394,
+    "question": "Когда появилась архитектура CISC?",
+    "answers": [
+      {
+        "text": "В начале 1970-х",
+        "isCorrect": true
+      },
+      {
+        "text": "В середине 1950-х",
+        "isCorrect": false
+      },
+      {
+        "text": "В конце 1980-х",
+        "isCorrect": false
+      },
+      {
+        "text": "После 2000 года",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 395,
+    "question": "Имеют ли программисты доступ к внутренним VLIW-командам?",
+    "answers": [
+      {
+        "text": "Нет, доступ закрыт",
+        "isCorrect": true
+      },
+      {
+        "text": "Да, через ассемблер",
+        "isCorrect": false
+      },
+      {
+        "text": "Только в режиме ядра",
+        "isCorrect": false
+      },
+      {
+        "text": "Да, через BIOS",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 396,
+    "question": "Сколько тактов затрачивает CISC на простую команду?",
+    "answers": [
+      {
+        "text": "Несколько тактов",
+        "isCorrect": true
+      },
+      {
+        "text": "Ровно один такт",
+        "isCorrect": false
+      },
+      {
+        "text": "Менее одного такта",
+        "isCorrect": false
+      },
+      {
+        "text": "Более ста тактов",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 397,
+    "question": "Сколько тактов затрачивает RISC на простую команду?",
+    "answers": [
+      {
+        "text": "Один такт",
+        "isCorrect": true
+      },
+      {
+        "text": "Четыре такта",
+        "isCorrect": false
+      },
+      {
+        "text": "Десять тактов",
+        "isCorrect": false
+      },
+      {
+        "text": "Переменное количество",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 398,
+    "question": "В чём измеряют производительность микропроцессора?",
+    "answers": [
+      {
+        "text": "В MIPS или FLOPS",
+        "isCorrect": true
+      },
+      {
+        "text": "В вольтах",
+        "isCorrect": false
+      },
+      {
+        "text": "В битах в секунду",
+        "isCorrect": false
+      },
+      {
+        "text": "В мегабайтах",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 399,
+    "question": "Сколько всего может быть портов ввода-вывода у микропроцессора?",
+    "answers": [
+      {
+        "text": "65536 портов",
+        "isCorrect": true
+      },
+      {
+        "text": "256 портов",
+        "isCorrect": false
+      },
+      {
+        "text": "1024 порта",
+        "isCorrect": false
+      },
+      {
+        "text": "До бесконечности",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 400,
+    "question": "Чего нет в интерфейсной части микропроцессора?",
+    "answers": [
+      {
+        "text": "Схемы АЛУ",
+        "isCorrect": true
+      },
+      {
+        "text": "Буферных регистров",
+        "isCorrect": false
+      },
+      {
+        "text": "Узлов управления шиной",
+        "isCorrect": false
+      },
+      {
+        "text": "Генератора адресов",
         "isCorrect": false
       }
     ]
@@ -7590,19 +8804,19 @@ const allQuestions = [
     "question": "Для чего предназначена интерфейсная часть микропроцессора?",
     "answers": [
       {
-        "text": "Для выполнения арифметических операций",
-        "isCorrect": false
-      },
-      {
-        "text": "Для хранения программ",
-        "isCorrect": false
-      },
-      {
-        "text": "Для связи микропроцессора с внешними устройствами",
+        "text": "Связь с системной шиной",
         "isCorrect": true
       },
       {
-        "text": "Для выполнения команд ветвления",
+        "text": "Дешифрация сложных команд",
+        "isCorrect": false
+      },
+      {
+        "text": "Выполнение арифметических операций",
+        "isCorrect": false
+      },
+      {
+        "text": "Хранение временных данных",
         "isCorrect": false
       }
     ]
@@ -7612,19 +8826,19 @@ const allQuestions = [
     "question": "На сколько функциональных частей можно разделить микропроцессор?",
     "answers": [
       {
-        "text": "На 2",
+        "text": "На четыре",
         "isCorrect": false
       },
       {
-        "text": "На 3 АЛУ, блок управления, интерфейсная часть",
+        "text": "На две",
         "isCorrect": true
       },
       {
-        "text": "На 4",
+        "text": "На пять уровней",
         "isCorrect": false
       },
       {
-        "text": "На 5",
+        "text": "Три части",
         "isCorrect": false
       }
     ]
@@ -7634,19 +8848,19 @@ const allQuestions = [
     "question": "Что не входит в состав микропроцессора Pentium?",
     "answers": [
       {
-        "text": "АЛУ",
-        "isCorrect": false
-      },
-      {
-        "text": "Кэш-память уровня L1",
-        "isCorrect": false
-      },
-      {
-        "text": "Контроллер памяти он выносился в Northbridge",
+        "text": "Кэш-память L3",
         "isCorrect": true
       },
       {
         "text": "Блок предсказания переходов",
+        "isCorrect": false
+      },
+      {
+        "text": "Конвейер команд",
+        "isCorrect": false
+      },
+      {
+        "text": "Математический сопроцессор",
         "isCorrect": false
       }
     ]
@@ -7656,19 +8870,19 @@ const allQuestions = [
     "question": "Когда был выпущен процессор Intel Celeron Mendocino?",
     "answers": [
       {
-        "text": "1994",
-        "isCorrect": false
-      },
-      {
-        "text": "1996",
-        "isCorrect": false
-      },
-      {
-        "text": "1998",
+        "text": "В 1998 году",
         "isCorrect": true
       },
       {
-        "text": "1999",
+        "text": "Летом 1996",
+        "isCorrect": false
+      },
+      {
+        "text": "В начале 1997 года",
+        "isCorrect": false
+      },
+      {
+        "text": "Осенью 1999",
         "isCorrect": false
       }
     ]
@@ -7678,19 +8892,19 @@ const allQuestions = [
     "question": "Когда был выпущен процессор Intel Pentium 4 Willamette?",
     "answers": [
       {
-        "text": "1999",
+        "text": "В 1999 году",
         "isCorrect": false
       },
       {
-        "text": "2000",
+        "text": "В 2001 году",
+        "isCorrect": false
+      },
+      {
+        "text": "В 2000 году",
         "isCorrect": true
       },
       {
-        "text": "2001",
-        "isCorrect": false
-      },
-      {
-        "text": "2002",
+        "text": "Зимой 2002",
         "isCorrect": false
       }
     ]
@@ -7700,19 +8914,19 @@ const allQuestions = [
     "question": "Когда был выпущен процессор Intel Pentium III Coppermine?",
     "answers": [
       {
-        "text": "1998",
+        "text": "В 1998 году",
         "isCorrect": false
       },
       {
-        "text": "1999",
+        "text": "В 1999 году",
         "isCorrect": true
       },
       {
-        "text": "2000",
+        "text": "Весной 2000",
         "isCorrect": false
       },
       {
-        "text": "2001",
+        "text": "В 2001 году",
         "isCorrect": false
       }
     ]
@@ -7722,19 +8936,19 @@ const allQuestions = [
     "question": "Когда был выпущен процессор Intel Pentium III Xeon?",
     "answers": [
       {
-        "text": "1997",
-        "isCorrect": false
-      },
-      {
-        "text": "1998",
+        "text": "В 1999 году",
         "isCorrect": true
       },
       {
-        "text": "1999",
+        "text": "В 1997 году",
         "isCorrect": false
       },
       {
-        "text": "2000",
+        "text": "Осенью 1998",
+        "isCorrect": false
+      },
+      {
+        "text": "В 2000 году",
         "isCorrect": false
       }
     ]
@@ -7744,19 +8958,19 @@ const allQuestions = [
     "question": "Какая тактовая частота у процессора Intel Pentium III Xeon?",
     "answers": [
       {
-        "text": "400–500 МГц",
+        "text": "100–200 МГц",
         "isCorrect": false
       },
       {
-        "text": "500–733 МГц",
+        "text": "500–1000 МГц",
         "isCorrect": true
       },
       {
-        "text": "750–900 МГц",
+        "text": "2–3 ГГц",
         "isCorrect": false
       },
       {
-        "text": "1 ГГц",
+        "text": "66–133 МГц",
         "isCorrect": false
       }
     ]
@@ -7766,11 +8980,11 @@ const allQuestions = [
     "question": "Какая тактовая частота у процессора Intel Pentium MMX?",
     "answers": [
       {
-        "text": "66–100 МГц",
+        "text": "60–100 МГц",
         "isCorrect": false
       },
       {
-        "text": "120–166 МГц",
+        "text": "300–450 МГц",
         "isCorrect": false
       },
       {
@@ -7778,7 +8992,7 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "300–400 МГц",
+        "text": "10–25 МГц",
         "isCorrect": false
       }
     ]
@@ -7788,20 +9002,20 @@ const allQuestions = [
     "question": "Какая тактовая частота у процессора Intel Pentium Pro?",
     "answers": [
       {
-        "text": "60–90 МГц",
-        "isCorrect": false
-      },
-      {
-        "text": "100–120 МГц",
-        "isCorrect": false
-      },
-      {
-        "text": "130–166 МГц",
-        "isCorrect": false
-      },
-      {
-        "text": "150–200 МГц серии 150, 166, 180, 200",
+        "text": "150–200 МГц",
         "isCorrect": true
+      },
+      {
+        "text": "33–66 МГц",
+        "isCorrect": false
+      },
+      {
+        "text": "400–600 МГц",
+        "isCorrect": false
+      },
+      {
+        "text": "800–1000 МГц",
+        "isCorrect": false
       }
     ]
   },
@@ -7810,19 +9024,19 @@ const allQuestions = [
     "question": "Какая тактовая частота у процессора Intel-80486?",
     "answers": [
       {
-        "text": "10–25 МГц",
-        "isCorrect": false
-      },
-      {
-        "text": "25–50 МГц",
-        "isCorrect": false
-      },
-      {
-        "text": "20–100 МГц правильно: от 16 до 100 МГц",
+        "text": "25–100 МГц",
         "isCorrect": true
       },
       {
-        "text": "100–133 МГц",
+        "text": "5–12 МГц",
+        "isCorrect": false
+      },
+      {
+        "text": "150–300 МГц",
+        "isCorrect": false
+      },
+      {
+        "text": "1–2 ГГц",
         "isCorrect": false
       }
     ]
@@ -7836,12 +9050,12 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "8 бит (внешняя шина), 16 бит ядро",
-        "isCorrect": true
+        "text": "16 бит",
+        "isCorrect": false
       },
       {
-        "text": "16 бит полностью",
-        "isCorrect": false
+        "text": "8 бит",
+        "isCorrect": true
       },
       {
         "text": "32 бита",
@@ -7858,12 +9072,12 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "16 бит",
-        "isCorrect": true
-      },
-      {
         "text": "32 бита",
         "isCorrect": false
+      },
+      {
+        "text": "16 бит",
+        "isCorrect": true
       },
       {
         "text": "64 бита",
@@ -7876,19 +9090,19 @@ const allQuestions = [
     "question": "Какая разрядность у процессора Intel-8080?",
     "answers": [
       {
-        "text": "4 бита",
-        "isCorrect": false
-      },
-      {
         "text": "8 бит",
         "isCorrect": true
+      },
+      {
+        "text": "4 бита",
+        "isCorrect": false
       },
       {
         "text": "16 бит",
         "isCorrect": false
       },
       {
-        "text": "32 бита",
+        "text": "24 бита",
         "isCorrect": false
       }
     ]
@@ -7898,15 +9112,15 @@ const allQuestions = [
     "question": "Какая разрядность у процессора Intel-4004?",
     "answers": [
       {
-        "text": "4 бита",
-        "isCorrect": true
-      },
-      {
         "text": "8 бит",
         "isCorrect": false
       },
       {
-        "text": "12 бит",
+        "text": "4 бита",
+        "isCorrect": true
+      },
+      {
+        "text": "1 бит",
         "isCorrect": false
       },
       {
@@ -7920,19 +9134,19 @@ const allQuestions = [
     "question": "Как расшифровывается VLIW?",
     "answers": [
       {
-        "text": "Very Long Integer Word",
-        "isCorrect": false
-      },
-      {
-        "text": "Variable Load Instruction Window",
-        "isCorrect": false
-      },
-      {
         "text": "Very Long Instruction Word",
         "isCorrect": true
       },
       {
-        "text": "Virtual Level Instruction Workflow",
+        "text": "Virtual Link Input Wave",
+        "isCorrect": false
+      },
+      {
+        "text": "Vector Logic Instruction Way",
+        "isCorrect": false
+      },
+      {
+        "text": "Variable Level Internal Wire",
         "isCorrect": false
       }
     ]
@@ -7942,7 +9156,11 @@ const allQuestions = [
     "question": "Как расшифровывается RISC?",
     "answers": [
       {
-        "text": "Random Instruction Set Chip",
+        "text": "Rapid Instruction Set Core",
+        "isCorrect": false
+      },
+      {
+        "text": "Real Integrated System Code",
         "isCorrect": false
       },
       {
@@ -7950,11 +9168,7 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Reconfigurable Interface System Core",
-        "isCorrect": false
-      },
-      {
-        "text": "Runtime Instruction Sequence Control",
+        "text": "Remote Input System Controller",
         "isCorrect": false
       }
     ]
@@ -7964,19 +9178,19 @@ const allQuestions = [
     "question": "Как расшифровывается CISC?",
     "answers": [
       {
-        "text": "Central Instruction System Code",
-        "isCorrect": false
-      },
-      {
         "text": "Complex Instruction Set Computer",
         "isCorrect": true
       },
       {
-        "text": "Core Integrated System Controller",
+        "text": "Central Input System Code",
         "isCorrect": false
       },
       {
-        "text": "Component Instruction Storage Chip",
+        "text": "Core Integrated System Command",
+        "isCorrect": false
+      },
+      {
+        "text": "Combined Instruction Set Core",
         "isCorrect": false
       }
     ]
@@ -7986,19 +9200,19 @@ const allQuestions = [
     "question": "Кем был выпущен первый микропроцессор?",
     "answers": [
       {
-        "text": "AMD",
+        "text": "Корпорацией IBM",
         "isCorrect": false
       },
       {
-        "text": "Intel",
+        "text": "Фирмой Intel",
         "isCorrect": true
       },
       {
-        "text": "Motorola",
+        "text": "Компанией Motorola",
         "isCorrect": false
       },
       {
-        "text": "IBM",
+        "text": "Бредом AMD",
         "isCorrect": false
       }
     ]
@@ -8008,19 +9222,19 @@ const allQuestions = [
     "question": "Когда был выпущен первый микропроцессор?",
     "answers": [
       {
-        "text": "1969",
-        "isCorrect": false
-      },
-      {
-        "text": "1970",
-        "isCorrect": false
-      },
-      {
-        "text": "1971 Intel 4004",
+        "text": "В 1971 году",
         "isCorrect": true
       },
       {
-        "text": "1972",
+        "text": "В 1969 году",
+        "isCorrect": false
+      },
+      {
+        "text": "В 1975 году",
+        "isCorrect": false
+      },
+      {
+        "text": "В 1981 году",
         "isCorrect": false
       }
     ]
@@ -8030,19 +9244,19 @@ const allQuestions = [
     "question": "На каком микропроцессоре впервые появился второй уровень кэш-памяти?",
     "answers": [
       {
+        "text": "Intel Pentium Pro",
+        "isCorrect": true
+      },
+      {
+        "text": "Intel 8086",
+        "isCorrect": false
+      },
+      {
         "text": "Intel 80386",
         "isCorrect": false
       },
       {
-        "text": "Intel 80486",
-        "isCorrect": false
-      },
-      {
-        "text": "Intel Pentium Pro встроенный L2",
-        "isCorrect": true
-      },
-      {
-        "text": "Intel Pentium II",
+        "text": "Intel Pentium MMX",
         "isCorrect": false
       }
     ]
@@ -8052,19 +9266,19 @@ const allQuestions = [
     "question": "Сколько уровней имеет кэш-память?",
     "answers": [
       {
-        "text": "1",
+        "text": "Только один",
         "isCorrect": false
       },
       {
-        "text": "2",
-        "isCorrect": false
-      },
-      {
-        "text": "3 L1, L2, L3",
+        "text": "Обычно до трех",
         "isCorrect": true
       },
       {
-        "text": "4",
+        "text": "Десять фиксированных",
+        "isCorrect": false
+      },
+      {
+        "text": "Всегда ровно пять",
         "isCorrect": false
       }
     ]
@@ -8074,7 +9288,7 @@ const allQuestions = [
     "question": "Что определяет рабочая тактовая частота микропроцессора?",
     "answers": [
       {
-        "text": "Количество регистров",
+        "text": "Емкость жесткого диска",
         "isCorrect": false
       },
       {
@@ -8082,11 +9296,11 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Разрядность",
+        "text": "Разрешение монитора",
         "isCorrect": false
       },
       {
-        "text": "Размер кэша",
+        "text": "Объем видеопамяти",
         "isCorrect": false
       }
     ]
@@ -8096,19 +9310,19 @@ const allQuestions = [
     "question": "Что определяет разрядность шины адреса микропроцессора?",
     "answers": [
       {
-        "text": "Максимальную длину команды",
+        "text": "Скорость интернета",
         "isCorrect": false
       },
       {
-        "text": "Максимальный объем адресуемой памяти",
+        "text": "Количество ядер",
+        "isCorrect": false
+      },
+      {
+        "text": "Максимальный объем памяти",
         "isCorrect": true
       },
       {
-        "text": "Скорость работы АЛУ",
-        "isCorrect": false
-      },
-      {
-        "text": "Количество портов ввода",
+        "text": "Частоту видеочипа",
         "isCorrect": false
       }
     ]
@@ -8118,19 +9332,19 @@ const allQuestions = [
     "question": "Что определяет разрядность шины данных микропроцессора?",
     "answers": [
       {
-        "text": "Скорость передаваемой информации",
+        "text": "Количество бит за такт",
         "isCorrect": true
       },
       {
-        "text": "Объем памяти",
+        "text": "Размер системного блока",
         "isCorrect": false
       },
       {
-        "text": "Количество команд",
+        "text": "Скорость вращения кулера",
         "isCorrect": false
       },
       {
-        "text": "Частоту процессора",
+        "text": "Напряжение процессора",
         "isCorrect": false
       }
     ]
@@ -8140,19 +9354,19 @@ const allQuestions = [
     "question": "Что относится к основным параметрам микропроцессора?",
     "answers": [
       {
-        "text": "Тип BIOS",
-        "isCorrect": false
-      },
-      {
-        "text": "Количество USB-портов",
-        "isCorrect": false
-      },
-      {
-        "text": "Тактовая частота, разрядность, архитектура",
+        "text": "Тактовая частота и разрядность",
         "isCorrect": true
       },
       {
-        "text": "Цвет корпуса",
+        "text": "Материал корпуса",
+        "isCorrect": false
+      },
+      {
+        "text": "Длина кабеля питания",
+        "isCorrect": false
+      },
+      {
+        "text": "Количество клавиш",
         "isCorrect": false
       }
     ]
@@ -8162,19 +9376,19 @@ const allQuestions = [
     "question": "Какую из функций не выполняет микропроцессор?",
     "answers": [
       {
-        "text": "Управление устройствами",
+        "text": "Обработка данных",
         "isCorrect": false
       },
       {
-        "text": "Выполнение логических операций",
+        "text": "Управление памятью",
         "isCorrect": false
       },
       {
-        "text": "Сжатие данных автоматически",
+        "text": "Длительное хранение файлов",
         "isCorrect": true
       },
       {
-        "text": "Выполнение арифметики",
+        "text": "Арифметические расчеты",
         "isCorrect": false
       }
     ]
@@ -8184,19 +9398,19 @@ const allQuestions = [
     "question": "Какую из функций выполняет микропроцессор?",
     "answers": [
       {
-        "text": "Подача питания устройствам",
-        "isCorrect": false
-      },
-      {
-        "text": "Управление вычислительным процессом",
+        "text": "Управление работой компьютера",
         "isCorrect": true
       },
       {
-        "text": "Хранение данных при отключении питания",
+        "text": "Очистка монитора",
         "isCorrect": false
       },
       {
-        "text": "Генерация тактовой частоты",
+        "text": "Печать на бумаге",
+        "isCorrect": false
+      },
+      {
+        "text": "Стабилизация тока",
         "isCorrect": false
       }
     ]
@@ -8206,20 +9420,20 @@ const allQuestions = [
     "question": "Какая из аббревиатур обозначает микропроцессор?",
     "answers": [
       {
+        "text": "BIOS",
+        "isCorrect": false
+      },
+      {
         "text": "HDD",
+        "isCorrect": false
+      },
+      {
+        "text": "RAM",
         "isCorrect": false
       },
       {
         "text": "CPU",
         "isCorrect": true
-      },
-      {
-        "text": "GPU",
-        "isCorrect": false
-      },
-      {
-        "text": "PSU",
-        "isCorrect": false
       }
     ]
   },
@@ -8228,7 +9442,7 @@ const allQuestions = [
     "question": "Как расшифровывается DRAM ?",
     "answers": [
       {
-        "text": "Direct Random Access Memory",
+        "text": "Data Real Access Mode",
         "isCorrect": false
       },
       {
@@ -8236,11 +9450,11 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Digital Read And Memory",
+        "text": "Digital Read Array Memory",
         "isCorrect": false
       },
       {
-        "text": "Dual Read Access Module",
+        "text": "Direct RAM",
         "isCorrect": false
       }
     ]
@@ -8254,15 +9468,15 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Simple Read Access Module",
+        "text": "System Read Access Module",
         "isCorrect": false
       },
       {
-        "text": "System Random Access Memory",
+        "text": "Single Random Array Memory",
         "isCorrect": false
       },
       {
-        "text": "Secure Rapid Access Memory",
+        "text": "Super RAM",
         "isCorrect": false
       }
     ]
@@ -8276,16 +9490,16 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "Монитор",
-        "isCorrect": false
-      },
-      {
         "text": "Клавиатура",
         "isCorrect": false
       },
       {
-        "text": "Регистры ЦП",
+        "text": "Микропроцессор",
         "isCorrect": true
+      },
+      {
+        "text": "Модем",
+        "isCorrect": false
       }
     ]
   },
@@ -8294,19 +9508,19 @@ const allQuestions = [
     "question": "Какое сокращение имеют запоминающие устройства динамического типа:",
     "answers": [
       {
-        "text": "DRAM",
-        "isCorrect": true
-      },
-      {
         "text": "SRAM",
         "isCorrect": false
       },
       {
-        "text": "PROM",
+        "text": "DRAM",
+        "isCorrect": true
+      },
+      {
+        "text": "ROM",
         "isCorrect": false
       },
       {
-        "text": "CMOS",
+        "text": "HDD",
         "isCorrect": false
       }
     ]
@@ -8316,6 +9530,10 @@ const allQuestions = [
     "question": "Какое сокращение имеют запоминающие устройства статического типа:",
     "answers": [
       {
+        "text": "PROM",
+        "isCorrect": false
+      },
+      {
         "text": "DRAM",
         "isCorrect": false
       },
@@ -8324,33 +9542,29 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "ROM",
-        "isCorrect": false
-      },
-      {
-        "text": "EPROM",
+        "text": "DDR",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 435,
-    "question": "Набор микросхем, предназначенных для временного хранения данных при включенном питании компьютера, называется…",
+    "question": "Набор микросхем, предназначенных для временного хранения данных при включенном питании компьютера, называется...",
     "answers": [
       {
-        "text": "ROM",
+        "text": "Жесткий диск",
         "isCorrect": false
       },
       {
-        "text": "RAM",
+        "text": "Оперативная память",
         "isCorrect": true
       },
       {
-        "text": "HDD",
+        "text": "Блок питания",
         "isCorrect": false
       },
       {
-        "text": "CMOS",
+        "text": "Сетевая карта",
         "isCorrect": false
       }
     ]
@@ -8360,48 +9574,48 @@ const allQuestions = [
     "question": "Микросхема, предназначенная для длительного хранения данных, при выключенном питании компьютера, называется...",
     "answers": [
       {
-        "text": "RAM",
+        "text": "ОЗУ",
         "isCorrect": false
       },
       {
-        "text": "ROM",
+        "text": "Кэш-память",
+        "isCorrect": false
+      },
+      {
+        "text": "ПЗУ",
         "isCorrect": true
       },
       {
-        "text": "DRAM",
-        "isCorrect": false
-      },
-      {
-        "text": "FIFO",
+        "text": "Регистр",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 437,
-    "question": "В одном байте…",
+    "question": "В одном байте...",
     "answers": [
       {
-        "text": "4 бита",
-        "isCorrect": false
-      },
-      {
-        "text": "6 бит",
-        "isCorrect": false
-      },
-      {
-        "text": "8 бит",
+        "text": "Восемь бит",
         "isCorrect": true
       },
       {
-        "text": "16 бит",
+        "text": "1024 бита",
+        "isCorrect": false
+      },
+      {
+        "text": "Шестнадцать бит",
+        "isCorrect": false
+      },
+      {
+        "text": "Два бита",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 438,
-    "question": "В одном килобайте…",
+    "question": "В одном килобайте...",
     "answers": [
       {
         "text": "1000 байт",
@@ -8412,11 +9626,11 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "512 байт",
+        "text": "8000 бит",
         "isCorrect": false
       },
       {
-        "text": "2048 байт",
+        "text": "1024 мегабайта",
         "isCorrect": false
       }
     ]
@@ -8426,7 +9640,7 @@ const allQuestions = [
     "question": "Как расшифровывается аббревиатура ОЗУ?",
     "answers": [
       {
-        "text": "Общая запись устройств",
+        "text": "Общее защищенное управление",
         "isCorrect": false
       },
       {
@@ -8434,33 +9648,33 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Объем защищенной области",
+        "text": "Основной звуковой узел",
         "isCorrect": false
       },
       {
-        "text": "Отраженная зона управления",
+        "text": "Оптическое записывающее устройство",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 440,
-    "question": "В одном мегабайте…",
+    "question": "В одном мегабайте...",
     "answers": [
       {
-        "text": "1000 КБ",
-        "isCorrect": false
-      },
-      {
-        "text": "1024 КБ",
+        "text": "1024 килобайта",
         "isCorrect": true
       },
       {
-        "text": "2048 КБ",
+        "text": "1000 байт",
         "isCorrect": false
       },
       {
-        "text": "4096 КБ",
+        "text": "1024 гигабайта",
+        "isCorrect": false
+      },
+      {
+        "text": "Миллион бит",
         "isCorrect": false
       }
     ]
@@ -8470,19 +9684,19 @@ const allQuestions = [
     "question": "Как расшифровывается аббревиатура RAM?",
     "answers": [
       {
-        "text": "Read Access Memory",
-        "isCorrect": false
-      },
-      {
         "text": "Random Access Memory",
         "isCorrect": true
       },
       {
-        "text": "Rapid Allocation Module",
+        "text": "Read Active Module",
         "isCorrect": false
       },
       {
-        "text": "Remote Address Memory",
+        "text": "Rapid Area Memory",
+        "isCorrect": false
+      },
+      {
+        "text": "Readily Available Mainframe",
         "isCorrect": false
       }
     ]
@@ -8492,7 +9706,7 @@ const allQuestions = [
     "question": "Какое сокращенное название имеет постоянная память?",
     "answers": [
       {
-        "text": "RAM",
+        "text": "HDD",
         "isCorrect": false
       },
       {
@@ -8500,11 +9714,11 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "HDD",
+        "text": "RAM",
         "isCorrect": false
       },
       {
-        "text": "PLD",
+        "text": "CPU",
         "isCorrect": false
       }
     ]
@@ -8514,29 +9728,29 @@ const allQuestions = [
     "question": "Какое сокращенное название имеет оперативная память?",
     "answers": [
       {
-        "text": "ROM",
-        "isCorrect": false
-      },
-      {
-        "text": "CMOS",
-        "isCorrect": false
-      },
-      {
         "text": "RAM",
         "isCorrect": true
       },
       {
-        "text": "SSD",
+        "text": "BIOS",
+        "isCorrect": false
+      },
+      {
+        "text": "GPU",
+        "isCorrect": false
+      },
+      {
+        "text": "ROM",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 444,
-    "question": "Постоянное запоминающее устройство – это…",
+    "question": "Постоянное запоминающее устройство - это...",
     "answers": [
       {
-        "text": "Часть процессора",
+        "text": "Временный файловый буфер",
         "isCorrect": false
       },
       {
@@ -8544,11 +9758,11 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Рабочая память программ",
+        "text": "Регистр процессора",
         "isCorrect": false
       },
       {
-        "text": "Кэш памяти",
+        "text": "Сменный оптический носитель",
         "isCorrect": false
       }
     ]
@@ -8558,63 +9772,63 @@ const allQuestions = [
     "question": "Как иначе называется жёсткий диск?",
     "answers": [
       {
-        "text": "SSD",
+        "text": "Драм-картридж",
         "isCorrect": false
       },
       {
-        "text": "HDD",
+        "text": "Винчестер",
         "isCorrect": true
       },
       {
-        "text": "CMOS",
+        "text": "Дискета",
         "isCorrect": false
       },
       {
-        "text": "FDD",
+        "text": "Плоттер",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 446,
-    "question": "Оперативная память – это…",
+    "question": "Оперативная память - это...",
     "answers": [
       {
-        "text": "Постоянное хранилище данных",
-        "isCorrect": false
-      },
-      {
-        "text": "Энергонезависимая память",
-        "isCorrect": false
-      },
-      {
-        "text": "Быстрая временная память",
+        "text": "Энергозависимое хранилище данных",
         "isCorrect": true
       },
       {
-        "text": "Графический процессор",
+        "text": "Устройство долгосрочного архивирования",
+        "isCorrect": false
+      },
+      {
+        "text": "Контроллер системной шины",
+        "isCorrect": false
+      },
+      {
+        "text": "Постоянный программный модуль",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 447,
-    "question": "Жесткий диск – это…",
+    "question": "Жесткий диск - это...",
     "answers": [
       {
-        "text": "Оперативная память",
+        "text": "Внутренний кэш процессора",
         "isCorrect": false
       },
       {
-        "text": "Энергонезависимая память большого объёма",
+        "text": "Логический элемент управления",
+        "isCorrect": false
+      },
+      {
+        "text": "Устройство внешней памяти",
         "isCorrect": true
       },
       {
-        "text": "Быстрый кэш",
-        "isCorrect": false
-      },
-      {
-        "text": "Контроллер питания",
+        "text": "Модуль обработки прерываний",
         "isCorrect": false
       }
     ]
@@ -8632,11 +9846,11 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "В децибелах",
+        "text": "В ваттах",
         "isCorrect": false
       },
       {
-        "text": "В вольтах",
+        "text": "В амперах",
         "isCorrect": false
       }
     ]
@@ -8646,19 +9860,19 @@ const allQuestions = [
     "question": "Какую емкость имеет диск 3,5''?",
     "answers": [
       {
-        "text": "360 КБ",
-        "isCorrect": false
-      },
-      {
-        "text": "720 КБ",
-        "isCorrect": false
-      },
-      {
-        "text": "1,44 МБ",
+        "text": "1,44 Мб",
         "isCorrect": true
       },
       {
-        "text": "2 МБ",
+        "text": "700 Кб",
+        "isCorrect": false
+      },
+      {
+        "text": "4,7 Гб",
+        "isCorrect": false
+      },
+      {
+        "text": "100 Мб",
         "isCorrect": false
       }
     ]
@@ -8668,19 +9882,19 @@ const allQuestions = [
     "question": "Почему флоппи диск имеет такое название?",
     "answers": [
       {
-        "text": "Потому что он гибкий от слова floppy — \"мягкий\"",
+        "text": "Из-за гибкого магнитного диска",
         "isCorrect": true
       },
       {
-        "text": "Потому что он металлический",
+        "text": "Благодаря высокой скорости вращения",
         "isCorrect": false
       },
       {
-        "text": "Потому что он быстрый",
+        "text": "Из-за специфического шума",
         "isCorrect": false
       },
       {
-        "text": "Потому что invented by IBM",
+        "text": "По имени изобретателя",
         "isCorrect": false
       }
     ]
@@ -8690,19 +9904,19 @@ const allQuestions = [
     "question": "Кто изобрёл флэш-память?",
     "answers": [
       {
-        "text": "Robert Dennard",
-        "isCorrect": false
-      },
-      {
-        "text": "Fujio Masuoka",
+        "text": "Фудзи Масуока",
         "isCorrect": true
       },
       {
-        "text": "Jack Kilby",
+        "text": "Алан Тьюринг",
         "isCorrect": false
       },
       {
-        "text": "Gordon Moore",
+        "text": "Стив Возняк",
+        "isCorrect": false
+      },
+      {
+        "text": "Гордон Мур",
         "isCorrect": false
       }
     ]
@@ -8712,19 +9926,19 @@ const allQuestions = [
     "question": "Какой элемент лежит в флэш-памяти типа NAND?",
     "answers": [
       {
-        "text": "Транзистор с плавающим затвором, соединённый последовательно",
+        "text": "Транзистор с плавающим затвором",
         "isCorrect": true
       },
       {
-        "text": "Транзистор с плавающим затвором, соединённый параллельно",
+        "text": "Магнитная микро-катушка",
         "isCorrect": false
       },
       {
-        "text": "Конденсатор",
+        "text": "Оптический кристалл",
         "isCorrect": false
       },
       {
-        "text": "Резистор",
+        "text": "Вакуумная лампа",
         "isCorrect": false
       }
     ]
@@ -8734,41 +9948,41 @@ const allQuestions = [
     "question": "Какой элемент лежит в основе флэш-памяти типа NOR?",
     "answers": [
       {
-        "text": "Транзистор с плавающим затвором, соединённый параллельно",
+        "text": "Ячейки с параллельным подключением",
         "isCorrect": true
       },
       {
-        "text": "Транзистор с плавающим затвором, соединённый последовательно",
+        "text": "Последовательная цепочка битов",
         "isCorrect": false
       },
       {
-        "text": "Диод",
+        "text": "Индуктивный сердечник",
         "isCorrect": false
       },
       {
-        "text": "Танталовый конденсатор",
+        "text": "Фоторезистивный слой",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 454,
-    "question": "Буферная Память – это…",
+    "question": "Буферная Память - это...",
     "answers": [
       {
-        "text": "Энергонезависимая память",
-        "isCorrect": false
-      },
-      {
-        "text": "Временная память для ускорения обмена данными",
+        "text": "Временное хранилище при обмене",
         "isCorrect": true
       },
       {
-        "text": "Постоянная память",
+        "text": "Постоянный архив документов",
         "isCorrect": false
       },
       {
-        "text": "Регистр процессора",
+        "text": "Защищенный раздел системы",
+        "isCorrect": false
+      },
+      {
+        "text": "Сектор загрузки BIOS",
         "isCorrect": false
       }
     ]
@@ -8782,15 +9996,15 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Last In Final Out",
+        "text": "Long Internal File Order",
         "isCorrect": false
       },
       {
-        "text": "Load In First Out",
+        "text": "Low Input Frequency Output",
         "isCorrect": false
       },
       {
-        "text": "Logic In FIFO",
+        "text": "Level Integrity Format Option",
         "isCorrect": false
       }
     ]
@@ -8800,41 +10014,41 @@ const allQuestions = [
     "question": "Как расшифровывается FIFO?",
     "answers": [
       {
+        "text": "Fast Input Fast Output",
+        "isCorrect": false
+      },
+      {
+        "text": "File Information Folder Object",
+        "isCorrect": false
+      },
+      {
         "text": "First In First Out",
         "isCorrect": true
       },
       {
-        "text": "Fast In Fast Out",
-        "isCorrect": false
-      },
-      {
-        "text": "First Input Fast Output",
-        "isCorrect": false
-      },
-      {
-        "text": "Flash In First Out",
+        "text": "Fixed Index For Output",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 457,
-    "question": "Видеопамять – это…",
+    "question": "Видеопамять - это...",
     "answers": [
       {
-        "text": "Постоянная память",
-        "isCorrect": false
-      },
-      {
-        "text": "Память для хранения графической информации",
+        "text": "Память для графических данных",
         "isCorrect": true
       },
       {
-        "text": "Буфер обмена",
+        "text": "Хранилище видеокассет",
         "isCorrect": false
       },
       {
-        "text": "Регистры процессора",
+        "text": "Кэш аудио-контроллера",
+        "isCorrect": false
+      },
+      {
+        "text": "Реестр системных прерываний",
         "isCorrect": false
       }
     ]
@@ -8844,19 +10058,19 @@ const allQuestions = [
     "question": "В каком году был анонсирован NAND - тип флешь памяти?",
     "answers": [
       {
-        "text": "1984",
-        "isCorrect": false
-      },
-      {
-        "text": "1987",
+        "text": "1987 год",
         "isCorrect": true
       },
       {
-        "text": "1990",
+        "text": "1995 год",
         "isCorrect": false
       },
       {
-        "text": "1992",
+        "text": "1972 год",
+        "isCorrect": false
+      },
+      {
+        "text": "2001 год",
         "isCorrect": false
       }
     ]
@@ -8874,11 +10088,11 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "SRAM",
+        "text": "DRAM",
         "isCorrect": false
       },
       {
-        "text": "DRAM",
+        "text": "SRAM",
         "isCorrect": false
       }
     ]
@@ -8888,7 +10102,7 @@ const allQuestions = [
     "question": "Какая фирма выпустила первый коммерческий флешь-чип?",
     "answers": [
       {
-        "text": "Intel 1988",
+        "text": "Intel",
         "isCorrect": true
       },
       {
@@ -8896,33 +10110,33 @@ const allQuestions = [
         "isCorrect": false
       },
       {
-        "text": "AMD",
+        "text": "Samsung",
         "isCorrect": false
       },
       {
-        "text": "Micron",
+        "text": "Apple",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 461,
-    "question": "В каком году была выпущена первая коммерческая флэш-памяти (флэш-чип)?",
+    "question": "В каком году была выпущена первая коммерческая флэш-память (флэш-чип)?",
     "answers": [
       {
-        "text": "1984",
-        "isCorrect": false
-      },
-      {
-        "text": "1987",
-        "isCorrect": false
-      },
-      {
-        "text": "1988",
+        "text": "1987 год",
         "isCorrect": true
       },
       {
-        "text": "1990",
+        "text": "1981 год",
+        "isCorrect": false
+      },
+      {
+        "text": "1992 год",
+        "isCorrect": false
+      },
+      {
+        "text": "1984 год",
         "isCorrect": false
       }
     ]
@@ -8932,85 +10146,85 @@ const allQuestions = [
     "question": "В каком году была изобретена флэш-память?",
     "answers": [
       {
-        "text": "1980",
+        "text": "1985 год",
         "isCorrect": false
       },
       {
-        "text": "1984",
+        "text": "1980 год",
         "isCorrect": true
       },
       {
-        "text": "1988",
+        "text": "1978 год",
         "isCorrect": false
       },
       {
-        "text": "1992",
+        "text": "1982 год",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 463,
-    "question": "Flash-Memory – это…",
+    "question": "Flash-Memory - это...",
     "answers": [
       {
-        "text": "Энергонезависимая память",
+        "text": "Энергозависимый кэш процессора",
+        "isCorrect": false
+      },
+      {
+        "text": "Оптический носитель данных",
+        "isCorrect": false
+      },
+      {
+        "text": "Тип магнитной ленты",
+        "isCorrect": false
+      },
+      {
+        "text": "Энергонезависимая полупроводниковая память",
         "isCorrect": true
-      },
-      {
-        "text": "Временная память",
-        "isCorrect": false
-      },
-      {
-        "text": "Регистры процессора",
-        "isCorrect": false
-      },
-      {
-        "text": "Буфер обмена",
-        "isCorrect": false
       }
     ]
   },
   {
     "id": 464,
-    "question": "FPM DRAM – это…",
+    "question": "FPM DRAM - это...",
     "answers": [
       {
-        "text": "Fast Page Mode DRAM",
+        "text": "Память с быстрым страничным режимом",
         "isCorrect": true
       },
       {
-        "text": "Flash Page Memory",
+        "text": "Полностью программируемый модуль",
         "isCorrect": false
       },
       {
-        "text": "First Parallel Memory",
+        "text": "Протокол передачи файлов",
         "isCorrect": false
       },
       {
-        "text": "Fast Peripheral Module",
+        "text": "Тип сегментированной видеопамяти",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 465,
-    "question": "DDR SDRAM – это…",
+    "question": "DDR SDRAM - это...",
     "answers": [
       {
-        "text": "Double Data Rate Synchronous DRAM",
+        "text": "Динамическая двухканальная память",
+        "isCorrect": false
+      },
+      {
+        "text": "Память с удвоенной скоростью передачи",
         "isCorrect": true
       },
       {
-        "text": "Direct Dynamic RAM",
+        "text": "Цифровая оперативная память",
         "isCorrect": false
       },
       {
-        "text": "Dual Disk RAM",
-        "isCorrect": false
-      },
-      {
-        "text": "Data Driven Register",
+        "text": "Прямой доступ к регистрам",
         "isCorrect": false
       }
     ]
@@ -9020,19 +10234,19 @@ const allQuestions = [
     "question": "К каким устройствам можно отнести принтер?",
     "answers": [
       {
-        "text": "Вводные",
+        "text": "Устройства ввода",
         "isCorrect": false
       },
       {
-        "text": "Выводные",
+        "text": "Устройства вывода",
         "isCorrect": true
       },
       {
-        "text": "Ввод/вывод",
+        "text": "Системные контроллеры",
         "isCorrect": false
       },
       {
-        "text": "Системные",
+        "text": "Накопители информации",
         "isCorrect": false
       }
     ]
@@ -9042,19 +10256,19 @@ const allQuestions = [
     "question": "К каким устройствам можно отнести клавиатуру, сканер?",
     "answers": [
       {
-        "text": "Вводные",
+        "text": "Устройства ввода",
         "isCorrect": true
       },
       {
-        "text": "Выводные",
+        "text": "Периферия вывода",
         "isCorrect": false
       },
       {
-        "text": "Ввод/вывод",
+        "text": "Средства обработки",
         "isCorrect": false
       },
       {
-        "text": "Системные",
+        "text": "Внешняя память",
         "isCorrect": false
       }
     ]
@@ -9064,19 +10278,19 @@ const allQuestions = [
     "question": "Что необходимо использовать для одновременного подключения нескольких устройств USB?",
     "answers": [
       {
-        "text": "Хаб USB",
+        "text": "Сетевой мост",
+        "isCorrect": false
+      },
+      {
+        "text": "USB-концентратор (хаб)",
         "isCorrect": true
       },
       {
-        "text": "Концентратор HDMI",
+        "text": "Маршрутизатор портов",
         "isCorrect": false
       },
       {
-        "text": "Коммутатор LAN",
-        "isCorrect": false
-      },
-      {
-        "text": "Роутер",
+        "text": "Параллельный адаптер",
         "isCorrect": false
       }
     ]
@@ -9086,41 +10300,41 @@ const allQuestions = [
     "question": "Сколько линий используется в параллельных портах для одновременной передачи байта информации?",
     "answers": [
       {
-        "text": "4",
+        "text": "16 линий",
         "isCorrect": false
       },
       {
-        "text": "8",
+        "text": "4 линии",
+        "isCorrect": false
+      },
+      {
+        "text": "8 линий",
         "isCorrect": true
       },
       {
-        "text": "16",
-        "isCorrect": false
-      },
-      {
-        "text": "32",
+        "text": "1 линия",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 470,
-    "question": "В первых компьютерах использовались …",
+    "question": "В первых компьютерах использовались ...",
     "answers": [
       {
-        "text": "Микропроцессоры",
-        "isCorrect": false
-      },
-      {
-        "text": "Вакуумные лампы",
+        "text": "Электронные вакуумные лампы",
         "isCorrect": true
       },
       {
-        "text": "Транзисторы",
+        "text": "Полупроводниковые транзисторы",
         "isCorrect": false
       },
       {
-        "text": "Микросхемы",
+        "text": "Интегральные микросхемы",
+        "isCorrect": false
+      },
+      {
+        "text": "Магнитные домены",
         "isCorrect": false
       }
     ]
@@ -9130,19 +10344,19 @@ const allQuestions = [
     "question": "В каком году компания Hewlett Packard представила компьютер для бизнеса HP 2115?",
     "answers": [
       {
-        "text": "1969",
+        "text": "1972 год",
         "isCorrect": false
       },
       {
-        "text": "1972",
+        "text": "1966 год",
         "isCorrect": true
       },
       {
-        "text": "1975",
+        "text": "1961 год",
         "isCorrect": false
       },
       {
-        "text": "1978",
+        "text": "1975 год",
         "isCorrect": false
       }
     ]
@@ -9152,19 +10366,19 @@ const allQuestions = [
     "question": "Какой первый коммерческий модем разработала компания Bell Labs?",
     "answers": [
       {
-        "text": "Acoustic Coupler",
+        "text": "Dataphone",
         "isCorrect": true
       },
       {
-        "text": "DSL",
+        "text": "Courier 1200",
         "isCorrect": false
       },
       {
-        "text": "Cable Modem",
+        "text": "Smartmodem 300",
         "isCorrect": false
       },
       {
-        "text": "Fiber Modem",
+        "text": "Bell 212A",
         "isCorrect": false
       }
     ]
@@ -9174,41 +10388,41 @@ const allQuestions = [
     "question": "Кто описал машину для суммирования чисел?",
     "answers": [
       {
-        "text": "Charles Babbage аналитическая машина",
+        "text": "Чарльз Бэббидж",
+        "isCorrect": false
+      },
+      {
+        "text": "Алан Тюринг",
+        "isCorrect": false
+      },
+      {
+        "text": "Блез Паскаль",
         "isCorrect": true
       },
       {
-        "text": "Alan Turing",
-        "isCorrect": false
-      },
-      {
-        "text": "John von Neumann",
-        "isCorrect": false
-      },
-      {
-        "text": "Konrad Zuse",
+        "text": "Джон фон Нейман",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 474,
-    "question": "В каком году создана электронно-вычислительная машина ENIAC ?",
+    "question": "В каком году создана электронно-вычислительная машина ENIAC?",
     "answers": [
       {
-        "text": "1943",
-        "isCorrect": false
-      },
-      {
-        "text": "1945",
+        "text": "1945 год",
         "isCorrect": true
       },
       {
-        "text": "1948",
+        "text": "1939 год",
         "isCorrect": false
       },
       {
-        "text": "1950",
+        "text": "1951 год",
+        "isCorrect": false
+      },
+      {
+        "text": "1948 год",
         "isCorrect": false
       }
     ]
@@ -9218,19 +10432,19 @@ const allQuestions = [
     "question": "Кто создал интегральную схему, расположив соединительные каналы непосредственно на кремниевой пластине?",
     "answers": [
       {
-        "text": "Robert Noyce",
+        "text": "Роберт Нойс",
         "isCorrect": true
       },
       {
-        "text": "Jack Kilby",
+        "text": "Джек Килби",
         "isCorrect": false
       },
       {
-        "text": "Gordon Moore",
+        "text": "Гордон Мур",
         "isCorrect": false
       },
       {
-        "text": "John Bardeen",
+        "text": "Уильям Шокли",
         "isCorrect": false
       }
     ]
@@ -9240,51 +10454,55 @@ const allQuestions = [
     "question": "Как называется максимальное количество ячеек основной памяти, которое может быть непосредственно адресовано микропроцессором?",
     "answers": [
       {
-        "text": "Адресуемая память",
+        "text": "Разрядность шины данных",
+        "isCorrect": false
+      },
+      {
+        "text": "Адресное пространство",
         "isCorrect": true
       },
       {
-        "text": "Общая память",
-        "isCorrect": false
-      },
-      {
-        "text": "Буферная память",
-        "isCorrect": false
-      },
-      {
         "text": "Кэш-память",
+        "isCorrect": false
+      },
+      {
+        "text": "Сегментация памяти",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 477,
-    "question": "Компьютеры 1-го поколения используют …",
+    "question": "Компьютеры 1-го поколения используют ...",
     "answers": [
       {
         "text": "Вакуумные лампы",
         "isCorrect": true
       },
       {
-        "text": "Транзисторы",
+        "text": "Транзисторные ключи",
         "isCorrect": false
       },
       {
-        "text": "Микропроцессоры",
+        "text": "Магнитные сердечники",
         "isCorrect": false
       },
       {
-        "text": "Интегральные схемы",
+        "text": "Релейные схемы",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 478,
-    "question": "Компьютеры 2-го поколения используют …",
+    "question": "Компьютеры 2-го поколения используют ...",
     "answers": [
       {
-        "text": "Вакуумные лампы",
+        "text": "БИС и СБИС",
+        "isCorrect": false
+      },
+      {
+        "text": "Вакуумные триоды",
         "isCorrect": false
       },
       {
@@ -9292,25 +10510,17 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Микропроцессоры",
-        "isCorrect": false
-      },
-      {
-        "text": "Интегральные схемы",
+        "text": "Интегральные микросхемы",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 479,
-    "question": "Компьютеры 3-го поколения используют …",
+    "question": "Компьютеры 3-го поколения используют ...",
     "answers": [
       {
-        "text": "Вакуумные лампы",
-        "isCorrect": false
-      },
-      {
-        "text": "Транзисторы",
+        "text": "Микропроцессоры",
         "isCorrect": false
       },
       {
@@ -9318,161 +10528,165 @@ const allQuestions = [
         "isCorrect": true
       },
       {
-        "text": "Микропроцессоры",
+        "text": "Магнитную ленту",
+        "isCorrect": false
+      },
+      {
+        "text": "Дискретные транзисторы",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 480,
-    "question": "Компьютеры 4-го поколения используют …",
+    "question": "Компьютеры 4-го поколения используют ...",
     "answers": [
-      {
-        "text": "Вакуумные лампы",
-        "isCorrect": false
-      },
-      {
-        "text": "Транзисторы",
-        "isCorrect": false
-      },
-      {
-        "text": "Интегральные схемы",
-        "isCorrect": false
-      },
       {
         "text": "Микропроцессоры",
         "isCorrect": true
+      },
+      {
+        "text": "Транзисторные сборки",
+        "isCorrect": false
+      },
+      {
+        "text": "Оптические чипы",
+        "isCorrect": false
+      },
+      {
+        "text": "Вакуумные индикаторы",
+        "isCorrect": false
       }
     ]
   },
   {
     "id": 481,
-    "question": "Мощные многопроцессорные вычислительные машины с быстродействием сотни миллионов — десятки миллиардов операций в секунду относятся к …",
+    "question": "Мощные многопроцессорные вычислительные машины с быстродействием сотни миллионов - десятки миллиардов операций в секунду относятся к ...",
     "answers": [
       {
-        "text": "Персональным компьютерам",
-        "isCorrect": false
-      },
-      {
-        "text": "Суперкомпьютерам",
+        "text": "суперкомпьютерам",
         "isCorrect": true
       },
       {
-        "text": "Серверным системам",
+        "text": "серверным станциям",
         "isCorrect": false
       },
       {
-        "text": "Мейнфреймам",
+        "text": "мейнкреймам",
+        "isCorrect": false
+      },
+      {
+        "text": "персональным ЭВМ",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 482,
-    "question": "Исторически первыми появились …",
+    "question": "Исторически первыми появились ...",
     "answers": [
       {
-        "text": "Персональные компьютеры",
+        "text": "интегральные схемы",
         "isCorrect": false
       },
       {
-        "text": "Мейнфреймы",
+        "text": "микропроцессоры",
+        "isCorrect": false
+      },
+      {
+        "text": "вакуумные лампы",
         "isCorrect": true
       },
       {
-        "text": "Лэптопы",
-        "isCorrect": false
-      },
-      {
-        "text": "Мини-компьютеры",
+        "text": "транзисторы",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 483,
-    "question": "Процессоры семейства Intel Pentium 4 – это",
+    "question": "Процессоры семейства Intel Pentium 4 - это",
     "answers": [
       {
-        "text": "Одноядерные до Pentium 4 Extreme Edition",
+        "text": "многоядерные чипы",
+        "isCorrect": false
+      },
+      {
+        "text": "одноядерные процессоры",
         "isCorrect": true
       },
       {
-        "text": "Двухъядерные",
+        "text": "графические ускорители",
         "isCorrect": false
       },
       {
-        "text": "Четырёхъядерные",
-        "isCorrect": false
-      },
-      {
-        "text": "Многоядерные с 8 ядрами",
+        "text": "квантовые вычислители",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 484,
-    "question": "Intel Pentium D- это",
+    "question": "Intel Pentium D - это",
     "answers": [
       {
-        "text": "Одноядерный процессор",
-        "isCorrect": false
-      },
-      {
-        "text": "Двухъядерный процессор",
+        "text": "двухъядерные процессоры",
         "isCorrect": true
       },
       {
-        "text": "Четырёхъядерный процессор",
+        "text": "мобильные чипсеты",
         "isCorrect": false
       },
       {
-        "text": "Экстремальный серверный процессор",
+        "text": "серверные модули",
+        "isCorrect": false
+      },
+      {
+        "text": "восьмиядерные системы",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 485,
-    "question": "AMD Athlon 64 X2 Dual-Core — это",
+    "question": "AMD Athlon 64 X2 Dual-Core - это",
     "answers": [
       {
-        "text": "Одноядерный процессор",
+        "text": "одноядерный процессор",
         "isCorrect": false
       },
       {
-        "text": "Двухъядерный процессор",
+        "text": "видеокарта",
+        "isCorrect": false
+      },
+      {
+        "text": "двухъядерный процессор",
         "isCorrect": true
       },
       {
-        "text": "Четырёхъядерный процессор",
-        "isCorrect": false
-      },
-      {
-        "text": "Графический процессор",
+        "text": "оперативная память",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 486,
-    "question": "2-ое поколение компьютеров создано на основе …",
+    "question": "2-ое поколение компьютеров создано на основе ...",
     "answers": [
       {
-        "text": "Вакуумных ламп",
-        "isCorrect": false
-      },
-      {
-        "text": "Транзисторов",
+        "text": "полупроводниковых транзисторов",
         "isCorrect": true
       },
       {
-        "text": "Микропроцессоров",
+        "text": "вакуумных ламп",
         "isCorrect": false
       },
       {
-        "text": "Интегральных схем",
+        "text": "микросхем",
+        "isCorrect": false
+      },
+      {
+        "text": "биочипов",
         "isCorrect": false
       }
     ]
@@ -9482,63 +10696,63 @@ const allQuestions = [
     "question": "Какое устройство реализует сопряжение и связь с другими устройствами ПК?",
     "answers": [
       {
-        "text": "Центральный процессор",
+        "text": "блок питания",
         "isCorrect": false
       },
       {
-        "text": "Контроллер ввода-вывода",
+        "text": "интерфейсный блок",
         "isCorrect": true
       },
       {
-        "text": "Память",
+        "text": "жесткий диск",
         "isCorrect": false
       },
       {
-        "text": "Тактовый генератор",
+        "text": "монитор",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 488,
-    "question": "Как называется временный останов выполнения одной программы в целях оперативного выполнения другой, в данный момент более важной (приоритетной) программы?",
+    "question": "Как называется временный останов выполнения одной программы в целях оперативного выполнения другой?",
     "answers": [
       {
-        "text": "Прерывание",
+        "text": "перезагрузка",
+        "isCorrect": false
+      },
+      {
+        "text": "прерывание",
         "isCorrect": true
       },
       {
-        "text": "Таймер",
+        "text": "цикл",
         "isCorrect": false
       },
       {
-        "text": "Кэширование",
-        "isCorrect": false
-      },
-      {
-        "text": "Буферизация",
+        "text": "блокировка",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 489,
-    "question": "Что обслуживает процедуры прерывания, принимает запрос на прерывание от внешних устройств, определяет уровень приоритета этого запроса и выдает сигнал прерывания в процессор?",
+    "question": "Что обслуживает процедуры прерывания и определяет уровень их приоритета?",
     "answers": [
       {
-        "text": "DMA",
-        "isCorrect": false
-      },
-      {
-        "text": "Контроллер прерываний",
+        "text": "контроллер прерываний",
         "isCorrect": true
       },
       {
-        "text": "Тактовый генератор",
+        "text": "видеоадаптер",
         "isCorrect": false
       },
       {
-        "text": "Кэш-память",
+        "text": "сетевая карта",
+        "isCorrect": false
+      },
+      {
+        "text": "математический копроцессор",
         "isCorrect": false
       }
     ]
@@ -9548,41 +10762,41 @@ const allQuestions = [
     "question": "Что определяет количество элементарных операций выполняемые процессором за единицу времени?",
     "answers": [
       {
-        "text": "Тактовая частота",
+        "text": "объем кэша",
+        "isCorrect": false
+      },
+      {
+        "text": "разрядность",
+        "isCorrect": false
+      },
+      {
+        "text": "тактовая частота",
         "isCorrect": true
       },
       {
-        "text": "Разрядность",
-        "isCorrect": false
-      },
-      {
-        "text": "Размер кэша",
-        "isCorrect": false
-      },
-      {
-        "text": "Тип шины",
+        "text": "шина адреса",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 491,
-    "question": "На какие типы можно разделить всю память с произвольным доступом? а)GRAM, б)FRAM, в)CRAM, г)DRAM, д)SRAM",
+    "question": "На какие типы можно разделить всю память с произвольным доступом?",
     "answers": [
       {
-        "text": "GRAM, FRAM, CRAM, DRAM, SRAM",
+        "text": "GRAM и CRAM",
+        "isCorrect": false
+      },
+      {
+        "text": "DRAM и SRAM",
         "isCorrect": true
       },
       {
-        "text": "ROM, PROM, EPROM, EEPROM",
+        "text": "FRAM и GRAM",
         "isCorrect": false
       },
       {
-        "text": "NAND, NOR, DRAM, SRAM",
-        "isCorrect": false
-      },
-      {
-        "text": "L1, L2, L3, L4",
+        "text": "SRAM и CRAM",
         "isCorrect": false
       }
     ]
@@ -9592,107 +10806,107 @@ const allQuestions = [
     "question": "В каком году был выпущен первый микропроцессор?",
     "answers": [
       {
-        "text": "1970",
+        "text": "1945 год",
         "isCorrect": false
       },
       {
-        "text": "1971 Intel 4004",
+        "text": "1971 год",
         "isCorrect": true
       },
       {
-        "text": "1972",
+        "text": "1985 год",
         "isCorrect": false
       },
       {
-        "text": "1973",
+        "text": "1991 год",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 493,
-    "question": "Как называется устройство для автоматического считывания с бумажных носителей и ввода в ПК машинописных текстов, графиков, рисунков, чертежей?",
+    "question": "Как называется устройство для автоматического считывания текстов и графики с бумажных носителей?",
     "answers": [
       {
-        "text": "Мышь",
+        "text": "принтер",
         "isCorrect": false
       },
       {
-        "text": "Сканер",
+        "text": "сканер",
         "isCorrect": true
       },
       {
-        "text": "Принтер",
+        "text": "модем",
         "isCorrect": false
       },
       {
-        "text": "Клавиатура",
+        "text": "плоттер",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 494,
-    "question": "Как называется устройство для ручного ввода графической информации, изображений путем перемещения специального указателя?",
+    "question": "Как называется устройство для ручного ввода графики путем перемещения специального указателя?",
     "answers": [
       {
-        "text": "Джойстик",
-        "isCorrect": false
-      },
-      {
-        "text": "Мышь",
+        "text": "дигитайзер",
         "isCorrect": true
       },
       {
-        "text": "Сенсорная панель",
+        "text": "клавиатура",
         "isCorrect": false
       },
       {
-        "text": "Графический планшет",
+        "text": "джойстик",
+        "isCorrect": false
+      },
+      {
+        "text": "стример",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 495,
-    "question": "Как называется устройство для ввода графической информации на экран дисплея путем управления движением курсора по экрану с последующим кодированием координат курсора и вводом их в ПК?",
+    "question": "Устройство для ввода графики на экран путем управления движением курсора?",
     "answers": [
       {
-        "text": "Мышь",
+        "text": "микрофон",
+        "isCorrect": false
+      },
+      {
+        "text": "мышь",
         "isCorrect": true
       },
       {
-        "text": "Тачскрин",
+        "text": "веб-камера",
         "isCorrect": false
       },
       {
-        "text": "Сканер",
-        "isCorrect": false
-      },
-      {
-        "text": "Джойстик",
+        "text": "дисковод",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 496,
-    "question": "Как называется устройство для ввода отдельных элементов изображения программ или команд с полиэкрана дисплея в ПК?",
+    "question": "Устройство для ввода отдельных элементов изображения или команд с экрана?",
     "answers": [
       {
-        "text": "Графический планшет",
+        "text": "световое перо",
         "isCorrect": true
       },
       {
-        "text": "Джойстик",
+        "text": "акустическая система",
         "isCorrect": false
       },
       {
-        "text": "Мышь",
+        "text": "жесткий диск",
         "isCorrect": false
       },
       {
-        "text": "Клавиатура",
+        "text": "процессор",
         "isCorrect": false
       }
     ]
@@ -9702,19 +10916,19 @@ const allQuestions = [
     "question": "Как называются печатающие устройства для регистрации информации на бумажный носитель?",
     "answers": [
       {
-        "text": "Принтеры",
+        "text": "сканеры",
+        "isCorrect": false
+      },
+      {
+        "text": "принтеры",
         "isCorrect": true
       },
       {
-        "text": "Сканеры",
+        "text": "мониторы",
         "isCorrect": false
       },
       {
-        "text": "Микшеры",
-        "isCorrect": false
-      },
-      {
-        "text": "Мониторы",
+        "text": "колонки",
         "isCorrect": false
       }
     ]
@@ -9724,63 +10938,63 @@ const allQuestions = [
     "question": "Как называются устройства для вывода графической информации из ПК на бумажный носитель?",
     "answers": [
       {
-        "text": "Мониторы",
-        "isCorrect": false
-      },
-      {
-        "text": "Принтеры",
+        "text": "плоттеры",
         "isCorrect": true
       },
       {
-        "text": "Джойстики",
+        "text": "трекболы",
         "isCorrect": false
       },
       {
-        "text": "Плоттеры",
+        "text": "наушники",
+        "isCorrect": false
+      },
+      {
+        "text": "модемы",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 499,
-    "question": "Какая плата за счет параллельной работы с процессором значительно ускоряет выполнение процедур ввода-вывода при обслуживании нескольких внешних устройств, освобождает процессор от обработки процедур ввода-вывода, в т.ч. реализуют и режим прямого доступа к памяти?",
+    "question": "Какая плата ускоряет ввод-вывод и реализует режим прямого доступа к памяти?",
     "answers": [
       {
-        "text": "Контроллер прерываний",
+        "text": "звуковая карта",
         "isCorrect": false
       },
       {
-        "text": "DMA-контроллер",
+        "text": "контроллер ввода-вывода",
         "isCorrect": true
       },
       {
-        "text": "Тактовый генератор",
+        "text": "модуль ОЗУ",
         "isCorrect": false
       },
       {
-        "text": "Кэш-память",
+        "text": "сетевой адаптер",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 500,
-    "question": "Что показывает сколько бит данных процессор может принять и обработать в своих регистрах за один такт?",
+    "question": "Что показывает сколько бит данных процессор может обработать за один такт?",
     "answers": [
       {
-        "text": "Разрядность процессора",
+        "text": "объем кэша",
+        "isCorrect": false
+      },
+      {
+        "text": "разрядность процессора",
         "isCorrect": true
       },
       {
-        "text": "Тактовая частота",
+        "text": "время отклика",
         "isCorrect": false
       },
       {
-        "text": "Размер кэша",
-        "isCorrect": false
-      },
-      {
-        "text": "Тип шины",
+        "text": "частота шины",
         "isCorrect": false
       }
     ]

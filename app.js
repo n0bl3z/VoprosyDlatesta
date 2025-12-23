@@ -201,13 +201,10 @@ function saveName() {
   }
 }
 
-// Показать/скрыть переключатель режима для секретного пользователя
+// Показать переключатель режима (доступен всем)
 function updateSecretModeUI() {
-  if (state.isSecretMode && elements.quizModeSelector) {
+  if (elements.quizModeSelector) {
     elements.quizModeSelector.classList.remove('hidden');
-  } else if (elements.quizModeSelector) {
-    elements.quizModeSelector.classList.add('hidden');
-    state.quizMode = 'normal'; // Сбрасываем режим
   }
 }
 
@@ -455,9 +452,9 @@ function initQuiz() {
   }
 
   // Режим 'all' — берём все вопросы (перемешанные), иначе рандомные 40
-  if (state.isSecretMode && state.quizMode === 'all') {
+  if (state.quizMode === 'all') {
     state.questions = shuffleArray([...questionsPool]); // Все вопросы в случайном порядке
-    console.log('🔓 All questions mode:', questionsPool.length, 'questions');
+    console.log('� All questions mode:', questionsPool.length, 'questions');
   } else {
     state.questions = getRandomItems(questionsPool, QUESTIONS_PER_TEST);
   }
@@ -484,7 +481,7 @@ function initQuiz() {
   showScreen('quiz');
 
   // В режиме 'all' — без таймера
-  if (state.isSecretMode && state.quizMode === 'all') {
+  if (state.quizMode === 'all') {
     elements.timer.textContent = '∞'; // Бесконечность
     elements.timer.classList.remove('warning');
   } else {
