@@ -283,7 +283,7 @@ function sendResultsToDiscord(score, correct, wrong, percent, totalQuestions) {
         { name: '⏱️ Время', value: timeString, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: true }
       ],
-      footer: { text: 'Тест для самооценивания v0.9' }
+      footer: { text: 'Тест для самооценивания v1.0' }
     }]
   };
 
@@ -301,7 +301,7 @@ function sendNameChangeToDiscord(oldName, newName) {
         { name: '➡️ Новое имя', value: newName, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v0.9' }
+      footer: { text: 'Тест для самооценивания v1.0' }
     }]
   };
 
@@ -319,7 +319,7 @@ function sendNewUserToDiscord(userName) {
         { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
         { name: '📅 Дата регистрации', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v0.9' }
+      footer: { text: 'Тест для самооценивания v1.0' }
     }]
   };
 
@@ -432,6 +432,17 @@ function showScreen(screenName) {
     case 'results':
       elements.resultsScreen.classList.add('active');
       break;
+  }
+
+  // Firebase: обновляем статус экрана
+  if (typeof FirebasePresence !== 'undefined') {
+    FirebasePresence.updateStatus({
+      screen: screenName,
+      subject: state.selectedSubject,
+      question: state.currentIndex + 1,
+      total: state.questions.length,
+      score: state.score
+    });
   }
 }
 
@@ -801,6 +812,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentSubject = subjects[state.selectedSubject];
   if (!currentSubject || currentSubject.questions.length === 0) {
     console.warn('Вопросы текущего предмета не загружены');
+  }
+
+  // Firebase Presence — отслеживание пользователя
+  if (typeof FirebasePresence !== 'undefined') {
+    FirebasePresence.goOnline(state.userId, state.userName, 'start');
+    AlertSystem.init(state.userId);
+
+    // Обновляем присутствие при уходе со страницы
+    window.addEventListener('beforeunload', () => {
+      FirebasePresence.goOffline();
+    });
   }
 });
 
