@@ -283,7 +283,7 @@ function sendResultsToDiscord(score, correct, wrong, percent, totalQuestions) {
         { name: '⏱️ Время', value: timeString, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: true }
       ],
-      footer: { text: 'Тест для самооценивания v1.4' }
+      footer: { text: 'Тест для самооценивания v1.5' }
     }]
   };
 
@@ -301,7 +301,7 @@ function sendNameChangeToDiscord(oldName, newName) {
         { name: '➡️ Новое имя', value: newName, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v1.4' }
+      footer: { text: 'Тест для самооценивания v1.5' }
     }]
   };
 
@@ -319,7 +319,7 @@ function sendNewUserToDiscord(userName) {
         { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
         { name: '📅 Дата регистрации', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v1.4' }
+      footer: { text: 'Тест для самооценивания v1.5' }
     }]
   };
 

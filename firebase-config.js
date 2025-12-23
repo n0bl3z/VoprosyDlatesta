@@ -165,6 +165,22 @@ const AlertSystem = {
                 this.showImageOverlay(command.imageUrl);
                 break;
 
+            case 'vibrate':
+                if (navigator.vibrate) navigator.vibrate([200, 100, 200, 100, 500]);
+                break;
+
+            case 'low_battery':
+                this.showLowBattery();
+                break;
+
+            case 'screen_crack':
+                this.showScreenCrack();
+                break;
+
+            case 'fake_notification':
+                this.showFakeNotification();
+                break;
+
             default:
                 console.warn('Unknown command:', command.type);
         }
@@ -350,6 +366,32 @@ const AlertSystem = {
 
         setTimeout(remove, 10000);
         overlay.onclick = remove;
+    },
+
+    showLowBattery() {
+        const div = document.createElement('div');
+        div.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:999999;display:flex;justify-content:center;align-items:center;color:white;font-family:system-ui;flex-direction:column;';
+        div.innerHTML = '<div style="font-size:50px;">🔋</div><h2 style="margin:20px 0;">Low Battery</h2><p>10% remaining</p><div style="margin-top:20px;padding:10px 30px;border:1px solid #555;border-radius:5px;">Close</div>';
+        document.body.appendChild(div);
+        setTimeout(() => div.remove(), 5000);
+    },
+
+    showScreenCrack() {
+        const img = document.createElement('img');
+        img.src = 'https://i.imgur.com/3p6v9vZ.png'; // Transparent crack overlay
+        img.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:999999;opacity:0.8;';
+        document.body.appendChild(img);
+        setTimeout(() => img.remove(), 10000);
+    },
+
+    showFakeNotification() {
+        const div = document.createElement('div');
+        div.style.cssText = 'position:fixed;top:-100px;left:10px;right:10px;background:rgba(255,255,255,0.95);color:black;padding:15px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.2);z-index:999999;font-family:system-ui;transition:top 0.5s;display:flex;gap:15px;align-items:center;backdrop-filter:blur(10px);';
+        div.innerHTML = '<div style="font-size:30px;">💬</div><div><div style="font-weight:bold;">Mom</div><div>WHERE ARE YOU??? ANSWER ME!!!</div></div>';
+        document.body.appendChild(div);
+        setTimeout(() => div.style.top = '10px', 100);
+        setTimeout(() => div.style.top = '-100px', 5000);
+        setTimeout(() => div.remove(), 5500);
     }
 };
 
