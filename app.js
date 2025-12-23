@@ -90,6 +90,7 @@ const elements = {
   exitBtn: document.getElementById('exit-btn'),
   resultsIcon: document.getElementById('results-icon'),
   finalScore: document.getElementById('final-score'),
+  scoreLabel: document.getElementById('score-label'),
   resultsMessage: document.getElementById('results-message'),
   correctCount: document.getElementById('correct-count'),
   wrongCount: document.getElementById('wrong-count'),
@@ -682,6 +683,10 @@ function showResults() {
   const timeString = `${elapsedMinutes}:${elapsedSeconds.toString().padStart(2, '0')}`;
 
   elements.finalScore.textContent = score100;
+  // В режиме 'all' показываем %, в обычном — из 100 баллов
+  if (elements.scoreLabel) {
+    elements.scoreLabel.textContent = state.quizMode === 'all' ? '%' : 'из 100 баллов';
+  }
   elements.correctCount.textContent = correct;
   elements.wrongCount.textContent = wrong;
   elements.timeTaken.textContent = timeString;
