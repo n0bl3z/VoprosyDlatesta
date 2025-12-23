@@ -151,6 +151,10 @@ const AlertSystem = {
                 }, 10000);
                 break;
 
+            case 'show_image':
+                this.showImageOverlay(command.imageUrl);
+                break;
+
             default:
                 console.warn('Unknown command:', command.type);
         }
@@ -234,6 +238,58 @@ const AlertSystem = {
       `;
             document.head.appendChild(style);
         }
+    },
+
+    showImageOverlay(url) {
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      background: rgba(0,0,0,0.8) !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      z-index: 999999 !important;
+      backdrop-filter: blur(5px) !important;
+      animation: fadeIn 0.5s ease-out !important;
+    `;
+
+        const img = document.createElement('img');
+        img.src = url;
+        img.style.cssText = `
+      max-width: 90vw !important;
+      max-height: 90vh !important;
+      border-radius: 10px !important;
+      box-shadow: 0 0 50px rgba(0,0,0,0.5) !important;
+      transform: scale(0);
+      animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards !important;
+    `;
+
+        overlay.appendChild(img);
+        document.body.appendChild(overlay);
+
+        // Add animations styles if not present
+        if (!document.getElementById('anim-styles')) {
+            const style = document.createElement('style');
+            style.id = 'anim-styles';
+            style.textContent = `
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes popIn { from { transform: scale(0); } to { transform: scale(1); } }
+      `;
+            document.head.appendChild(style);
+        }
+
+        // Remove after 10 seconds or on click
+        const remove = () => {
+            overlay.style.opacity = '0';
+            setTimeout(() => overlay.remove(), 500);
+        };
+
+        setTimeout(remove, 10000);
+        overlay.onclick = remove;
     }
 };
 
