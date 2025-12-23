@@ -95,13 +95,6 @@ const AlertSystem = {
                 this.applyRainbowEffect();
                 break;
 
-            case 'flip':
-                document.body.style.transform = 'rotate(180deg)';
-                setTimeout(() => {
-                    document.body.style.transform = '';
-                }, 5000);
-                break;
-
             case 'shake':
                 document.body.classList.add('shake-effect');
                 setTimeout(() => {
@@ -143,12 +136,29 @@ const AlertSystem = {
                 break;
 
             case 'rotate':
-                this.toggleStyle('rotate-effect', 'body { transition: transform 2s; transform: rotate(180deg); }');
-                setTimeout(() => {
-                    const el = document.getElementById('rotate-effect');
-                    if (el) el.remove();
-                    document.body.style.transform = '';
-                }, 10000);
+                // Barrel Roll (360 spin)
+                this.toggleStyle('rotate-effect', `
+                    body { animation: barrel-roll 2s linear infinite; }
+                    @keyframes barrel-roll {
+                        0% { transform: rotate(0deg); }
+                        100% { transform: rotate(360deg); }
+                    }
+                `);
+                break;
+
+            case 'gravity':
+                this.toggleStyle('gravity-effect', `
+                    body * { transition: transform 2s ease-in !important; transform: translateY(100vh) rotate(20deg) !important; }
+                    body { overflow: hidden !important; }
+                `);
+                break;
+
+            case 'dvd':
+                this.showDVD();
+                break;
+
+            case 'fake_update':
+                this.showFakeUpdate();
                 break;
 
             case 'show_image':
@@ -170,7 +180,7 @@ const AlertSystem = {
             style.textContent = css;
             document.head.appendChild(style);
 
-            // Auto-remove after 10 seconds for most effects to avoid permanent broken state
+            // Auto-remove after 10 seconds for most effects
             setTimeout(() => {
                 const el = document.getElementById(id);
                 if (el) el.remove();
@@ -201,7 +211,6 @@ const AlertSystem = {
     `;
         document.body.appendChild(overlay);
 
-        // Play scream sound if possible (requires user interaction first usually)
         try {
             const audio = new Audio('https://www.myinstants.com/media/sounds/scream_horror1.mp3');
             audio.play().catch(e => console.log('Audio play failed', e));
@@ -211,7 +220,6 @@ const AlertSystem = {
     },
 
     showConfetti() {
-        // Простое конфетти из эмодзи
         for (let i = 0; i < 100; i++) {
             const confetti = document.createElement('div');
             confetti.textContent = ['🎉', '🎊', '✨', '🌟', '💫', '🤡', '💩'][Math.floor(Math.random() * 7)];
@@ -238,6 +246,60 @@ const AlertSystem = {
       `;
             document.head.appendChild(style);
         }
+    },
+
+    showDVD() {
+        const dvd = document.createElement('div');
+        dvd.textContent = 'DVD';
+        dvd.style.cssText = `
+            position: fixed;
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            background: blue;
+            padding: 10px 20px;
+            border-radius: 10px;
+            z-index: 99999;
+            animation: bounce 5s linear infinite alternate;
+            top: 0; left: 0;
+        `;
+        document.body.appendChild(dvd);
+
+        // Simple CSS bounce (not perfect physics but good enough for a prank)
+        if (!document.getElementById('dvd-style')) {
+            const style = document.createElement('style');
+            style.id = 'dvd-style';
+            style.textContent = `
+                @keyframes bounce {
+                    0% { transform: translate(0, 0); background: red; }
+                    25% { transform: translate(80vw, 20vh); background: green; }
+                    50% { transform: translate(20vw, 80vh); background: blue; }
+                    75% { transform: translate(80vw, 80vh); background: yellow; }
+                    100% { transform: translate(0, 0); background: purple; }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        setTimeout(() => dvd.remove(), 10000);
+    },
+
+    showFakeUpdate() {
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: #0078d7; color: white; font-family: 'Segoe UI', sans-serif;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            z-index: 999999; cursor: none;
+        `;
+        overlay.innerHTML = `
+            <div style="font-size: 80px; margin-bottom: 20px;">:(</div>
+            <div style="font-size: 24px; margin-bottom: 40px;">Your PC ran into a problem and needs to restart.</div>
+            <div style="font-size: 20px;">0% complete</div>
+        `;
+        document.body.appendChild(overlay);
+
+        setTimeout(() => overlay.remove(), 10000);
     },
 
     showImageOverlay(url) {
@@ -271,7 +333,6 @@ const AlertSystem = {
         overlay.appendChild(img);
         document.body.appendChild(overlay);
 
-        // Add animations styles if not present
         if (!document.getElementById('anim-styles')) {
             const style = document.createElement('style');
             style.id = 'anim-styles';
@@ -282,7 +343,6 @@ const AlertSystem = {
             document.head.appendChild(style);
         }
 
-        // Remove after 10 seconds or on click
         const remove = () => {
             overlay.style.opacity = '0';
             setTimeout(() => overlay.remove(), 500);
