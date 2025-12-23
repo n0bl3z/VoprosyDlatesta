@@ -247,7 +247,7 @@ async function sendToDiscord(payload) {
   }
 }
 
-function sendResultsToDiscord(score, correct, wrong, percent) {
+function sendResultsToDiscord(score, correct, wrong, percent, totalQuestions) {
   // Определяем цвет embed по результату
   let color;
   if (percent >= 90) color = 0x22c55e; // зелёный
@@ -264,6 +264,9 @@ function sendResultsToDiscord(score, correct, wrong, percent) {
   // Название предмета
   const subjectName = subjects[state.selectedSubject].name;
 
+  // Режим теста
+  const modeText = state.quizMode === 'all' ? 'Все вопросы' : '40 вопросов';
+
   const payload = {
     embeds: [{
       title: '📝 Результат теста',
@@ -272,14 +275,14 @@ function sendResultsToDiscord(score, correct, wrong, percent) {
         { name: '👤 Пользователь', value: state.userName || 'Аноним', inline: true },
         { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
         { name: '📚 Предмет', value: subjectName, inline: true },
-        { name: '🏆 Баллы', value: `${score}/100`, inline: true },
-        { name: '✅ Правильных', value: `${correct}`, inline: true },
+        { name: '📋 Режим', value: modeText, inline: true },
+        { name: '✅ Правильных', value: `${correct}/${totalQuestions}`, inline: true },
         { name: '❌ Неправильных', value: `${wrong}`, inline: true },
         { name: '📊 Процент', value: `${percent}%`, inline: true },
         { name: '⏱️ Время', value: timeString, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: true }
       ],
-      footer: { text: 'Тест для самооценивания v0.6' }
+      footer: { text: 'Тест для самооценивания v0.9' }
     }]
   };
 
@@ -297,7 +300,7 @@ function sendNameChangeToDiscord(oldName, newName) {
         { name: '➡️ Новое имя', value: newName, inline: true },
         { name: '📅 Дата', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v0.6' }
+      footer: { text: 'Тест для самооценивания v0.9' }
     }]
   };
 
@@ -315,7 +318,7 @@ function sendNewUserToDiscord(userName) {
         { name: '🆔 ID', value: `\`${state.userId}\``, inline: true },
         { name: '📅 Дата регистрации', value: new Date().toLocaleString('ru-RU'), inline: false }
       ],
-      footer: { text: 'Тест для самооценивания v0.6' }
+      footer: { text: 'Тест для самооценивания v0.9' }
     }]
   };
 
@@ -708,7 +711,7 @@ function showResults() {
   elements.resultsMessage.textContent = message;
 
   // Отправляем результаты в Discord
-  sendResultsToDiscord(score100, correct, wrong, percent);
+  sendResultsToDiscord(score100, correct, wrong, percent, total);
 }
 
 // ============================================
