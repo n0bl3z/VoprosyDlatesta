@@ -1,5 +1,6 @@
 // Парсер для аппаратного обеспечения ПК ИСР-221
-// Правильный ответ - первый вариант (индекс 0)
+// Формат: answers с { text, isCorrect }
+// Правильный ответ - первый вариант
 
 const fs = require('fs');
 
@@ -15,47 +16,48 @@ let currentQuestion = null;
 for (const line of lines) {
     if (line.startsWith('#####')) {
         // Сохраняем предыдущий вопрос
-        if (currentQuestion && currentQuestion.options.length >= 2) {
+        if (currentQuestion && currentQuestion.answers.length >= 2) {
             questions.push(currentQuestion);
         }
         // Новый вопрос
         const questionText = line.replace('#####', '').trim();
         currentQuestion = {
             question: questionText,
-            options: [],
-            correct: 0 // Первый вариант всегда правильный
+            answers: []
         };
     } else if (line.startsWith('?????')) {
         // Вариант ответа
         const optionText = line.replace('?????', '').trim();
         if (currentQuestion && optionText) {
-            currentQuestion.options.push(optionText);
+            // Первый вариант - правильный
+            const isCorrect = currentQuestion.answers.length === 0;
+            currentQuestion.answers.push({
+                text: optionText,
+                isCorrect: isCorrect
+            });
         }
     }
 }
 
 // Добавляем последний вопрос
-if (currentQuestion && currentQuestion.options.length >= 2) {
+if (currentQuestion && currentQuestion.answers.length >= 2) {
     questions.push(currentQuestion);
 }
 
-// Перемешиваем варианты и обновляем правильный индекс
-function shuffleWithCorrect(q) {
-    const correctAnswer = q.options[0];
-    const shuffled = [...q.options];
+// Перемешиваем варианты ответов
+function shuffleAnswers(q) {
+    const shuffled = [...q.answers];
     for (let i = shuffled.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    const newCorrectIndex = shuffled.indexOf(correctAnswer);
     return {
         question: q.question,
-        options: shuffled,
-        correct: newCorrectIndex
+        answers: shuffled
     };
 }
 
-const shuffledQuestions = questions.map(shuffleWithCorrect);
+const shuffledQuestions = questions.map(shuffleAnswers);
 
 // Генерируем JS файл
 const jsContent = `// Аппаратное обеспечение ПК ИСР-221
@@ -75,3 +77,4 @@ fs.writeFileSync(outputFile, jsContent);
 console.log(`✅ Готово!`);
 console.log(`📝 Вопросов: ${questions.length}`);
 console.log(`📁 Файл: ${outputFile}`);
+console.log(`📋 Формат: answers с { text, isCorrect }`);
