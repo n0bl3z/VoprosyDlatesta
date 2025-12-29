@@ -27,7 +27,7 @@ const subjects = {
   },
   innovation: {
     name: 'Инновационные технологии',
-    questions: typeof innovationQuestions !== 'undefined' ? innovationQuestions : [],
+    questions: typeof innovationQuestionsNew !== 'undefined' ? innovationQuestionsNew : [],
     // v2 вопросы для секретного доступа
     questionsV2: typeof innovationQuestionsV2 !== 'undefined' ? innovationQuestionsV2 : []
   }
