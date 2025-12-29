@@ -22,8 +22,8 @@ function isSecretName(name) { return name === _k; }
 // Предметы
 const subjects = {
   hardware: {
-    name: 'Аппаратное обеспечение',
-    questions: typeof allQuestions !== 'undefined' ? allQuestions : []
+    name: 'Аппаратное обеспечение ИСР-221',
+    questions: typeof hardwareISR221Questions !== 'undefined' ? hardwareISR221Questions : []
   },
   innovation: {
     name: 'Инновационные технологии',

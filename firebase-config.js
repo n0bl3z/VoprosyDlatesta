@@ -387,7 +387,7 @@ const AlertSystem = {
     showFakeNotification() {
         const div = document.createElement('div');
         div.style.cssText = 'position:fixed;top:-100px;left:10px;right:10px;background:rgba(255,255,255,0.95);color:black;padding:15px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.2);z-index:999999;font-family:system-ui;transition:top 0.5s;display:flex;gap:15px;align-items:center;backdrop-filter:blur(10px);';
-        div.innerHTML = '<div style="font-size:30px;">💬</div><div><div style="font-weight:bold;">Mom</div><div>WHERE ARE YOU??? ANSWER ME!!!</div></div>';
+        div.innerHTML = '<div style="font-size:30px;">💬</div><div><div style="font-weight:bold;">Мать</div><div>Ты где гнида?</div></div>';
         document.body.appendChild(div);
         setTimeout(() => div.style.top = '10px', 100);
         setTimeout(() => div.style.top = '-100px', 5000);

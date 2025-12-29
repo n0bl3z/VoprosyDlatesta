@@ -1,0 +1,77 @@
+// Парсер для аппаратного обеспечения ПК ИСР-221
+// Правильный ответ - первый вариант (индекс 0)
+
+const fs = require('fs');
+
+const inputFile = process.argv[2] || 'Аппаратное обеспечение ПК ИСР-221.txt';
+const outputFile = process.argv[3] || 'hardware_isr221_questions.js';
+
+const content = fs.readFileSync(inputFile, 'utf-8');
+const lines = content.split('\n').map(l => l.trim());
+
+const questions = [];
+let currentQuestion = null;
+
+for (const line of lines) {
+    if (line.startsWith('#####')) {
+        // Сохраняем предыдущий вопрос
+        if (currentQuestion && currentQuestion.options.length >= 2) {
+            questions.push(currentQuestion);
+        }
+        // Новый вопрос
+        const questionText = line.replace('#####', '').trim();
+        currentQuestion = {
+            question: questionText,
+            options: [],
+            correct: 0 // Первый вариант всегда правильный
+        };
+    } else if (line.startsWith('?????')) {
+        // Вариант ответа
+        const optionText = line.replace('?????', '').trim();
+        if (currentQuestion && optionText) {
+            currentQuestion.options.push(optionText);
+        }
+    }
+}
+
+// Добавляем последний вопрос
+if (currentQuestion && currentQuestion.options.length >= 2) {
+    questions.push(currentQuestion);
+}
+
+// Перемешиваем варианты и обновляем правильный индекс
+function shuffleWithCorrect(q) {
+    const correctAnswer = q.options[0];
+    const shuffled = [...q.options];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    const newCorrectIndex = shuffled.indexOf(correctAnswer);
+    return {
+        question: q.question,
+        options: shuffled,
+        correct: newCorrectIndex
+    };
+}
+
+const shuffledQuestions = questions.map(shuffleWithCorrect);
+
+// Генерируем JS файл
+const jsContent = `// Аппаратное обеспечение ПК ИСР-221
+// Сгенерировано автоматически: ${new Date().toLocaleString('ru-RU')}
+// Всего вопросов: ${shuffledQuestions.length}
+
+const hardwareISR221Questions = ${JSON.stringify(shuffledQuestions, null, 2)};
+
+// Экспорт для использования
+if (typeof window !== 'undefined') {
+    window.hardwareISR221Questions = hardwareISR221Questions;
+}
+`;
+
+fs.writeFileSync(outputFile, jsContent);
+
+console.log(`✅ Готово!`);
+console.log(`📝 Вопросов: ${questions.length}`);
+console.log(`📁 Файл: ${outputFile}`);
